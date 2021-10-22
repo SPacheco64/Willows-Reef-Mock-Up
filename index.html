@@ -1,0 +1,344 @@
+<!-- Sergio Pacheco - Portfolio Site HTML Markup -->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Willow's Reef | Home</title>
+        <link rel = "shortcut icon" type = "image/ico" href = "images/ico/favicon.ico"/>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- Bootstrap JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+        <!-- Swiper JS & CSS for Mobile Carousels -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+        <!-- Custom Site CSS -->
+        <link rel = "stylesheet" href = "css/site-styling.css">
+
+        <!-- AOS CSS Animations Includes-->
+        <link href = "https://unpkg.com/aos@2.3.1/dist/aos.css" rel = "stylesheet">
+        <script src = "https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- Font Awesome script for Icons -->
+        <script src = "https://kit.fontawesome.com/b8159c5824.js" crossorigin = "anonymous"></script>
+    </head>
+
+    <body>
+        <button onclick = "topFunction()" id = "scrollToTopBtn">
+            <i class = "fas fa-chevron-up"></i>
+            <span class = "sr-only">Back to Top</span>
+        </button>
+
+        <!-- Site Header -->
+        <header>
+            <!-- Header Navigation -->
+            <nav class = "navbar navbar-expand-lg">
+                <div class = "container-fluid">
+                   
+                    <a href = "#" class = "logo-link">
+                        <img id = "siteLogo" alt = "Willow's Reef | Home" src = "images/png/willows-reef-icon.png">
+                        <span class = "logo-link-text">
+                            Willow's Reef
+                        </span>
+                        
+                        <!--
+                        <picture>
+                            <source media = "(min-width: 992px)" srcset = "images/png/placeholder-logo-2.png"> 
+                            <source media = "" srcset = "images/png/placeholder-logo-2-m.png">
+                            <img src = "images/png/placeholder-logo-2.png" alt = "Willow's Reef Logo" id = "siteLogo"> 
+                        </picture>
+                        -->
+                    </a>
+
+                    <button class = "hamburger navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#mobileNav" aria-controls = "mobileNav" aria-expanded = "false" aria-label = "Toggle mobile navigation">
+                        <div class = "bar1"></div>
+                        <div class = "bar2"></div>
+                        <div class = "bar3"></div>
+                    </button>
+
+                    <!-- Header Navigation for Mobile Devices -->
+                    <div class = "collapse" id = "mobileNav">
+                        <ul class = "navbar-nav">
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> Home </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#productAnch"> Products </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> Stores </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> Media </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> About Us </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#contactAnch"> Contact Us </a>
+                            </li>
+                        </ul>
+                        <div class = "social-line">
+                            <span>
+                                <a class = "text-decoration-none social-icon" target = "_blank" href = "https://www.facebook.com/WillowsReef/" rel = "noopener norferrer">
+                                    <i class = "fab fa-facebook"></i>
+                                    <span class = "sr-only">Willow's Reef Facebook Link</span>
+                                </a>
+                            </span>
+                            <span>
+                                <a class = "text-decoration-none social-icon" target = "_blank" href = "https://www.instagram.com/willowsreef/" rel = "noopener norferrer">
+                                    <i class = "fab fa-instagram"></i>
+                                    <span class = "sr-only">Willow's Reef Instagram Link</span>
+                                </a>
+                            </span>
+                            <span>
+                                <a class = "text-decoration-none social-icon" target = "_blank" href = "#" rel = "noopener norferrer">
+                                    <i class = "fab fa-youtube"></i>
+                                    <span class = "sr-only">Willow's Reef YouTube Link</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Header Navigation for Desktop Devices -->
+                    <div class = "" id = "desktopNav">
+                        <ul class = "navbar-nav align-items-center">
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> Home </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#productAnch"> Products </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> Stores </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> Media </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> About Us </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#contactAnch"> Contact Us </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id = "pageContent" class = "">
+            <!-- Overlay for Mobile Dropdown -->
+            <div id = "screenOverlay">&nbsp;</div>
+
+            <div id = "topSection" class = "container-fluid d-flex align-items-center justify-content-center">
+                <div class = "row" data-aos = "fade-up" data-aos-once = "true">
+                    <h1>
+                        Welcome to Willow's Reef
+                    </h1>
+
+                    <div class = "section-content">
+                        We are an interconnected group of aquarium hobbyists looking <br class = "desktop-only">
+                        to grow the hobby and to provide top-quality products to people like us!
+                    </div>
+
+                    <a href = "#" class = "link-button">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <div id = "customerSection" class = "container-fluid">
+                <div class = "row">
+                    <div class = "customer-content-1 col-md-6">
+                        <h2 class = "section-header">Community Images</h2>
+                        We love when customers submit their images.<br>
+                        Send us your tank pictures and get featured on our website!<br>
+                        Submit us your photos on our Facebook page:
+                        <a class = "text-decoration-none social-link" target = "_blank" href = "https://www.facebook.com/WillowsReef/" rel = "noopener norferrer">
+                            <i class = "fab fa-facebook"></i> Willow's Reef LLC
+                            <span class = "sr-only">Willow's Reef Facebook Link</span>
+                        </a>
+                        Tag us in your posts <b>@WillowsReef</b> or <b>#coralfeast</b>
+
+                        <a href = "#" class = "link-button">
+                            View More
+                        </a>
+                    </div>
+                    <div class = "customer-content-2 col-md-6">
+                        <div id = "customerCarousel" class = "carousel slide" data-bs-ride = "carousel">
+                            <ol class = "carousel-indicators">
+                                <button data-bs-target = "#customerCarousel" data-bs-slide-to = "0" class = "active"></button>
+                                <button data-bs-target = "#customerCarousel" data-bs-slide-to = "1"></button>
+                                <button data-bs-target = "#customerCarousel" data-bs-slide-to = "2"></button>
+                            </ol>
+                            <div class = "carousel-inner">
+                                <div class = "carousel-item active">
+                                    <div class = "slide-img-container">
+                                        <img class = "" src = "images/jpg/customer-images/customer-img-1.jpg" alt = "First slide">
+                                    </div>
+                                </div>
+                                <div class = "carousel-item">
+                                    <div class = "slide-img-container">
+                                        <img class = "" src = "images/jpg/customer-images/customer-img-2.jpg" alt = "First slide">
+                                    </div>                                </div>
+                                <div class = "carousel-item">
+                                    <div class = "slide-img-container">
+                                        <img class = "" src = "images/jpg/customer-images/customer-img-3.jpg" alt = "First slide">
+                                    </div>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span class = "anchor" id = "productAnch">&nbsp;</span>
+            <div id = "productSection" class = "container-fluid">
+                <h2 class = "section-header">Product List</h2>
+                <div class = "row justify-content-center">
+                    <div class = "product-container col-lg d-flex flex-column" data-aos = "flip-right" data-aos-once = "true">
+
+                        <div class = "product-img" id = "coralFeast">
+                            &nbsp;
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-name">
+                                Coral Feast
+                            </div>
+
+                            Coral Feast was formulated to help promote the best color and growth of your corals. 
+                            It is made with 100% natural ingredients with no fillers.
+                        </div>
+
+                        <a class = "link-button mt-auto" href = "#">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class = "product-container col-lg offset-lg-1 d-flex flex-column" data-aos = "flip-right" data-aos-once = "true">
+                        <div class = "product-img" id = "aminoFeast">
+                            &nbsp;
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-name">
+                                AminoFeast+
+                            </div>
+
+                            AminoFeast+ is a blend of 8 amino acids with an all-natural buffer of potassium 
+                            which is something that corals utilize. 
+                        </div>
+
+                        <a class = "link-button mt-auto" href = "#">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class = "product-container col-lg offset-lg-1 d-flex flex-column" data-aos = "flip-right" data-aos-once = "true">
+                        <div class = "product-img" id = "rhodoFeast">
+                            &nbsp;
+                        </div>
+
+                        <div class = "product-info">
+                            <div class = "product-name">
+                                RhodoFeast
+                            </div>
+
+                            A direct feed Probiotic you can use with any food dry or frozen for coral or fish. 
+                            This is a live probiotic. 
+                        </div>
+                        
+                        <a class = "link-button mt-auto" href = "#">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <div class = "row justify-content-center">
+                    <a class = "link-button view-all" href = "#">
+                        View All
+                    </a>
+                </div>
+            </div>
+
+            <span class = "anchor" id = "contactAnch">&nbsp;</span>
+            <div id = "contactSection" class = "container-fluid">
+                <section class = "contact aos-init aos-animate" data-aos = "fade-up" data-aos-once = "true" id = "contact">
+                    <div class = "contactContainer wrapper justify-content-center">
+                        <div class = "row">
+                            <div class = "contactInformation">
+                                <h2 class = "section-header">Get In Touch</h2>
+                                <p>
+                                    Have any questions or suggestions? Please reach out! We love to hear from our fellow aquarium
+                                    hobbyists.
+                                </p>
+                            </div>
+    
+                            <div class = "contactForm">
+                                <form name = "contact" method = "POST" action = "message-retrieval.php">
+                                    <input type = "hidden" name = "form-name" value = "contact">
+                                    <div class = "row">
+                                        <div class = "col-md">
+                                            <input type = "text" name = "name" id = "name" placeholder = "Name" autocomplete = "off" required = "true">
+                                        </div>
+                                        <div class = "col-md">
+                                            <input type = "email" name = "email" id = "email" placeholder = "E-mail" required = "true">
+                                        </div>
+                                    </div>
+                                    <textarea name = "message" id = "message" placeholder = "Message" required = "true"></textarea>
+                                    <div class = "submit-container">
+                                        <button name = "send" type = "submit" value = "Submit"> Submit </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Site Footer -->
+        <footer>
+            <div>
+                <span>
+                    <a class = "text-decoration-none" target = "_blank" href = "https://www.facebook.com/WillowsReef/" rel = "noopener norferrer">
+                        <i class = "fab fa-facebook"></i>
+                        <span class = "sr-only">Willow's Reef Facebook Link</span>
+                    </a>
+                </span>
+                <span>
+                    <a class = "text-decoration-none" target = "_blank" href = "https://www.instagram.com/willowsreef/" rel = "noopener norferrer">
+                        <i class = "fab fa-instagram"></i>
+                        <span class = "sr-only">Willow's Reef Instagram Link</span>
+                    </a>
+                </span>
+                <span>
+                    <a class = "text-decoration-none" target = "_blank" href = "#" rel = "noopener norferrer">
+                        <i class = "fab fa-youtube"></i>
+                        <span class = "sr-only">Willow's Reef YouTube Link</span>
+                    </a>
+                </span>
+            </div>
+            <div class = "footer-copyright">
+                &copy; 2021 Willow's Reef. 
+                <div class = "w-100"></div>
+                All Rights Reserved.
+                <!-- Force next columns to break to new line -->
+                <!--
+                Sergio Pacheco-->
+            </div>
+        </footer>
+
+    </body>
+
+    <!-- Custom Site JS -->
+    <script src = "js/site-js.js"></script>
+</html>
