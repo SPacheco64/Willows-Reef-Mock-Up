@@ -1,0 +1,659 @@
+/* Sergio Pacheco - Portfolio Site Styling */
+/* Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
+/* Basic SCSS Style Variables */
+/* Animation CSS (using AOS animation library) */
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Karla";
+  background: #fff;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+body img, body button, body i {
+  caret-color: transparent;
+}
+
+a {
+  color: #010048;
+  width: fit-content;
+}
+
+a:hover {
+  color: #07c2f9;
+  text-decoration: none;
+}
+
+header {
+  background: #010048;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  height: 5rem;
+}
+
+header .navbar {
+  height: 100%;
+}
+
+footer {
+  background: #03002e;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  text-align: center;
+  padding: 2rem 0;
+  min-height: 5rem;
+  margin-top: 4.5rem;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a i {
+  font-size: 2rem;
+  padding: 0 .5rem;
+}
+
+footer .footer-copyright {
+  margin-top: .5rem;
+}
+
+/* Hamburger Menu Styling - START */
+.hamburger.navbar-toggler {
+  outline: 0;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: #fff;
+  margin: .5rem 0;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  border-radius: 3rem;
+}
+
+.hamburger.active .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-0.7rem, 0.7rem);
+  transform: rotate(-45deg) translate(-0.7rem, 0.7rem);
+  margin-top: .5rem;
+}
+
+.hamburger.active .bar2 {
+  opacity: 0;
+}
+
+.hamburger.active .bar3 {
+  -webkit-transform: rotate(45deg) translate(-0.7rem, -0.7rem);
+  transform: rotate(45deg) translate(-0.7rem, -0.7rem);
+}
+
+.hamburger:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Hamburger Menu Styling - END */
+/* Header Nav CSS - START */
+#siteLogo {
+  max-height: 4rem;
+  border-radius: 1rem;
+}
+
+.logo-link {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logo-link-text {
+  display: none;
+}
+
+#desktopNav {
+  display: none;
+}
+
+#mobileNav {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 5rem;
+  background: #010048;
+  left: 0px;
+  padding: 1rem 0;
+}
+
+#mobileNav a {
+  margin: .5rem auto;
+  width: 10rem;
+  border: 0.1rem solid #fff;
+  border-radius: 30rem;
+  font-weight: bold;
+}
+
+#mobileNav .social-line {
+  margin: 1rem 0;
+}
+
+#mobileNav .social-line .social-icon {
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  padding: .5rem;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Header Nav CSS - END */
+nav .nav-item {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+nav .nav-item .nav-link {
+  color: #fff;
+}
+
+nav .nav-item .nav-link:hover {
+  color: #07c2f9;
+}
+
+#screenOverlay {
+  display: none;
+  background: #010048;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+#screenOverlay.active {
+  display: block;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #03002e;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.header-subtxt {
+  position: relative;
+  top: -1rem;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+#pageContent {
+  position: relative;
+  top: 5rem;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.link-button {
+  background-color: #010048;
+  padding: .8rem 1.3rem;
+  width: fit-content;
+  border-radius: 30rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 1rem auto;
+  box-shadow: 1px 1px 10px -4px #000;
+}
+
+.link-button:hover {
+  background: #07c2f9;
+  color: #03002e;
+  border-color: #07c2f9;
+}
+
+#topSection {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.55) 0, rgba(0, 0, 0, 0.55) 100%), url(../images/jpg/placeholder-header-D4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 55vh;
+  width: 100%;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 10px #000;
+  overflow-anchor: none;
+}
+
+#topSection .link-button {
+  text-shadow: none;
+}
+
+#topSection h1 {
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+}
+
+#topSection .section-content {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+#customerSection {
+  background: #e3ecf1;
+  width: 95%;
+  margin: 7.5% auto 0 auto;
+}
+
+#customerSection .social-link {
+  display: block;
+  margin: .5rem 0;
+  color: #010048;
+}
+
+#customerSection .social-link:hover {
+  color: #07c2f9;
+}
+
+#customerSection .link-button {
+  display: block;
+  margin: 1rem auto;
+  box-shadow: none;
+}
+
+#customerSection .row {
+  height: inherit;
+}
+
+#customerSection .customer-content-1 {
+  padding: 5%;
+  height: inherit;
+}
+
+#customerSection .customer-content-2 {
+  padding: 0;
+  height: inherit;
+}
+
+#customerSection .carousel {
+  height: 100%;
+}
+
+#customerSection .carousel .carousel-inner {
+  height: 100%;
+}
+
+#customerSection .carousel .carousel-inner .carousel-item {
+  height: 100%;
+}
+
+#customerSection .carousel .carousel-inner .carousel-item .slide-img-container {
+  height: 100%;
+}
+
+#customerSection .carousel .carousel-inner .carousel-item .slide-img-container img {
+  width: 100%;
+  object-fit: cover;
+  height: 15rem;
+}
+
+#customerSection .carousel .carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 30px;
+}
+
+#productSection .section-header {
+  margin-bottom: 2rem;
+}
+
+#productSection .product-container {
+  box-shadow: 1px 1px 8px -4px #000;
+  text-align: center;
+  padding: 0;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+#productSection .product-container .product-info {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 1rem 0;
+  padding: .25rem .75rem;
+}
+
+#productSection .product-container .product-info .product-name {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  font-weight: bold;
+  color: #03002e;
+}
+
+#productSection .product-container .link-button {
+  box-shadow: none;
+}
+
+#productSection .product-container #coralFeast {
+  background: url(../images/png/compressed-product-images/coral-feast-prd.png);
+}
+
+#productSection .product-container #aminoFeast {
+  background: url(../images/png/compressed-product-images/amino-feast-prd.png);
+}
+
+#productSection .product-container #rhodoFeast {
+  background: url(../images/png/compressed-product-images/rhodo-feast-prd.png);
+}
+
+#productSection .product-container #coralFeast, #productSection .product-container #aminoFeast, #productSection .product-container #rhodoFeast {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e3ecf1;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#productSection .view-all {
+  margin-bottom: 2rem;
+  box-shadow: none;
+}
+
+/* STYLING FOR CONTACT FORM - START */
+#contactSection {
+  background: #010048;
+  color: #fff;
+  text-align: center;
+}
+
+#contactSection .section-header {
+  color: #fff;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin: -1rem;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+.contact .contactContainer .contactForm input, .contact .contactContainer .contactForm textarea {
+  padding: .4rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: .2rem;
+  outline: none;
+}
+
+.contact .contactContainer .contactForm input {
+  width: 100%;
+}
+
+.contact .contactContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .contactContainer .contactInformation, .contact .contactContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contactContainer .contactInformation .socialIcons {
+  padding: 0;
+}
+
+.contact .contactContainer .contactInformation .socialIcons i {
+  padding: 0 1rem 0 0;
+  font-size: 2rem;
+}
+
+.contact .contactContainer .contactInformation .socialIcons a:hover {
+  color: #fff;
+}
+
+.contact .contactContainer .contactForm button {
+  background-color: #03002e;
+  border: none;
+  padding: .8rem 1.3rem;
+  margin: 1rem auto;
+  display: block;
+  width: auto;
+  border-radius: 30rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  min-width: 10rem;
+  border: 0.2rem solid #fff;
+}
+
+.contact .contactContainer .contactForm button:hover {
+  background: #07c2f9;
+  color: #03002e;
+  border-color: #07c2f9;
+  cursor: pointer;
+}
+
+#message {
+  max-height: 15rem;
+  min-height: 10rem;
+}
+
+.submit-container, .socialIcons {
+  text-align: center;
+}
+
+/* STYLING FOR CONTACT FORM - END */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: .5rem;
+  right: .1rem;
+  z-index: 100;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+#scrollToTopBtn i {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #03002e;
+  padding: .45rem .6rem;
+  border-radius: 100%;
+  border: 0.1rem solid #fff;
+}
+
+#topSection, #productSection, #contactSection {
+  padding: 5%;
+}
+
+@media (min-width: 768px) {
+  .company-logo {
+    width: 75%;
+  }
+  #pageContent {
+    text-align: left;
+  }
+  #topSection h1 {
+    line-height: 5rem;
+    font-size: 5rem;
+  }
+  #topSection .section-content {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  #customerSection {
+    width: 90%;
+    height: 30rem;
+  }
+  #customerSection .section-header {
+    text-align: left;
+  }
+  #customerSection .carousel .carousel-inner .carousel-item .slide-img-container img {
+    height: 100%;
+  }
+  #productSection .product-container {
+    max-width: 65%;
+  }
+}
+
+@media (min-width: 992px) {
+  #topSection {
+    min-height: 100vh;
+  }
+  #topSection h1 {
+    line-height: 4rem;
+    font-size: 4rem;
+  }
+  header {
+    position: fixed;
+    box-shadow: 1px 1px 8px -2px #000;
+  }
+  footer {
+    position: static;
+    background: #03002e;
+    margin-top: 2rem;
+  }
+  footer a i {
+    padding: 0 .75rem;
+  }
+  /* Header Nav CSS */
+  .hamburger, #mobileNav {
+    display: none;
+  }
+  #desktopNav {
+    display: flex;
+  }
+  #desktopNav .nav-item .nav-link:after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    top: -.1rem;
+    background-color: #07c2f9;
+    transform: scaleX(0);
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+  }
+  #desktopNav .nav-item .nav-link:hover:after {
+    transform: scaleX(1);
+  }
+  .logo-link-text {
+    display: inline-block;
+    position: relative;
+    font-size: 1.5rem;
+    top: .25rem;
+    color: #fff;
+  }
+  .no-scroll {
+    overflow: visible;
+  }
+  /* Nested CSS for Navigation Items */
+  nav .nav-item {
+    width: auto;
+  }
+  nav a {
+    font-size: 1.2rem;
+    margin: 0 .75rem;
+  }
+  /* Header Nav CSS - END */
+  #screenOverlay, #screenOverlay.active {
+    display: none;
+  }
+  #pageContent {
+    top: 2rem;
+  }
+  .desktop-only {
+    display: block;
+  }
+  .w-100 {
+    display: none;
+  }
+  .submit-container, .socialIcons {
+    text-align: left;
+  }
+  #productSection .row {
+    margin: auto;
+  }
+  #productSection .row .product-container {
+    margin-bottom: 0;
+  }
+  #productSection .view-all {
+    margin: 2rem 0;
+  }
+  #contactSection {
+    padding: 5% 25%;
+  }
+  #scrollToTopBtn {
+    bottom: 1rem;
+    right: 1.5rem;
+  }
+  #scrollToTopBtn i {
+    top: 0;
+    -webkit-transition: top 0.3s ease-out;
+    -moz-transition: top 0.3s ease-out;
+    -ms-transition: top 0.3s ease-out;
+    -o-transition: top 0.3s ease-out;
+    transition: top 0.3s ease-out;
+    position: relative;
+  }
+  #scrollToTopBtn i:hover {
+    background-color: #07c2f9;
+    border-color: #07c2f9;
+    color: #03002e;
+    top: -.35rem;
+  }
+}
