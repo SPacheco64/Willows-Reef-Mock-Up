@@ -145,7 +145,10 @@ footer .footer-copyright {
   top: 5rem;
   background: #010048;
   left: 0px;
-  padding: 1rem 0;
+}
+
+#mobileNav .nav-item:first-child {
+  padding-top: 1rem;
 }
 
 #mobileNav a {
