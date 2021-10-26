@@ -1,0 +1,296 @@
+<!-- Sergio Pacheco - Portfolio Site HTML Markup -->
+
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Willow's Reef | Stores</title>
+        <link rel = "shortcut icon" type = "image/ico" href = "images/ico/favicon.ico"/>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- Bootstrap JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+        <!-- Swiper JS & CSS for Mobile Carousels -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+        <!-- Custom Site CSS -->
+        <link rel = "stylesheet" href = "css/site-styling.css">
+
+        <!-- AOS CSS Animations Includes-->
+        <link href = "https://unpkg.com/aos@2.3.1/dist/aos.css" rel = "stylesheet">
+        <script src = "https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <!-- Font Awesome script for Icons -->
+        <script src = "https://kit.fontawesome.com/b8159c5824.js" crossorigin = "anonymous"></script>
+    </head>
+
+    <body>
+        <button onclick = "topFunction()" id = "scrollToTopBtn">
+            <i class = "fas fa-chevron-up"></i>
+            <span class = "sr-only">Back to Top</span>
+        </button>
+
+        <!-- Site Header -->
+        <header>
+            <!-- Header Navigation -->
+            <nav class = "navbar navbar-expand-lg">
+                <div class = "container-fluid">
+                   
+                    <a href = "/Willows-Reef-Mock-Up" class = "logo-link">
+                        <img id = "siteLogo" alt = "Willow's Reef | Home" src = "images/png/willows-reef-icon.png">
+                        <span class = "logo-link-text">
+                            Willow's Reef
+                        </span>
+                    </a>
+
+                    <button class = "hamburger navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#mobileNav" aria-controls = "mobileNav" aria-expanded = "false" aria-label = "Toggle mobile navigation">
+                        <div class = "bar1"></div>
+                        <div class = "bar2"></div>
+                        <div class = "bar3"></div>
+                    </button>
+
+                    <!-- Header Navigation for Mobile Devices -->
+                    <div class = "collapse" id = "mobileNav">
+                        <ul class = "navbar-nav">
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up"> Home </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/products-page.html"> Products </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/stores-page.html"> Stores </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> Media </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> About Us </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#contactAnch"> Contact Us </a>
+                            </li>
+                        </ul>
+                        <div class = "social-line">
+                            <span>
+                                <a class = "text-decoration-none social-icon" target = "_blank" href = "https://www.facebook.com/WillowsReef/" rel = "noopener norferrer">
+                                    <i class = "fab fa-facebook"></i>
+                                    <span class = "sr-only">Willow's Reef Facebook Link</span>
+                                </a>
+                            </span>
+                            <span>
+                                <a class = "text-decoration-none social-icon" target = "_blank" href = "https://www.instagram.com/willowsreef/" rel = "noopener norferrer">
+                                    <i class = "fab fa-instagram"></i>
+                                    <span class = "sr-only">Willow's Reef Instagram Link</span>
+                                </a>
+                            </span>
+                            <span>
+                                <a class = "text-decoration-none social-icon" target = "_blank" href = "#" rel = "noopener norferrer">
+                                    <i class = "fab fa-youtube"></i>
+                                    <span class = "sr-only">Willow's Reef YouTube Link</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Header Navigation for Desktop Devices -->
+                    <div class = "" id = "desktopNav">
+                        <ul class = "navbar-nav align-items-center">
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up"> Home </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/products-page.html"> Products </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/stores-page.html"> Stores </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> Media </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#"> About Us </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#contactAnch"> Contact Us </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div id = "pageContent" class = "">
+            <!-- Overlay for Mobile Dropdown -->
+            <div id = "screenOverlay">&nbsp;</div>
+
+            <div id = "productSection" class = "container-fluid">
+                <div class = "row justify-content-center product-descript-container">
+                    <div class = "col-md-6">
+                        <img src = "../Willow's Reef Website Mockup/images/png/compressed-product-images/coral-feast-prd.png" alt = "Coral Feast">
+                    </div>
+                    <div class = "col-md-6 item-descript">
+                        <h2 class = "section-header text-start">Coral Feast</h2>
+
+                        <b>Coral Feast</b> is formulated to help promote your corals' best growth 
+                        and color and is made with 100% all-natural aquatic ingredients. 
+                        There are no fillers of ANY kind like corn starch, flours, yeasts, 
+                        fish protein powder, garlic powder, or bioenhancers.
+                        <br><br>
+
+                        <a href = "/Willows-Reef-Mock-Up/stores-page.html" class = "link-button">
+                            See Stores
+                        </a>
+                    </div>
+                </div>
+
+                <h2 class = "section-header">Product Description</h2>
+                <div class = "full-descript">
+                    CoralFeast is made with nine all-natural 100% aquatic ingredients to help promote your corals' best 
+                    growth and color. There are no fillers of ANY kind like corn starch, flours, yeasts, fish protein 
+                    powder, garlic powder, or bioenhancers.
+                    <br><br>
+                    CoralFeast is milled in an FDA-certified factory. It is milled and sifted with a 300-micron screen, 
+                    leaving a 300 to 500-micron particle size, making this ideal for all NPS, LPS, and SPS coral. It is 
+                    also ideal for sponges and clams. The size aids in the digestion for maximum nutrient absorption. More 
+                    absorption, less excrement.
+                    <br><br>
+                    The milling removes all impurities, making it cleaner than any other coral food currently on the market. 
+                    For best results: Add a high-quality amino acid-like AminoFeast+ and a probiotic to a container and mix 
+                    thoroughly. We also recommend adding CoralFeast as an ingredient when you feed frozen food, as this will 
+                    boost the overall nutrition and help with the appetite for picky fish.
+                    <br><br>
+                    In our opinion, fillers are not needed. Of course, it costs more to produce, but we were unwilling to take 
+                    any shortcuts when we decided to make a quality coral food. CoralFeast is made with what we would want to 
+                    put into my tank. You spend $100s to $1,000s on your aquarium with lights, skimmers, dosing units, pumps, 
+                    and of course, coral and fish. Why not feed them the best coral food?
+                    <br><br>
+                    <b>Ingredients:</b>
+                    <ul class = "ingredient-list">
+                        <li>
+                            Whole Krill
+                        </li>
+                        <li>
+                            Freeze Dried Rotifers
+                        </li>
+                        <li>
+                            Arctic Copepods
+                        </li>
+                        <li>
+                            Whole Brine Shrimp
+                        </li>
+                        <li>
+                            Apocalypse Royi
+                        </li>
+                        <li>
+                            Spirulina Powder
+                        </li>
+                        <li>
+                            Porphyra umbilicalis
+                        </li>
+                        <li>
+                            Palmaria palmata
+                        </li>
+                        <li>
+                            Ulva lactuca
+                        </li>
+                        <br>
+                        <li>
+                            Crude Protein 55.3%
+                        </li>
+                        <li>
+                            Crude Fat 15.5%
+                        </li>
+                        <li>
+                            Crude fiber 8.28%
+                        </li>
+                        <li>
+                            Crude lipid 12%
+                        </li>
+                        <li>
+                            Min Moisture 7.95%
+                        </li>
+                        <li>
+                            Ash 9.58%
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <span class = "anchor" id = "contactAnch">&nbsp;</span>
+            <div id = "contactSection" class = "container-fluid">
+                <section class = "contact aos-init aos-animate" data-aos = "fade-up" data-aos-once = "true" id = "contact">
+                    <div class = "contactContainer wrapper justify-content-center">
+                        <div class = "row">
+                            <div class = "contactInformation">
+                                <h2 class = "section-header">Get In Touch</h2>
+                                <p>
+                                    Have any questions or suggestions? Please reach out! We love to hear from our fellow aquarium
+                                    hobbyists.
+                                </p>
+                            </div>
+    
+                            <div class = "contactForm">
+                                <form name = "contact" method = "POST" action = "message-retrieval.php">
+                                    <input type = "hidden" name = "form-name" value = "contact">
+                                    <div class = "row">
+                                        <div class = "col-md">
+                                            <input type = "text" name = "name" id = "name" placeholder = "Name" autocomplete = "off" required = "true">
+                                        </div>
+                                        <div class = "col-md">
+                                            <input type = "email" name = "email" id = "email" placeholder = "E-mail" required = "true">
+                                        </div>
+                                    </div>
+                                    <textarea name = "message" id = "message" placeholder = "Message" required = "true"></textarea>
+                                    <div class = "submit-container">
+                                        <button name = "send" type = "submit" value = "Submit"> Submit </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- Site Footer -->
+        <footer>
+            <div>
+                <span>
+                    <a class = "text-decoration-none" target = "_blank" href = "https://www.facebook.com/WillowsReef/" rel = "noopener norferrer">
+                        <i class = "fab fa-facebook"></i>
+                        <span class = "sr-only">Willow's Reef Facebook Link</span>
+                    </a>
+                </span>
+                <span>
+                    <a class = "text-decoration-none" target = "_blank" href = "https://www.instagram.com/willowsreef/" rel = "noopener norferrer">
+                        <i class = "fab fa-instagram"></i>
+                        <span class = "sr-only">Willow's Reef Instagram Link</span>
+                    </a>
+                </span>
+                <span>
+                    <a class = "text-decoration-none" target = "_blank" href = "#" rel = "noopener norferrer">
+                        <i class = "fab fa-youtube"></i>
+                        <span class = "sr-only">Willow's Reef YouTube Link</span>
+                    </a>
+                </span>
+            </div>
+            <div class = "footer-copyright">
+                &copy; 2021 Willow's Reef. 
+                <div class = "w-100"></div>
+                All Rights Reserved.
+            </div>
+        </footer>
+
+    </body>
+
+    <!-- Custom Site JS -->
+    <script src = "js/site-js.js"></script>
+</html>
