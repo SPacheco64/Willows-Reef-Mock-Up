@@ -587,7 +587,7 @@ h1, h2 {
   border: 0.1rem solid #fff;
 }
 
-#topSection, #productSection, #contactSection, #storeSection {
+#topSection, #productSection, #contactSection, #storeSection, #aboutSection {
   padding: 5%;
 }
 
