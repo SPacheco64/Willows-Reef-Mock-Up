@@ -416,6 +416,41 @@ h1, h2 {
 #productSection .product-descript-container {
   align-items: center;
   margin-bottom: 3rem;
+  display: table;
+  height: inherit;
+}
+
+#productSection .product-descript-container .coral-feast-col {
+  background: url(../images/png/compressed-product-images/coral-feast-prd.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#productSection .product-descript-container .amino-feast-col {
+  background: url(../images/png/compressed-product-images/amino-feast-prd.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#productSection .product-descript-container .rhodo-feast-col {
+  background: url(../images/png/compressed-product-images/rhodo-feast-prd.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#productSection .product-descript-container .frozen-feast-col {
+  background: url(../images/jpg/compressed-product-images/frozen-feast-prd.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#productSection .product-descript-container .col-md-6 {
+  height: inherit;
+  display: table-cell;
 }
 
 #productSection .product-descript-container .section-header {
@@ -431,7 +466,7 @@ h1, h2 {
 
 #productSection .product-descript-container .frozen-feast-img {
   max-height: none;
-  width: 95.5%;
+  width: 100%;
 }
 
 #productSection .product-descript-container .item-descript {
