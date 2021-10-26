@@ -240,7 +240,6 @@ h1, h2 {
   color: #fff;
   text-transform: uppercase;
   margin: 1rem auto;
-  box-shadow: 1px 1px 10px -4px #000;
 }
 
 .link-button:hover {
@@ -264,6 +263,7 @@ h1, h2 {
 
 #topSection .link-button {
   text-shadow: none;
+  box-shadow: 1px 1px 10px -4px #000;
 }
 
 #topSection h1 {
@@ -411,6 +411,35 @@ h1, h2 {
 #productSection .view-all {
   margin-bottom: 2rem;
   box-shadow: none;
+}
+
+#productSection .product-descript-container {
+  align-items: center;
+}
+
+#productSection .product-descript-container .section-header {
+  margin-bottom: 1rem;
+}
+
+#productSection .product-descript-container img {
+  width: 45%;
+  margin: 0 auto;
+  display: block;
+}
+
+#productSection .product-descript-container .item-descript {
+  background: #e3ecf1;
+  padding: 5%;
+}
+
+#productSection .full-descript {
+  background: #e3ecf1;
+  padding: 5%;
+}
+
+#productSection .ingredient-list {
+  padding-left: 0;
+  list-style: none;
 }
 
 #storeSection a {
