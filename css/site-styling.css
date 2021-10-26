@@ -385,6 +385,18 @@ h1, h2 {
   background: url(../images/png/compressed-product-images/rhodo-feast-prd.png);
 }
 
+#productSection .product-container #frozenFeast {
+  background: url(../images/jpg/compressed-product-images/frozen-feast-prd.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e3ecf1;
+  border-radius: 1rem 1rem 0 0;
+}
+
 #productSection .product-container #coralFeast, #productSection .product-container #aminoFeast, #productSection .product-container #rhodoFeast {
   background-size: contain;
   background-position: center;
