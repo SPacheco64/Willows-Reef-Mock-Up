@@ -413,6 +413,10 @@ h1, h2 {
   box-shadow: none;
 }
 
+#storeSection a {
+  text-decoration: none;
+}
+
 /* STYLING FOR CONTACT FORM - START */
 #contactSection {
   background: #010048;
@@ -527,7 +531,7 @@ h1, h2 {
   border: 0.1rem solid #fff;
 }
 
-#topSection, #productSection, #contactSection {
+#topSection, #productSection, #contactSection, #storeSection {
   padding: 5%;
 }
 
