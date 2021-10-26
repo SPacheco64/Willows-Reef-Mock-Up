@@ -424,9 +424,9 @@ h1, h2 {
 }
 
 #productSection .product-descript-container img {
-  width: 60%;
+  max-height: 25rem;
   display: block;
-  margin: -4rem auto;
+  margin: 1rem auto;
 }
 
 #productSection .product-descript-container .item-descript {
@@ -605,7 +605,7 @@ h1, h2 {
     max-width: 65%;
   }
   #productSection .product-descript-container {
-    margin-bottom: 0;
+    margin-bottom: 3rem;
   }
   #productSection .product-descript-container .section-header {
     text-align: left;
@@ -614,7 +614,6 @@ h1, h2 {
     display: inline-block;
   }
   #productSection .product-descript-container img {
-    width: 45%;
     margin: 0 auto;
   }
 }
@@ -703,6 +702,9 @@ h1, h2 {
   }
   #productSection .row .product-container {
     margin-bottom: 0;
+  }
+  #productSection .product-descript-container {
+    margin: 3rem 0;
   }
   #productSection .view-all {
     margin: 2rem 0;
