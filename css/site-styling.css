@@ -203,7 +203,14 @@ nav .dropdown {
 
 nav .dropdown .dropdown-toggle::after {
   margin-left: 0;
-  vertical-align: .2rem;
+  vertical-align: .15rem;
+}
+
+nav .dropdown .dropdown-toggle.show::after {
+  border-top: 0;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0.3em solid;
+  border-left: 0.3em solid transparent;
 }
 
 nav .dropdown button {
