@@ -168,6 +168,10 @@ footer .footer-copyright {
   padding: 0.5rem 1rem;
 }
 
+#mobileNav a:hover, #mobileNav button:hover {
+  border-color: #07c2f9;
+}
+
 #mobileNav .social-line {
   margin: 1rem 0;
 }
