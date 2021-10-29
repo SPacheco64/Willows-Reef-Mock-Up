@@ -676,6 +676,9 @@ h1, h2 {
   #pageContent {
     text-align: left;
   }
+  nav .dropdown .dropdown-menu {
+    width: 35%;
+  }
   #topSection h1 {
     line-height: 5rem;
     font-size: 5rem;
