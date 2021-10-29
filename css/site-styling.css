@@ -660,13 +660,29 @@ h1, h2 {
   border: 0.1rem solid #fff;
 }
 
-#topSection, #productSection, #contactSection, #storeSection, #aboutSection {
+#topSection, #productSection, #contactSection, #storeSection, #aboutSection, #mediaSection {
   padding: 5%;
 }
 
 .anchor {
   position: relative;
   top: -3rem;
+}
+
+#videoPlayer {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 0.2rem solid #7d731e;
+  background: #000;
+}
+
+.yt-red {
+  color: #E62117;
+}
+
+.yt-red i {
+  vertical-align: text-bottom;
 }
 
 @media (min-width: 768px) {
