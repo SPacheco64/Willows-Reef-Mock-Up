@@ -673,6 +673,7 @@ h1, h2 {
   display: block;
   margin: 0 auto;
   max-width: 100%;
+  height: 15rem;
   border: 0.2rem solid #7d731e;
   background: #000;
 }
@@ -731,6 +732,9 @@ h1, h2 {
   }
   #productSection .product-descript-container .link-button {
     display: inline-block;
+  }
+  #videoPlayer {
+    height: 30rem;
   }
 }
 
@@ -866,5 +870,8 @@ h1, h2 {
   }
   .anchor {
     top: 0;
+  }
+  #videoPlayer {
+    height: 35rem;
   }
 }
