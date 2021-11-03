@@ -1,3 +1,15 @@
+        <script>
+            $(".hamburger").click(function () 
+            {
+            $(".hamburger").toggleClass("active");
+            screenOverlay.classList.toggle("active");
+            pageBody.classList.toggle("no-scroll");
+            });
+            $("#mobileNav .nav-link").click(function () 
+            {
+            $(".hamburger").click();
+            });
+        </script>
         <!-- Site Header -->
         <header>
             <!-- Header Navigation -->
