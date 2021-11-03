@@ -6,6 +6,9 @@ $(document).ready(function ()
     const pageBody = document.body;
     const screenOverlay = document.getElementById("screenOverlay");
 
+    $("#globalHeader").load("./global-header.html");
+    $("#globalFooter").load("./global-footer.html");
+    
     $(".hamburger").click(function () 
     {
         $(".hamburger").toggleClass("active");
@@ -16,9 +19,6 @@ $(document).ready(function ()
     {
         $(".hamburger").click();
     });
-
-    $("#globalHeader").load("./global-header.html");
-    $("#globalFooter").load("./global-footer.html");
 });
 
 // Initialization for the AOS CSS Animations
