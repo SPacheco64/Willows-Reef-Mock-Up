@@ -3,9 +3,6 @@
 // Swaps between Hamburger Icon to 'X' and displays the dropdown menu
 $(document).ready(function () 
 {
-    const pageBody = document.body;
-    const screenOverlay = document.getElementById("screenOverlay");
-
     $("#globalHeader").load("./global-header.html");
     $("#globalFooter").load("./global-footer.html");
 });
