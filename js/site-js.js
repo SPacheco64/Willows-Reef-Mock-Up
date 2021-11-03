@@ -16,6 +16,9 @@ $(document).ready(function ()
     {
         $(".hamburger").click();
     });
+
+    $("#globalHeader").load("./global-header.html");
+    $("#globalFooter").load("./global-footer.html");
 });
 
 // Initialization for the AOS CSS Animations
