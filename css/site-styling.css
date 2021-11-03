@@ -63,7 +63,6 @@ footer {
   text-align: center;
   padding: 2rem 0;
   min-height: 5rem;
-  margin-top: 4.5rem;
 }
 
 footer a {
@@ -753,7 +752,6 @@ h1, h2 {
   footer {
     position: static;
     background: #03002e;
-    margin-top: 2rem;
   }
   footer a i {
     padding: 0 .75rem;
