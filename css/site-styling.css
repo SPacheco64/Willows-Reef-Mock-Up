@@ -547,6 +547,47 @@ h1, h2 {
 
 #storeSection a {
   text-decoration: none;
+  color: #fff;
+}
+
+#storeSection a:hover {
+  color: #07c2f9;
+}
+
+#storeSection button {
+  border: none;
+  background: none;
+  color: #03002e;
+}
+
+#storeSection button:hover {
+  color: #07c2f9;
+}
+
+#storeSection .dropdown .dropdown-menu {
+  background: #03002e;
+  border: 0.1rem solid #fff;
+}
+
+#storeSection .dropdown .dropdown-menu .dropdown-header {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#storeSection .dropdown .dropdown-toggle::after {
+  margin-left: 0;
+  vertical-align: .15rem;
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+#storeSection .dropdown .dropdown-toggle.show::after {
+  transform: rotate(180deg);
 }
 
 /* STYLING FOR CONTACT FORM - START */
