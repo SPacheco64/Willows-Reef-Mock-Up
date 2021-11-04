@@ -567,6 +567,20 @@ h1, h2 {
 #storeSection .dropdown .dropdown-menu {
   background: #03002e;
   border: 0.1rem solid #fff;
+  -webkit-animation: fadeIn 0.5s;
+  -moz-animation: fadeIn 0.5s;
+  -ms-animation: fadeIn 0.5s;
+  -o-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 #storeSection .dropdown .dropdown-menu .dropdown-header {
