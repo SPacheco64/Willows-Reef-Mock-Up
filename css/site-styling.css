@@ -767,6 +767,7 @@ h1, h2 {
   nav .dropdown .dropdown-menu {
     width: 35%;
     left: 50% !important;
+    right: 50% !important;
     transform: translateX(-50%) !important;
     top: 100% !important;
   }
