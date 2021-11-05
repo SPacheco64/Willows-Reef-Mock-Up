@@ -38,14 +38,6 @@ a:hover {
   text-decoration: none;
 }
 
-#globalHeader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 300;
-}
-
 header {
   background: #010048;
   position: fixed;
@@ -602,6 +594,7 @@ h1, h2 {
   top: 100% !important;
   min-width: 15rem;
   height: max-content;
+  z-index: 100;
   -webkit-animation: fadeIn 0.5s;
   -moz-animation: fadeIn 0.5s;
   -ms-animation: fadeIn 0.5s;
