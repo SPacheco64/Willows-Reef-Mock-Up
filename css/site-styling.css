@@ -38,6 +38,14 @@ a:hover {
   text-decoration: none;
 }
 
+#globalHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 300;
+}
+
 header {
   background: #010048;
   position: fixed;
