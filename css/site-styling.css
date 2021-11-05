@@ -575,6 +575,7 @@ h1, h2 {
   border: none;
   background: none;
   color: #03002e;
+  font-weight: bold;
 }
 
 #storeSection button:hover, #storeSection button:focus, #storeSection button:active {
