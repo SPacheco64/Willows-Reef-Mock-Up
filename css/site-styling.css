@@ -569,7 +569,7 @@ h1, h2 {
   color: #03002e;
 }
 
-#storeSection button:hover {
+#storeSection button:hover, #storeSection button:focus, #storeSection button:active {
   color: #07c2f9;
 }
 
