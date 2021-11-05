@@ -588,6 +588,7 @@ h1, h2 {
   left: 50% !important;
   transform: translate(-50%, 5%) !important;
   top: 100% !important;
+  z-index: 300;
   -webkit-animation: fadeIn 0.5s;
   -moz-animation: fadeIn 0.5s;
   -ms-animation: fadeIn 0.5s;
@@ -778,7 +779,6 @@ h1, h2 {
     right: 50% !important;
     transform: translateX(-50%) !important;
     top: 100% !important;
-    z-index: 1000;
   }
   #topSection h1 {
     line-height: 5rem;
