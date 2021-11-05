@@ -154,6 +154,12 @@ footer .footer-copyright {
   padding-top: 1rem;
 }
 
+#mobileNav .dropdown-menu {
+  left: 50% !important;
+  transform: translate(-50%, 5%) !important;
+  top: 100% !important;
+}
+
 #mobileNav .dropdown-menu .nav-item:first-child {
   padding-top: 0;
 }
