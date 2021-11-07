@@ -573,16 +573,16 @@ h1, h2 {
 
 #storeSection button {
   border: none;
-  background: none;
-  color: #03002e;
-  border: 0.1rem solid;
+  background: #03002e;
+  color: #fff;
   border-radius: 30rem;
   min-width: 15rem;
-  padding: 0.5rem;
+  padding: .8rem 1.3rem;
 }
 
 #storeSection button:hover, #storeSection button:focus, #storeSection button:active {
-  color: #07c2f9;
+  color: #03002e;
+  background: #07c2f9;
 }
 
 #storeSection .dropdown .dropdown-menu {
