@@ -611,6 +611,20 @@ h1, h2 {
   }
 }
 
+#storeSection .dropdown .dropdown-menu .store-logo {
+  max-width: 85%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5%;
+  color: #fff;
+}
+
+#storeSection .dropdown .dropdown-menu .store-logo img {
+  max-height: 5rem;
+  max-width: 100%;
+}
+
 #storeSection .dropdown .dropdown-menu .dropdown-header {
   color: #fff;
   text-transform: uppercase;
