@@ -580,7 +580,7 @@ h1, h2 {
   max-width: 90%;
   max-height: 25rem;
   background: #03002e;
-  overflow-y: scroll;
+  overflow-y: auto;
   z-index: 400;
   border: 0.1rem solid #fff;
   padding: 2rem;
