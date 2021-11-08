@@ -577,8 +577,8 @@ h1, h2 {
   left: 0;
   right: 0;
   margin: auto;
-  max-width: 30rem;
-  max-height: 35rem;
+  max-width: 90%;
+  max-height: 25rem;
   background: #03002e;
   overflow-y: scroll;
   z-index: 300;
@@ -911,6 +911,10 @@ h1, h2 {
   #productSection .product-descript-container .link-button {
     display: inline-block;
   }
+  #productSection #storePopup {
+    width: 70%;
+    max-height: 35rem;
+  }
   #videoPlayer {
     height: 30rem;
   }
@@ -1025,6 +1029,9 @@ h1, h2 {
   }
   #productSection .view-all {
     margin: 2rem 0;
+  }
+  #productSection #storePopup {
+    max-width: 30rem;
   }
   #contactSection {
     padding: 5% 25%;
