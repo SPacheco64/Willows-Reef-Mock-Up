@@ -42,8 +42,35 @@
         <div id = "pageContent" class = "">
             <!-- Overlay for Mobile Dropdown -->
             <div id = "screenOverlay">&nbsp;</div>
+            <div id = "popupOverlay">&nbsp;</div>
 
             <div id = "productSection" class = "container-fluid">
+                <div id = "storePopup">
+                    <i class = "close-popup-overlay far fa-times-circle">
+                        &nbsp;
+                    </i>
+                    <div style = "text-align: center; font-weight: bold; color: #fff; font-size: 2rem; text-transform: uppercase; ">
+                        Available At:
+                    </div>
+                    <div class = "row">
+                        <a class = "col-6 store-link" href = "https://www.amazon.com/AminoFeast-Quality-Coral-Amino-Acids/dp/B08P7VL6PX/ref=sr_1_2?keywords=amino+feast&qid=1636048123&sr=8-2" target = "_blank" rel = "noopener norferrer">
+                            <div>
+                                <img alt = "Amazon" src = "images/test/test-1.png">
+                            </div>
+                        </a>
+                        <a class = "col-6 store-link" href = "https://coralhubus.com/cart-2/3-4-frag-plug/" target = "_blank" rel = "noopener norferrer">
+                            <div>
+                                <img alt = "Coral Hub" src = "images/test/test-4.png">
+                            </div>
+                        </a>
+                        <a class = "col-6 store-link" href = "https://reefshackllc.com/products/amino-feast-coral-food-amino-acid-250ml?_pos=1&_sid=71bb8333e&_ss=r" target = "_blank" rel = "noopener norferrer">
+                            <div>
+                                <img alt = "Reef Shack" src = "images/test/test-6.png">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
                 <div class = "row justify-content-center product-descript-container">
                     <div class = "col-md-6 amino-feast-col">
                         <!--<img src = "../Willow's Reef Website Mockup/images/png/compressed-product-images/amino-feast-prd.png" alt = "AminoFeast+">-->
@@ -56,9 +83,9 @@
                         your corals THRIVE while having as little negative impact on your ecosystem as possible.
                         <br><br>
 
-                        <a href = "/Willows-Reef-Mock-Up/stores-page.html" class = "link-button">
+                        <button class = "link-button">
                             See Stores
-                        </a>
+                        </button>
                     </div>
                 </div>
 
@@ -112,11 +139,12 @@
                     </ul>
                 </div>
             </div>
-
-            <div id = "globalFooter">&nbsp;</div>
-
+        </div>
+        
+        <div id = "globalFooter">&nbsp;</div>
     </body>
 
     <!-- Custom Site JS -->
     <script src = "js/site-js.js"></script>
+    <script src = "js/store-popup.js"></script>
 </html>
