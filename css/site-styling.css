@@ -295,7 +295,7 @@ nav .dropdown .dropdown-menu .nav-link {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 200;
+  z-index: 300;
 }
 
 #popupOverlay.active {
@@ -581,7 +581,7 @@ h1, h2 {
   max-height: 25rem;
   background: #03002e;
   overflow-y: scroll;
-  z-index: 300;
+  z-index: 400;
   border: 0.1rem solid #fff;
   padding: 2.5%;
 }
