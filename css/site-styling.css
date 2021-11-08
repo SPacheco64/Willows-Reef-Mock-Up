@@ -194,7 +194,7 @@ footer .footer-copyright {
   padding: .5rem;
 }
 
-.no-scroll {
+.no-scroll, .no-scroll-all {
   overflow: hidden;
 }
 
@@ -287,6 +287,21 @@ nav .dropdown .dropdown-menu .nav-link {
   display: block;
 }
 
+#popupOverlay {
+  display: none;
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+#popupOverlay.active {
+  display: block;
+}
+
 h1, h2 {
   font-weight: bold;
 }
@@ -324,6 +339,7 @@ h1, h2 {
   color: #fff;
   text-transform: uppercase;
   margin: 1rem auto;
+  border: none;
 }
 
 .link-button:hover {
@@ -551,6 +567,64 @@ h1, h2 {
 #productSection .ingredient-list {
   padding-left: 0;
   list-style: none;
+}
+
+#productSection #storePopup {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 30rem;
+  max-height: 35rem;
+  background: #03002e;
+  overflow-y: scroll;
+  z-index: 300;
+  border: 0.1rem solid #fff;
+  padding: 2.5%;
+}
+
+#productSection #storePopup .close-popup-overlay {
+  color: #fff;
+  font-size: 1.75rem;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
+
+#productSection #storePopup .close-popup-overlay:hover {
+  color: #07c2f9;
+  cursor: pointer;
+}
+
+#productSection #storePopup .store-link {
+  padding: 0;
+}
+
+#productSection #storePopup .store-link div {
+  text-align: center;
+  margin: 0.25rem;
+  border: 0.1rem solid #fff;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#productSection #storePopup .store-link img {
+  max-width: 85%;
+  margin: 1rem 0;
+  max-height: 5rem;
+}
+
+#productSection #storePopup .store-link:hover div {
+  border-color: #07c2f9;
+}
+
+#productSection #storePopup.active {
+  display: block;
 }
 
 #storeSection a {
