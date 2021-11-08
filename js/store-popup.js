@@ -1,7 +1,6 @@
 // Developer: Sergio Pacheco
 // Content: Product Page Stores Pop-up JS
 
-const pageBody = document.body;
 const popupOverlay = document.getElementById("popupOverlay");
 const storePopup = document.getElementById("storePopup");
 $(".link-button").click(function () 
