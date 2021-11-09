@@ -613,6 +613,14 @@ h1, h2 {
   cursor: pointer;
 }
 
+#productSection #storePopup .popup-header {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 #productSection #storePopup .row {
   overflow: auto;
   max-height: 19rem;
