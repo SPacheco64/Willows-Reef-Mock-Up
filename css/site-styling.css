@@ -472,10 +472,11 @@ h1, h2 {
 }
 
 #productSection .product-container .product-info .product-name {
-  font-size: 2rem;
   line-height: 3.5rem;
   font-weight: bold;
   color: #03002e;
+  font-family: 'chiller', sans-serif;
+  font-size: 2.5rem;
 }
 
 #productSection .product-container .link-button {
