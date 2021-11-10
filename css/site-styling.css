@@ -552,6 +552,7 @@ h1, h2 {
   background-position: center;
   background-repeat: no-repeat;
   height: 25rem;
+  caret-color: transparent;
 }
 
 #productSection .product-descript-container .section-header {
