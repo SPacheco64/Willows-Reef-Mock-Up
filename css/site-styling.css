@@ -2,6 +2,11 @@
 /* Font Imports */
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
+@font-face {
+  font-family: 'chiller', sans-serif;
+  src: url("/fonts/ChillerStd.otf");
+}
+
 /* Basic SCSS Style Variables */
 /* Animation CSS (using AOS animation library) */
 [aos="fade"] {
@@ -46,6 +51,10 @@ header {
   left: 0;
   z-index: 300;
   height: 5rem;
+}
+
+header .logo-link-text {
+  font-family: 'chiller', sans-serif;
 }
 
 header .navbar {
