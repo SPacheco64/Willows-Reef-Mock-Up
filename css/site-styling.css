@@ -1022,9 +1022,9 @@ h1, h2 {
   .logo-link-text {
     display: inline-block;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 2rem;
     top: .25rem;
-    color: #fff;
+    color: #e2d339;
   }
   .no-scroll {
     overflow: visible;
