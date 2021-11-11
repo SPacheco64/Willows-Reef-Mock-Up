@@ -758,6 +758,44 @@ h1, h2 {
   transform: rotate(180deg);
 }
 
+#blogSection .blog-post-container {
+  box-shadow: 1px 1px 8px -4px #000;
+  text-align: center;
+  padding: 0;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+#blogSection .blog-post-container .blog-post-img {
+  max-height: 15rem;
+}
+
+#blogSection .blog-post-container .blog-post-img img {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#blogSection .blog-post-container .blog-post-info {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 1rem 0;
+  padding: .25rem .75rem;
+  text-align: left;
+}
+
+#blogSection .blog-post-container .blog-post-info .blog-post-name {
+  line-height: 3rem;
+  font-weight: bold;
+  color: #03002e;
+  font-size: 2rem;
+}
+
+#blogSection .blog-post-container .blog-post-info .blog-post-name a {
+  text-decoration: none;
+}
+
 /* STYLING FOR CONTACT FORM - START */
 #contactSection {
   background: #010048;
@@ -872,7 +910,7 @@ h1, h2 {
   border: 0.1rem solid #fff;
 }
 
-#topSection, #productSection, #contactSection, #storeSection, #aboutSection, #mediaSection {
+#topSection, #productSection, #contactSection, #storeSection, #aboutSection, #mediaSection, #blogSection {
   padding: 5%;
 }
 
@@ -888,6 +926,7 @@ h1, h2 {
   height: 15rem;
   border: 0.2rem solid #7d731e;
   background: #000;
+  border-radius: 1rem;
 }
 
 .yt-red {
@@ -956,8 +995,11 @@ h1, h2 {
   #productSection #storePopup .row {
     max-height: 29rem;
   }
+  #blogSection .blog-post-container {
+    max-width: 20rem;
+  }
   #videoPlayer {
-    height: 30rem;
+    height: 20rem;
   }
 }
 
@@ -1100,6 +1142,6 @@ h1, h2 {
     top: 0;
   }
   #videoPlayer {
-    height: 35rem;
+    height: 25rem;
   }
 }
