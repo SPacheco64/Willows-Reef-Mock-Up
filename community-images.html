@@ -31,16 +31,6 @@
         <link href = "./css/photoswipe/default-skin.min.css" rel = "stylesheet">
         <script src = "./js/photoswipe/photoswipe.min.js"></script>
         <script src = "./js/photoswipe/photoswipe-ui-default.min.js"></script>
-
-        <!-- Nanogallery2 CSS & JS -->
-        <!--
-        <link href = "./css/nanogallery/nanogallery2.min.css" rel = "stylesheet">
-        <script src = "./js/nanogallery/jquery.nanogallery2.core.min.js"></script>
-        <script src = "./js/nanogallery/jquery.nanogallery2.data_flickr.min.js"></script>
-        <script src = "./js/nanogallery/jquery.nanogallery2.data_google3.min.js"></script>
-        <script src = "./js/nanogallery/jquery.nanogallery2.data_nano_photos_provider2.min.js"></script>
-        <script src = "./js/nanogallery/jquery.nanogallery2.min.js"></script>
-        -->
     </head>
 
     <body>
@@ -106,9 +96,10 @@
                             margin: 0 auto;
                             box-shadow: 1px 1px 8px -4px #000;
                         }
-                        .customer-gallery a:hover
+                        .customer-gallery [data-aos^=zoom][data-aos^=zoom].aos-animate:hover
                         {
                             transform: scale(1.05);
+                            transition-duration: .3s;
                         }
                         .customer-gallery a:hover .customer-img-container
                         {
