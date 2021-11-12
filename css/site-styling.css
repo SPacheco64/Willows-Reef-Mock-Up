@@ -1014,7 +1014,7 @@ h1, h2 {
     height: 100%;
   }
   #productSection .product-container {
-    max-width: 65%;
+    max-width: 20rem;
   }
   #productSection .product-descript-container {
     display: table;
