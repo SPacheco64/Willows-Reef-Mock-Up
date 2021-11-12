@@ -414,7 +414,7 @@ h1, h2 {
 }
 
 #customerSection .customer-content-1 {
-  padding: 5%;
+  padding: 3rem;
   height: inherit;
 }
 
@@ -1005,6 +1005,7 @@ h1, h2 {
   }
   #customerSection {
     width: 90%;
+    max-width: 75rem;
     height: 30rem;
   }
   #customerSection .section-header {
