@@ -829,6 +829,7 @@ h1, h2 {
 
 #blogSection .blog-content .img-src {
   color: #555;
+  font-size: .8rem;
 }
 
 #blogSection .blog-content .final-blurb {
@@ -1048,6 +1049,9 @@ h1, h2 {
   }
   #blogSection .blog-content .blog-post-details .auth-date-info {
     margin-bottom: 0;
+  }
+  #blogSection .blog-content .img-src {
+    font-size: inherit;
   }
   #videoPlayer {
     height: 20rem;
