@@ -796,6 +796,10 @@ h1, h2 {
   text-decoration: none;
 }
 
+#blogSection .blog-content {
+  padding: 5% 10% 0 10%;
+}
+
 /* STYLING FOR CONTACT FORM - START */
 #contactSection {
   background: #010048;
@@ -1140,6 +1144,9 @@ h1, h2 {
   }
   .anchor {
     top: 0;
+  }
+  #blogSection .blog-content {
+    padding: 5% 15% 0 15%;
   }
   #videoPlayer {
     height: 25rem;
