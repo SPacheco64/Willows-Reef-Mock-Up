@@ -800,6 +800,45 @@ h1, h2 {
   padding: 5% 10% 0 10%;
 }
 
+#blogSection .blog-content .blog-post-details {
+  margin-bottom: 1rem;
+}
+
+#blogSection .blog-content .blog-post-details .auth-date-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: -1rem;
+}
+
+#blogSection .blog-content .blog-post-details .auth-date-info .author-img {
+  height: 5rem;
+  border-radius: 10rem;
+}
+
+#blogSection .blog-content .blog-post-details .auth-date-info .author-details {
+  margin: 0 1rem;
+}
+
+#blogSection .blog-content .blog-post-details a {
+  text-decoration: none;
+}
+
+#blogSection .blog-content .blog-top-img {
+  max-width: 100%;
+}
+
+#blogSection .blog-content .img-src {
+  color: #555;
+}
+
+#blogSection .blog-content .final-blurb {
+  margin: 2rem 0;
+  font-style: italic;
+  color: #555;
+  border-top: .05rem solid;
+  padding-top: 2rem;
+}
+
 /* STYLING FOR CONTACT FORM - START */
 #contactSection {
   background: #010048;
@@ -1001,6 +1040,14 @@ h1, h2 {
   }
   #blogSection .blog-post-container {
     max-width: 20rem;
+  }
+  #blogSection .blog-content .blog-post-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #blogSection .blog-content .blog-post-details .auth-date-info {
+    margin-bottom: 0;
   }
   #videoPlayer {
     height: 20rem;
