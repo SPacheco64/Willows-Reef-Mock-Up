@@ -971,6 +971,7 @@ h1, h2 {
   border: 0.2rem solid #7d731e;
   background: #000;
   border-radius: 1rem;
+  caret-color: transparent;
 }
 
 .yt-red {
