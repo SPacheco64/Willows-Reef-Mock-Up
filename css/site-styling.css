@@ -1056,6 +1056,7 @@ h1, h2 {
   }
   #videoPlayer {
     height: 20rem;
+    width: 30rem;
   }
 }
 
@@ -1202,5 +1203,6 @@ h1, h2 {
   }
   #videoPlayer {
     height: 25rem;
+    width: 35rem;
   }
 }
