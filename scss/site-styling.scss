@@ -19,6 +19,10 @@ Developer: Sergio Pacheco
 |------------------------------------------------------------------------------------------|
 | Footer                                   |                     FTRKY                     |
 |------------------------------------------------------------------------------------------|
+| Scroll To Top Button                     |                     STTKY                     |
+|------------------------------------------------------------------------------------------|
+| Anchor Tags                              |                     ANCKY                     |
+|------------------------------------------------------------------------------------------|
 | Homepage Welcome                         |                     HOMKY                     |
 |------------------------------------------------------------------------------------------|
 | Homepage Customer Images                 |                     HCIKY                     |
@@ -867,13 +871,13 @@ h1, h2{ font-weight: bold; }
     padding: 5%;
 }
 
-.anchor // Places anchor tags slightly above each section for better user experience/no content cut-off
+.anchor // Places anchor tags slightly above each section for better user experience/no content cut-off [ ANCHY ]
 {
     position: relative;
     top: -3rem;
 }
 
-#scrollToTopBtn // Scroll to Top Button Stylng
+#scrollToTopBtn // Scroll to Top Button Stylng [ STTKY ]
 {
     display: none;
     position: fixed;
@@ -1100,7 +1104,7 @@ h1, h2{ font-weight: bold; }
 
     #contactSection{ margin-top: 2rem; padding: 5% 25%; } // [ CONKY ]
 
-    .anchor{ top: 0; }
+    .anchor{ top: 0; } // [ ANCHY ]
 
     #scrollToTopBtn // [ STTKY ]
     {
