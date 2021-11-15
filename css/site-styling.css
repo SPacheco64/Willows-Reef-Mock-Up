@@ -76,7 +76,7 @@ header {
   height: 5rem;
 }
 
-header .logo-link-text {
+header .logo-link .logo-link-text {
   font-family: 'chiller', sans-serif;
 }
 
@@ -1173,7 +1173,7 @@ h1, h2 {
   #desktopNav {
     display: flex;
   }
-  .logo-link-text {
+  .logo-link .logo-link-text {
     display: inline-block;
     position: relative;
     font-size: 2rem;
