@@ -1,0 +1,1117 @@
+/* 
+Content: Willow's Reef Website SCSS Styling
+Developer: Sergio Pacheco 
+
+--------------------------------------- Index ---------------------------------------                     
+                Content                   |         Search Keyword (ctrl+f the following terms)
+-------------------------------------------------------------------------------------
+Fonts                                     |                     FNTKY
+Global Variables                          |                     VARKY
+Body                                      |                     BDYKY
+Global Link Styles                        |                     LNKKY
+Screen Overlays                           |                     OVRKY
+Header                                    |                     HDRKY
+Footer                                    |                     FTRKY
+Homepage Welcome                          |                     HOMKY
+Homepage Customer Images                  |                     HCIKY
+Products Pages/Content                    |                     PRDKY
+Stores Page                               |                     STRKY
+Store Pop-up                              |                     STPKY
+Blog Page                                 |                     BLGKY
+Community Images Page                     |                     CIMKY
+Feeding Videos Page                       |                     FDVKY
+About Us Page                             |                     ABTKY
+Contact Us Form                           |                     CONKY
+Contact Confirmation Page                 |                     CFMKY
+Media Queries                             |                     MEDKY
+-------------------------------------------------------------------------------------
+*/
+
+/* Font Imports [ FNTKY ]*/
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+@font-face
+{
+    font-family: 'chiller', sans-serif;
+    src: url('/fonts/ChillerStd.otf');
+}
+
+/* Basic SCSS Style Variables (Colors & Fonts) - START [ VARKY ] */
+$primary-font: 'Helvetica', sans-serif;
+$secondary-font: 'Karla';
+$label-font: 'Sarabun', sans-serif;
+$body-color: #fff;
+$blue-primary: #03002e;
+$blue-secondary: #010048;
+$blue-hover: #07c2f9;
+$yellow-primary: #e2d339;
+$yellow-secondary: #d6c93d;
+$yellow-shaded: #7d731e;
+$darkened-color: #161718;
+$white-text: #fff;
+$black-text: #000;
+$off-white: #F5F5EE;
+$overlay-color: rgba(0, 0, 0, 0.8);
+$shadow-color: #555;
+$product-bg: #e3ecf1;
+/* Basic SCSS Style Variables - END */
+
+/* Animation CSS (using AOS animation library) */
+[aos = "fade"]{ opacity: 0; transition-property: opacity; }
+[aos = "fade"].aos-animate{ opacity: 1; }
+
+html{ scroll-behavior: smooth; }
+body // CSS for the page body
+{
+    font-family: $secondary-font;
+    background: $body-color;
+    font-size: 1.2rem;
+    color: $black-text;
+    img, button, i, .anchor, .product-img{ caret-color: transparent; }
+}
+a 
+{ 
+    color: $blue-secondary;
+    width: fit-content; 
+    &:hover
+    {
+        color: $blue-hover; 
+        text-decoration: none; 
+    }
+}
+header // [ HDRKY ]
+{
+    background: $blue-secondary;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    height: 5rem;
+    .logo-link
+    {
+        .logo-link-text{ font-family: 'chiller', sans-serif; }
+    }
+    .navbar{ height: 100%; }
+}
+footer // [ FTRKY ]
+{
+    background: $blue-primary;
+    color: $white-text;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;  
+    text-align: center;
+    padding: 2rem 0;
+    min-height: 5rem;
+    a 
+    { 
+        color: $white-text; 
+        i{ font-size: 2rem; padding: 0 .5rem; }
+    }
+    .footer-copyright{ margin-top: .5rem; }
+}
+#contactSection{ margin-top: 4.5rem; } // [ CONKY ]
+
+/* Hamburger Menu Styling - START [ HDRKY ]*/
+.hamburger.navbar-toggler{ outline: 0; }
+.bar1, .bar2, .bar3 
+{
+    width: 3rem;
+    height: 0.5rem;
+    background-color: $white-text;
+    margin: .5rem 0;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    border-radius: 3rem;
+}
+.hamburger.active .bar1 
+{
+    -webkit-transform: rotate(-45deg) translate(-0.7rem, 0.7rem);
+    transform: rotate(-45deg) translate(-0.7rem, 0.7rem);
+    margin-top: .5rem;
+}
+.hamburger.active .bar2 { opacity: 0; }
+.hamburger.active .bar3 
+{
+    -webkit-transform: rotate(45deg) translate(-0.7rem, -0.7rem);
+    transform: rotate(45deg) translate(-0.7rem, -0.7rem);
+}
+.hamburger:focus{ outline: none; box-shadow: none; }
+/* Hamburger Menu Styling - END */
+
+/* Header Nav CSS - START [ HDRKY ] */
+.logo-link
+{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    #siteLogo
+    {   
+        max-height: 4rem;
+        border-radius: 1rem;
+    }
+    .logo-link-text{ display: none; }
+}
+#desktopNav{ display: none; }
+#mobileNav
+{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    top: 5rem;
+    background: $blue-secondary;
+    left: 0px;
+
+    .nav-item:first-child{ padding-top: 1rem; }
+    .dropdown-menu
+    {
+        .nav-item:first-child{ padding-top: 0; }
+        .nav-link{ border: none; }
+    }
+    a, button
+    { 
+        margin: .5rem auto;
+        width: 10rem;
+        border: .1rem solid $white-text;
+        border-radius: 30rem;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+
+        &:hover
+        {
+            border-color: $blue-hover;
+        }
+    }
+    .social-line
+    {
+        margin: 1rem 0;
+        .social-icon
+        {
+            color: $white-text;
+            font-size: 2rem;
+            border: none;
+            padding: .5rem;
+        }
+    }
+}
+.no-scroll, .no-scroll-all{ overflow: hidden; }
+/* Header Nav CSS - END */
+
+/* Nested CSS for Navigation Items - START [ HDRKY ] */ 
+nav
+{
+    .nav-item
+    {
+        width: 10rem;
+        margin: 0 auto;
+
+        .nav-link
+        {
+            color: $white-text; 
+            &:hover{ color: $blue-hover; }
+        }
+    }
+    .dropdown
+    {
+        padding: 0 .5rem;
+        .dropdown-toggle::after
+        {
+            margin-left: 0;
+            vertical-align: .15rem;
+            -webkit-transition: transform 0.2s ease;
+            -moz-transition: transform 0.2s ease;
+            -ms-transition: transform 0.2s ease;
+            -o-transition: transform 0.2s ease;
+            transition: transform 0.2s ease;
+        }
+        .dropdown-toggle.show::after
+        {
+            transform: rotate(180deg);
+        }
+        button
+        { 
+            color: $white-text; 
+            &:hover{ color: $blue-hover; }
+            background: none;
+            border: none;
+            padding-right: 0.5rem;
+            padding-left: 0.5rem;
+        }
+        .dropdown-menu
+        {
+            background: $blue-primary;
+            border: .1rem solid $white-text;
+            text-align: center;
+            width: 60%;
+            margin: 0.5rem auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            -webkit-animation: fadeIn 0.5s;
+            -moz-animation: fadeIn 0.5s;
+            -ms-animation: fadeIn 0.5s;
+            -o-animation: fadeIn 0.5s;
+            animation: fadeIn 0.5s;
+            @keyframes fadeIn 
+            {
+                0% { opacity:0; }
+                100% { opacity:1; }
+            }
+            .nav-link
+            {
+                width: inherit;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
+/* Nested CSS for Navigation Items - END */
+
+#screenOverlay // Screen Overlay for when Mobile Hamburger Menu is active [ OVRKY ]
+{ 
+    display: none; 
+    background: $blue-secondary;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+#screenOverlay.active{ display: block; }
+
+#popupOverlay // Screen Overlay for when a pop-up is active [ OVRKY ]
+{ 
+    display: none; 
+    background: rgba(0,0,0,.55);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+}
+#popupOverlay.active{ display: block; }
+
+h1, h2{ font-weight: bold; }
+.section-header { margin-bottom: 1rem; text-transform: uppercase; color: $blue-primary; font-size: 2rem; text-align: center; }
+.header-subtxt { position: relative; top: -1rem; font-style: italic; font-size: 1rem; }
+#pageContent{ position: relative; top: 5rem; }
+.desktop-only{ display: none; }
+.link-button
+{
+    background-color: $blue-secondary;
+    padding: .8rem 1.3rem;
+    width: fit-content;
+    border-radius: 30rem;
+    text-decoration: none;
+    color: $white-text;
+    text-transform: uppercase;
+    margin: 1rem auto;
+    border: none;
+    &:hover
+    {
+        background: $blue-hover;
+        color: $blue-primary;
+        border-color: $blue-hover;
+    }
+}
+
+#topSection // Section Container for Welcome Section at the top of the Home Page [ HOMKY ]
+{
+    background: linear-gradient(45deg,rgba(0,0,0,.55) 0,rgba(0,0,0,.55) 100%),url(../images/jpg/placeholder-header-D4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 55vh;
+    width: 100%;
+    background-position: center;
+    color: $white-text;
+    text-align: center;
+    text-shadow: 1px 1px 10px $black-text;
+    overflow-anchor: none;
+    .link-button{ text-shadow: none; box-shadow: 1px 1px 10px -4px $black-text; }
+    h1
+    {
+        text-transform: uppercase;
+        line-height: 2.5rem;
+        font-size: 2.5rem;
+    }
+    .section-content
+    {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+#customerSection // Section Container for Customer Community Images Section on the Home Page [ HCIKY ]
+{
+    background: $product-bg;
+    width: 95%;
+    margin: 7.5% auto 0 auto;
+    .social-link
+    { 
+        display: block; 
+        margin: .5rem 0;
+        color: $blue-secondary; 
+        &:hover { color: $blue-hover; }
+    }
+    .link-button
+    {
+        display: block;
+        margin: 1rem auto;
+        box-shadow: none;
+    }
+    .row{ height: inherit; }
+    .customer-content-1{ padding: 3rem; height: inherit; }
+    .customer-content-2{ padding: 0; height: inherit; }
+    .carousel
+    {
+        height: 100%;
+
+        .carousel-inner
+        {
+            height: 100%;
+            .carousel-item
+            {
+                height: 100%;
+
+                .slide-img-container
+                {
+                    height: 100%;
+
+                    img{ width: 100%; object-fit: cover; height: 15rem; }
+                }
+            }
+        }
+        .carousel-indicators [data-bs-target] 
+        {
+            width: 20px;
+            height: 20px;
+            border: 0;
+            border-radius: 30px;
+        }
+    }
+}
+
+#productSection // Section Container for any Product-related content [ PRDKY ]
+{
+    .section-header{ margin-bottom: 2rem; }
+    .product-container
+    {
+        box-shadow: 1px 1px 8px -4px $black-text;
+        text-align: center;
+        padding: 0;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        .product-info
+        {
+            font-size: 1rem;
+            line-height: 1.25rem;
+            margin: 1rem 0;
+            padding: .25rem .75rem;;
+            .product-name
+            {
+                line-height: 3.5rem;
+                font-weight: bold;
+                color: $blue-primary;
+                font-family: 'chiller', sans-serif;
+                font-size: 2.5rem;
+            }
+        }
+        .link-button{ box-shadow: none; }
+        /* Product Images set as Background images for each Product Container */
+        #coralFeast{ background: url(../images/png/compressed-product-images/coral-feast-prd.png); }
+        #aminoFeast{ background: url(../images/png/compressed-product-images/amino-feast-prd.png); }
+        #rhodoFeast{ background: url(../images/png/compressed-product-images/rhodo-feast-prd.png); }
+        #frozenFeast
+        { 
+            background: url(../images/jpg/compressed-product-images/frozen-feast-prd.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; 
+            height: 15rem;
+            width: 100%;
+            margin: 0 auto;
+            background-color: $product-bg;
+            border-radius: 1rem 1rem 0 0;
+        }
+        #coralFeast, #aminoFeast, #rhodoFeast
+        {
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 15rem;
+            width: 100%;
+            margin: 0 auto;
+            background-color: $product-bg;
+            border-radius: 1rem 1rem 0 0;
+        }
+    }
+    .view-all{ margin-bottom: 2rem; box-shadow: none; }
+    .product-descript-container
+    {
+        align-items: center;
+        margin-bottom: 3rem;
+        .coral-feast-col
+        {
+            background: url(../images/png/compressed-product-images/coral-feast-prd.png);
+            background-size: contain;
+        }
+        .amino-feast-col
+        {
+            background: url(../images/png/compressed-product-images/amino-feast-prd.png);
+            background-size: contain;
+        }
+        .rhodo-feast-col
+        {
+            background: url(../images/png/compressed-product-images/rhodo-feast-prd.png);
+            background-size: contain; 
+        }
+        .frozen-feast-col
+        {
+            background: url(../images/jpg/compressed-product-images/frozen-feast-prd.jpg);
+            background-size: cover;
+        }
+        .coral-feast-col, .amino-feast-col, .rhodo-feast-col, .frozen-feast-col
+        {
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 25rem;
+            caret-color: transparent;
+        }
+        .section-header{ margin-bottom: 1rem; text-align: center; }
+        .item-descript{ background: $product-bg; padding: 5%; }
+        .link-button{ display: block; margin-top: 0; }
+    }
+    .full-descript{ background: $product-bg; padding: 5%; }
+    .ingredient-list{ padding-left: 0; list-style: none; }
+
+    /* Styling for pop-ups on the Products pages that show Store Locations that sell a particular Product [ STPKY ] */
+    #storePopup
+    {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        max-width: 90%;
+        max-height: 25rem;
+        height: fit-content;
+        background: $blue-primary;
+        z-index: 400;
+        border: .1rem solid $white-text;
+        padding: 2rem;
+        -webkit-animation: fadeIn 0.5s;
+        -moz-animation: fadeIn 0.5s;
+        -ms-animation: fadeIn 0.5s;
+        -o-animation: fadeIn 0.5s;
+        animation: fadeIn 0.5s;
+        @keyframes fadeIn 
+        {
+            0% { opacity:0; }
+            100% { opacity:1; }
+        }
+        .close-popup-overlay
+        {
+            color: $white-text;
+            font-size: 1.75rem;
+            position: absolute;
+            right: 0;
+            top: 1rem;
+
+            &:hover{ color: $blue-hover; cursor: pointer; }
+        }
+        .popup-header
+        {
+            text-align: center; 
+            font-weight: bold; 
+            color: $white-text; 
+            font-size: 2rem; 
+            text-transform: uppercase;
+        }
+        .row{ overflow: auto; max-height: 19rem; }
+        .store-link
+        {
+            padding: 0;
+            div
+            {
+                text-align: center;
+                margin: 0.25rem;
+                border: 0.1rem solid $white-text;
+                height: 8rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            img{ max-width: 85%; margin: 1rem 0; max-height: 5rem; }
+
+            &:hover
+            { 
+                div{ border-color: $blue-hover; }
+            }
+        }
+    }
+    #storePopup.active { display: block; }
+}
+
+#storeSection // Section Container for Stores Page [ STRKY ]
+{
+    a
+    { 
+        text-decoration: none;
+        color: $white-text;
+        border: 0.1rem solid;
+        border-radius: 30rem;
+        margin: 1rem auto;
+        min-width: 9rem;
+        text-align: center;
+        
+        &:hover {color: $blue-hover;} 
+    }
+    a:first-child{ margin-top: 0.5rem; }
+    button
+    {
+        border: none;
+        background: $blue-primary;
+        color: $white-text;
+        border-radius: 30rem;
+        min-width: 15rem;
+        padding: .8rem 1.3rem;
+
+        &:hover, &:focus, &:active{ color: $blue-primary; background: $blue-hover; }
+    }
+    .dropdown
+    {
+        .dropdown-menu
+        {
+            background: $blue-primary;
+            border: 0.1rem solid $white-text;
+            margin: 0.5rem auto;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            top: 100% !important;
+            min-width: 15rem;
+            height: max-content;
+            z-index: 100;
+            -webkit-animation: fadeIn 0.5s;
+            -moz-animation: fadeIn 0.5s;
+            -ms-animation: fadeIn 0.5s;
+            -o-animation: fadeIn 0.5s;
+            animation: fadeIn 0.5s;
+            @keyframes fadeIn 
+            {
+                0% { opacity:0; }
+                100% { opacity:1; }
+            }
+            .store-logo
+            {
+                max-width: 85%;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                padding: 5%;
+                color: $white-text;
+
+                img{ max-height: 5rem; max-width: 100%; }
+            }
+            .dropdown-header
+            {
+                color: $white-text;
+                text-transform: uppercase;
+                text-align: center;
+                text-decoration: underline;
+            }
+        }
+        .dropdown-toggle::after
+        {
+            margin-left: 0;
+            vertical-align: .15rem;
+            -webkit-transition: transform 0.2s ease;
+            -moz-transition: transform 0.2s ease;
+            -ms-transition: transform 0.2s ease;
+            -o-transition: transform 0.2s ease;
+            transition: transform 0.2s ease;
+        }
+        .dropdown-toggle.show::after
+        {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+#blogSection // Section Container for the Blog Pages [ BLGKY ]
+{
+    .blog-post-container
+    {
+        box-shadow: 1px 1px 8px -4px $black-text;
+        text-align: center;
+        padding: 0;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        .blog-post-img
+        {
+            max-height: 15rem;
+            img{ border-radius: 1rem 1rem 0 0; width: 100%; height: 100%; object-fit: cover; }
+        }
+        .blog-post-info
+        {
+            font-size: 1rem;
+            line-height: 1.25rem;
+            margin: 1rem 0;
+            padding: .25rem 1.25rem;;
+            text-align: left;
+            .blog-post-name
+            {
+                line-height: 3rem;
+                font-weight: bold;
+                color: $blue-primary;
+                font-size: 2rem;
+                a{ text-decoration: none; }
+            }
+        }
+    }
+    .blog-content
+    { 
+        padding: 5% 10% 0 10%; 
+        .blog-post-details
+        {
+            margin-bottom: 1rem; 
+            .auth-date-info
+            {
+                display: flex; 
+                align-items: center;
+                margin-bottom: -1rem;
+                .author-img{ height: 5rem; border-radius: 10rem; }
+                .author-details{ margin: 0 1rem; }
+            }
+            a{ text-decoration: none; }
+        }
+        .blog-top-img{ max-width: 100%; }
+        .img-src{ color: $shadow-color; font-size: .8rem; }
+        .final-blurb
+        { 
+            margin: 2rem 0; 
+            font-style: italic; 
+            color: $shadow-color; 
+            border-top: .05rem solid; 
+            padding-top: 2rem;
+        }
+    }
+}
+
+#mediaSection // Section Container for the Community Images & Feeding Videos Pages
+{
+    /* Customer Image Gallery Page Styling - START [ CIMKY ] */
+    .customer-gallery{ width: 100%; height: auto; }
+    .customer-gallery figure
+    {
+        color: $white-text;
+        width: auto;
+        background: rgba(0,0,0,.5);
+        position: relative;
+        top: -2rem;
+        padding: 1rem;
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+    .customer-gallery a
+    {
+        height: auto;
+        line-height: 0;
+        text-decoration: none;
+        caret-color: transparent;
+        cursor: zoom-in;
+    }
+    .customer-img-container
+    {
+        width: 100%;
+        max-width: 25rem;
+        height: 15rem;
+        background-size: cover;
+        background-position: center;
+        background-color: #444;
+        margin: 0 auto;
+        box-shadow: 1px 1px 8px -4px $black-text;
+    }
+    .customer-gallery [data-aos^=zoom][data-aos^=zoom].aos-animate:hover{ transform: scale(1.05); transition-duration: .3s; }
+    .customer-gallery a:hover .customer-img-container{ opacity: .8; }
+    /* Customer Image Gallery Page Styling - END */
+
+    /* Feeding Videos Page Styling - START [ FDVKY ] */
+    #videoPlayer
+    {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: 15rem;
+        border: .2rem solid $yellow-shaded;
+        background: $black-text;
+        border-radius: 1rem;
+        caret-color: transparent;
+    }
+    .yt-red { color: #E62117; i { vertical-align: text-bottom; } }
+    /* Feeding Videos Page Styling - END */
+}
+
+/* STYLING FOR CONTACT FORM - START */
+#contactSection // Section Container for Contact Us Form [ CONKY ]
+{
+    background: $blue-secondary;
+    color: $white-text;
+    text-align: center;
+    .section-header{ color: $white-text; }
+}
+.visuallyHidden:not(:focus):not(:active) 
+{
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    margin: -1rem;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0);
+    overflow: hidden;
+}
+.contact .contactContainer .contactForm input, .contact .contactContainer .contactForm textarea 
+{
+    padding: .4rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: .2rem;
+    outline: none;
+}
+.contact .contactContainer .contactForm input{ width: 100%; }
+.contact .contactContainer{ display: flex; justify-content: space-between; }
+.contact .contactContainer .contactInformation, .contact .contactContainer form{ display: flex; flex-direction: column; }
+.contact .contactContainer .contactInformation .socialIcons 
+{ 
+    padding: 0;
+    i{ padding: 0 1rem 0 0; font-size: 2rem; }
+    a:hover { color: $white-text; }
+}
+.contact .contactContainer .contactForm button 
+{
+    background-color: $blue-primary;
+    border: none;
+    padding: .8rem 1.3rem;
+    margin: 1rem auto;
+    display: block;
+    width: auto;
+    border-radius: 30rem;
+    text-decoration: none;
+    color: $white-text;
+    text-transform: uppercase;
+    min-width: 10rem;
+    border: .2rem solid $white-text;
+    &:hover
+    {
+        background: $blue-hover;
+        color: $blue-primary;
+        border-color: $blue-hover;
+        cursor: pointer;
+    }
+}
+#message{ max-height: 15rem; min-height: 10rem; }
+.submit-container, .socialIcons{ text-align: center; }
+/* STYLING FOR CONTACT FORM - END */
+
+#confirmationSection // Section Container for Contact Us Confirmation Page [ CFMKY ]
+{
+    .confirmation-container
+    { 
+        padding: 3rem 0 5rem 0; 
+        img{ width: 8rem; }
+        .confirmation-page-box
+        {
+            text-align: center; 
+            background: $product-bg; 
+            padding: 2rem; 
+            width: 75%;
+        }
+    }
+}
+
+/* Padding added to all major Section Containers */
+#topSection, #productSection, #contactSection, #storeSection, #aboutSection, #mediaSection, #blogSection, #confirmationSection
+{
+    padding: 5%;
+}
+
+.anchor // Places anchor tags slightly above each section for better user experience/no content cut-off
+{
+    position: relative;
+    top: -3rem;
+}
+
+#scrollToTopBtn // Scroll to Top Button Stylng
+{
+    display: none;
+    position: fixed;
+    bottom: .5rem;
+    right: .1rem;
+    z-index: 100;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: $white-text;
+    cursor: pointer;
+    i
+    {
+        font-size: 2rem;
+        color: $white-text;
+        background-color: $blue-primary;
+        padding: .45rem .6rem;
+        border-radius: 100%;
+        border: .1rem solid $white-text;
+    }
+}
+
+/* Media Breakpoints - START [ MEDKY ] */
+@media (min-width: 576px) // Breakpoint for Small Devices and up
+{
+    // No styling currently in place for these specific device sizes
+}
+
+@media (min-width: 768px) // Breakpoint for Medium Devices and up
+{
+    .company-logo{ width: 75%; }
+    #pageContent { text-align: left; }
+
+    nav
+    {
+        .dropdown
+        {
+            .dropdown-menu
+            {
+                width: 35%;
+                left: 50% !important;
+                right: 50% !important;
+                transform: translateX(-50%) !important;
+                top: 100% !important;
+            }
+        }
+    }
+
+    #topSection // [ HOMKY ]
+    {
+        h1
+        {
+            line-height: 5rem;
+            font-size: 5rem;
+        }
+        .section-content
+        {
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    #customerSection // [ HCIKY ]
+    {
+        width: 90%;
+        max-width: 75rem;
+        height: 30rem;
+
+        .section-header{ text-align: left; }
+
+        .carousel
+        {
+            .carousel-inner
+            {
+                .carousel-item
+                {
+                    .slide-img-container
+                    {
+                        img{ height: 100%; }
+                    }
+                }
+            }
+        }
+    }
+
+    #productSection // [ PRDKY ]
+    {
+        .product-container
+        {
+            max-width: 20rem;
+        }
+
+        .product-descript-container
+        {
+            display: table;
+            margin-bottom: 3rem;
+
+            .col-md-6
+            {
+                display: table-cell;
+            }
+            
+            .coral-feast-col, .amino-feast-col, .rhodo-feast-col, .frozen-feast-col
+            {
+                height: auto;
+            }
+
+            .section-header{ text-align: left; }
+
+            .link-button{ display: inline-block; }
+        }
+        
+        #storePopup // [ STPKY ]
+        {
+            width: 70%;
+            max-height: 35rem;
+
+            .row{ max-height: 29rem; }
+        }
+    }
+
+    #blogSection // [ BLGKY ]
+    {
+        .blog-post-container
+        {
+            max-width: 20rem;
+        }
+
+        .blog-content
+        {
+            .blog-post-details
+            {
+                display: flex; 
+                align-items: center; 
+                justify-content: space-between;
+
+                .auth-date-info{ margin-bottom: 0; }
+            }
+
+            .img-src{ font-size: inherit; }
+        }
+    }
+    
+    #videoPlayer{ height: 20rem; width: 30rem; }
+
+    #confirmationSection // [ CFMKY ]
+    {
+        .confirmation-container{ padding: 5rem 0 1rem 0; }
+    }
+}
+
+@media (min-width: 992px) // Breakpoint for Large Devices and up
+{   
+    header{ position: fixed; box-shadow: 1px 1px 8px -2px $black-text; } // [ HDRKY ]
+    footer // [ FTRKY ]
+    { 
+        position: static; 
+        background: $blue-primary; 
+        a{ i{ padding: 0 .75rem; } }
+    }
+    /* Header Nav CSS - START [ HDRKY ] */
+    .hamburger, #mobileNav{ display: none; }
+    #desktopNav{ display: flex; }
+    .logo-link
+    {
+        .logo-link-text
+        {
+            display: inline-block;
+            position: relative;
+            font-size: 2rem;
+            top: .25rem;
+            color: $white-text;
+        }
+    }
+    .no-scroll{ overflow: visible; }
+    nav // Nested CSS for Navigation Items
+    {
+        .nav-item { width: auto; }
+        a { font-size: 1.2rem; margin: 0 .75rem; }
+        .dropdown-menu{ width: 100%; margin: 0 auto; }
+    }
+    /* Header Nav CSS - END */
+
+    #screenOverlay, #screenOverlay.active{ display: none; }
+    #pageContent{ top: 2rem; }
+
+    .desktop-only{ display: block; }
+
+    .w-100{ display: none; }
+
+    .submit-container, .socialIcons{ text-align: left; }
+
+    #topSection // [ HOMKY ]
+    {
+        min-height: 100vh; // Ensures section takes up entire display (full-screen effect)
+        h1
+        {
+            line-height: 4rem;
+            font-size: 4rem;
+        }
+    }
+
+    #productSection // [ PRDKY ]
+    {
+        .row
+        {
+            margin: auto;
+            .product-container{ margin-bottom: 0; }
+        }
+
+        .product-descript-container{ margin: 3rem 0; }
+
+        .view-all{ margin: 2rem 0; }
+
+        #storePopup{ max-width: 30rem; } // [ STPKY ]
+    }
+
+    #blogSection{ .blog-content{ padding: 5% 15% 0 15%; } } // [ BLGKY ]
+
+    #mediaSection
+    {
+        // [ FDVKY ]
+        #videoPlayer{ height: 25rem; width: 40rem; }
+    }
+
+    #contactSection{ margin-top: 2rem; padding: 5% 25%; } // [ CONKY ]
+
+    .anchor{ top: 0; }
+
+    #scrollToTopBtn
+    {
+        bottom: 1rem;
+        right: 1.5rem;  
+        i
+        {
+            top: 0;
+            -webkit-transition: top 0.3s ease-out;
+            -moz-transition: top 0.3s ease-out;
+            -ms-transition: top 0.3s ease-out;
+            -o-transition: top 0.3s ease-out;
+            transition: top 0.3s ease-out;
+            position: relative;
+
+            &:hover
+            {
+                background-color: $blue-hover;
+                border-color: $blue-hover;
+                color: $blue-primary;
+                top: -.35rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) // Breakpoint for X-Large Devices and up
+{
+    // No styling currently in place for these specific device sizes
+}
+/* Media Breakpoints - END */
