@@ -954,7 +954,7 @@ h1, h2 {
   border: 0.1rem solid #fff;
 }
 
-#topSection, #productSection, #contactSection, #storeSection, #aboutSection, #mediaSection, #blogSection {
+#topSection, #productSection, #contactSection, #storeSection, #aboutSection, #mediaSection, #blogSection, #confirmationSection {
   padding: 5%;
 }
 
@@ -980,6 +980,21 @@ h1, h2 {
 
 .yt-red i {
   vertical-align: text-bottom;
+}
+
+#confirmationSection .confirmation-container {
+  padding: 3rem 0 5rem 0;
+}
+
+#confirmationSection .confirmation-container img {
+  width: 8rem;
+}
+
+#confirmationSection .confirmation-container .confirmation-page-box {
+  text-align: center;
+  background: #e3ecf1;
+  padding: 2rem;
+  width: 75%;
 }
 
 @media (min-width: 768px) {
@@ -1058,6 +1073,9 @@ h1, h2 {
   #videoPlayer {
     height: 20rem;
     width: 30rem;
+  }
+  #confirmationSection .confirmation-container {
+    padding: 5rem 0 1rem 0;
   }
 }
 
