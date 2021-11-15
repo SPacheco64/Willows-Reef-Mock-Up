@@ -1,4 +1,7 @@
-<!-- Sergio Pacheco - Portfolio Site HTML Markup -->
+<!-- 
+Content: RhodoFeast Product Page
+Developer: Sergio Pacheco 
+ -->
 
 <!DOCTYPE html>
 <html lang = "en">
@@ -37,14 +40,19 @@
             <span class = "sr-only">Back to Top</span>
         </button>
 
+        <!-- Global Header Section populated by JS -->
         <div id = "globalHeader">&nbsp;</div>
 
-        <div id = "pageContent" class = "">
+        <!-- Main Content Container -->
+        <div id = "pageContent">
             <!-- Overlay for Mobile Dropdown -->
             <div id = "screenOverlay">&nbsp;</div>
+
+            <!-- Overlay for Stores List Pop-Up -->
             <div id = "popupOverlay">&nbsp;</div>
 
             <div id = "productSection" class = "container-fluid">
+                <!-- Stores List Pop-Up (Shows Locations that Sell this Product) - START -->
                 <div id = "storePopup">
                     <i class = "close-popup-overlay far fa-times-circle">
                         &nbsp;
@@ -65,10 +73,12 @@
                         </a>
                     </div>
                 </div>
+                <!-- Stores List Pop-Up (Shows Locations that Sell this Product) - END -->
 
+                <!-- Product Overview - START -->
                 <div class = "row justify-content-center product-descript-container">
                     <div class = "col-md-6 rhodo-feast-col">
-                        <!--<img src = "../Willow's Reef Website Mockup/images/png/compressed-product-images/rhodo-feast-prd.png" alt = "RhodoFeast">-->
+                        &nbsp;
                     </div>
                     <div class = "col-md-6 item-descript">
                         <h2 class = "section-header">RhodoFeast</h2>
@@ -83,7 +93,9 @@
                         </button>
                     </div>
                 </div>
+                <!-- Product Overview - END -->
 
+                <!-- In-depth Product Description - START -->
                 <h2 class = "section-header">Product Description</h2>
                 <div class = "full-descript">
                     <b>
@@ -215,9 +227,11 @@
                         </li>
                     </ol>
                 </div>
+                <!-- In-depth Product Description - END -->
             </div>
         </div>
 
+        <!-- Global Footer Section populated by JS -->
         <div id = "globalFooter">&nbsp;</div>
 
     </body>

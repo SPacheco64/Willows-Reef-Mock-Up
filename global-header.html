@@ -1,159 +1,153 @@
-        <script>
-            const pageBody = document.body;
-            const screenOverlay = document.getElementById("screenOverlay");
-            $(".hamburger").click(function () 
-            {
-                $(".hamburger").toggleClass("active");
-                screenOverlay.classList.toggle("active");
-                pageBody.classList.toggle("no-scroll");
-            });
-            $("#mobileNav .nav-link").click(function () 
-            {
-                $(".hamburger").click();
-            });
-        </script>
-        <!-- Site Header -->
-        <header>
-            <!-- Header Navigation -->
-            <nav class = "navbar navbar-expand-lg">
-                <div class = "container-fluid">
-                   
-                    <a href = "/Willows-Reef-Mock-Up" class = "logo-link">
-                        <img id = "siteLogo" alt = "Willow's Reef | Home" src = "images/png/willows-reef-icon.png">
-                        <span class = "logo-link-text">
-                            Willow's Reef
-                        </span>
-                    </a>
+<!-- 
+Content: Global Header Markup
+Developer: Sergio Pacheco 
+-->
+<script>
+    const pageBody = document.body;
+    const screenOverlay = document.getElementById("screenOverlay");
+    $(".hamburger").click(function () 
+    {
+        $(".hamburger").toggleClass("active");
+        screenOverlay.classList.toggle("active");
+        pageBody.classList.toggle("no-scroll");
+    });
+    $("#mobileNav .nav-link").click(function () 
+    {
+        $(".hamburger").click();
+    });
+</script>
+<!-- Site Header -->
+<header>
+    <!-- Header Navigation -->
+    <nav class = "navbar navbar-expand-lg">
+        <div class = "container-fluid">
+            
+            <a href = "/Willows-Reef-Mock-Up" class = "logo-link">
+                <img id = "siteLogo" alt = "Willow's Reef | Home" src = "images/png/willows-reef-icon.png">
+                <span class = "logo-link-text">
+                    Willow's Reef
+                </span>
+            </a>
 
-                    <button class = "hamburger navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#mobileNav" aria-controls = "mobileNav" aria-expanded = "false" aria-label = "Toggle mobile navigation">
-                        <div class = "bar1"></div>
-                        <div class = "bar2"></div>
-                        <div class = "bar3"></div>
-                    </button>
+            <button class = "hamburger navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#mobileNav" aria-controls = "mobileNav" aria-expanded = "false" aria-label = "Toggle mobile navigation">
+                <div class = "bar1"></div>
+                <div class = "bar2"></div>
+                <div class = "bar3"></div>
+            </button>
 
-                    <!-- Header Navigation for Mobile Devices -->
-                    <div class = "collapse" id = "mobileNav">
-                        <ul class = "navbar-nav">
+            <!-- Header Navigation for Mobile Devices -->
+            <div class = "collapse" id = "mobileNav">
+                <ul class = "navbar-nav">
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up"> Home </a>
+                    </li>
+                    <span class = "dropdown">
+                        <button class = "dropdown-toggle" type = "button" id = "productTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
+                            Products 
+                        </button>
+                        <ul class = "dropdown-menu" aria-labelledby = "productTab">
                             <li class = "nav-item">
-                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up"> Home </a>
-                            </li>
-                            <!--
-                            <li class = "nav-item">
-                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/products-page.html"> Products </a>
-                            </li>
-                            -->
-                            <span class = "dropdown">
-                                <button class = "dropdown-toggle" type = "button" id = "productTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                    Products 
-                                </button>
-                                <ul class = "dropdown-menu" aria-labelledby = "productTab">
-                                    <li class = "nav-item">
-                                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/products-page.html"> Individual </a>
-                                    </li>
-                                    <li class = "nav-item">
-                                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/wholesale-page.html"> Wholesale </a>
-                                    </li>
-                                </ul>
-                            </span>
-                            <li class = "nav-item">
-                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/stores-page.html"> Stores </a>
-                            </li>
-                            <span class = "dropdown">
-                                <button class = "dropdown-toggle" type = "button" id = "mediaTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                    Media 
-                                </button>
-                                <ul class = "dropdown-menu" aria-labelledby = "mediaTab">
-                                    <li class = "nav-item">
-                                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/blog.html"> Blog </a>
-                                    </li>
-                                    <li class = "nav-item">
-                                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/community-images.html"> Community Images </a>
-                                    </li>
-                                    <li class = "nav-item">
-                                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/feeding-vids.html"> Feeding Videos </a>
-                                    </li>
-                                </ul>
-                            </span>
-                            <li class = "nav-item">
-                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/about-page.html"> About Us </a>
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/products-page.html"> Individual </a>
                             </li>
                             <li class = "nav-item">
-                                <a class = "nav-link contact-us-link" href = "#contactAnch"> Contact Us </a>
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/wholesale-page.html"> Wholesale </a>
                             </li>
                         </ul>
-                        <div class = "social-line">
-                            <span>
-                                <a class = "text-decoration-none social-icon" target = "_blank" href = "https://www.facebook.com/WillowsReef/" rel = "noopener norferrer">
-                                    <i class = "fab fa-facebook"></i>
-                                    <span class = "sr-only">Willow's Reef Facebook Link</span>
-                                </a>
-                            </span>
-                            <span>
-                                <a class = "text-decoration-none social-icon" target = "_blank" href = "https://www.instagram.com/willowsreef/" rel = "noopener norferrer">
-                                    <i class = "fab fa-instagram"></i>
-                                    <span class = "sr-only">Willow's Reef Instagram Link</span>
-                                </a>
-                            </span>
-                            <span>
-                                <a class = "text-decoration-none social-icon" target = "_blank" href = "https://www.youtube.com/channel/UCTXiB_prj_rgMFAIBdVbURg" rel = "noopener norferrer">
-                                    <i class = "fab fa-youtube"></i>
-                                    <span class = "sr-only">Willow's Reef YouTube Link</span>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-
-                    <!-- Header Navigation for Desktop Devices -->
-                    <div class = "" id = "desktopNav">
-                        <ul class = "navbar-nav align-items-center">
+                    </span>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/stores-page.html"> Stores </a>
+                    </li>
+                    <span class = "dropdown">
+                        <button class = "dropdown-toggle" type = "button" id = "mediaTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
+                            Media 
+                        </button>
+                        <ul class = "dropdown-menu" aria-labelledby = "mediaTab">
                             <li class = "nav-item">
-                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up"> Home </a>
-                            </li>
-                            <!--
-                            <li class = "nav-item">
-                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/products-page.html"> Products </a>
-                            </li>
-                            -->
-                            <span class = "dropdown">
-                                <button class = "dropdown-toggle" type = "button" id = "productTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                    Products 
-                                </button>
-                                <ul class = "dropdown-menu" aria-labelledby = "productTab">
-                                    <li class = "nav-item">
-                                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/products-page.html"> Individual </a>
-                                    </li>
-                                    <li class = "nav-item">
-                                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/wholesale-page.html"> Wholesale </a>
-                                    </li>
-                                </ul>
-                            </span>
-                            <li class = "nav-item">
-                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/stores-page.html"> Stores </a>
-                            </li>
-                            <span class = "dropdown">
-                                <button class = "dropdown-toggle" type = "button" id = "mediaTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                    Media 
-                                </button>
-                                <ul class = "dropdown-menu" aria-labelledby = "mediaTab">
-                                    <li class = "nav-item">
-                                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/blog.html"> Blog </a>
-                                    </li>
-                                    <li class = "nav-item">
-                                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/community-images.html"> Community Images </a>
-                                    </li>
-                                    <li class = "nav-item">
-                                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/feeding-vids.html"> Feeding Videos </a>
-                                    </li>
-                                </ul>
-                            </span>
-                            <li class = "nav-item">
-                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/about-page.html"> About Us </a>
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/blog.html"> Blog </a>
                             </li>
                             <li class = "nav-item">
-                                <a class = "nav-link contact-us-link" href = "#contactAnch"> Contact Us </a>
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/community-images.html"> Community Images </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/feeding-vids.html"> Feeding Videos </a>
                             </li>
                         </ul>
-                    </div>
+                    </span>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/about-page.html"> About Us </a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link contact-us-link" href = "#contactAnch"> Contact Us </a>
+                    </li>
+                </ul>
+                <div class = "social-line">
+                    <span>
+                        <a class = "text-decoration-none social-icon" target = "_blank" href = "https://www.facebook.com/WillowsReef/" rel = "noopener norferrer">
+                            <i class = "fab fa-facebook"></i>
+                            <span class = "sr-only">Willow's Reef Facebook Link</span>
+                        </a>
+                    </span>
+                    <span>
+                        <a class = "text-decoration-none social-icon" target = "_blank" href = "https://www.instagram.com/willowsreef/" rel = "noopener norferrer">
+                            <i class = "fab fa-instagram"></i>
+                            <span class = "sr-only">Willow's Reef Instagram Link</span>
+                        </a>
+                    </span>
+                    <span>
+                        <a class = "text-decoration-none social-icon" target = "_blank" href = "https://www.youtube.com/channel/UCTXiB_prj_rgMFAIBdVbURg" rel = "noopener norferrer">
+                            <i class = "fab fa-youtube"></i>
+                            <span class = "sr-only">Willow's Reef YouTube Link</span>
+                        </a>
+                    </span>
                 </div>
-            </nav>
-        </header>
+            </div>
+
+            <!-- Header Navigation for Desktop Devices -->
+            <div class = "" id = "desktopNav">
+                <ul class = "navbar-nav align-items-center">
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up"> Home </a>
+                    </li>
+                    <span class = "dropdown">
+                        <button class = "dropdown-toggle" type = "button" id = "productTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
+                            Products 
+                        </button>
+                        <ul class = "dropdown-menu" aria-labelledby = "productTab">
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/products-page.html"> Individual </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/wholesale-page.html"> Wholesale </a>
+                            </li>
+                        </ul>
+                    </span>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/stores-page.html"> Stores </a>
+                    </li>
+                    <span class = "dropdown">
+                        <button class = "dropdown-toggle" type = "button" id = "mediaTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
+                            Media 
+                        </button>
+                        <ul class = "dropdown-menu" aria-labelledby = "mediaTab">
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/blog.html"> Blog </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/community-images.html"> Community Images </a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "/Willows-Reef-Mock-Up/feeding-vids.html"> Feeding Videos </a>
+                            </li>
+                        </ul>
+                    </span>
+                    <li class = "nav-item">
+                        <a class = "nav-link" href = "/Willows-Reef-Mock-Up/about-page.html"> About Us </a>
+                    </li>
+                    <li class = "nav-item">
+                        <a class = "nav-link contact-us-link" href = "#contactAnch"> Contact Us </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
