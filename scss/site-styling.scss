@@ -79,7 +79,7 @@ $product-bg: #e3ecf1;
 [aos = "fade"].aos-animate{ opacity: 1; }
 
 html{ scroll-behavior: smooth; }
-body // CSS for the page body
+body // CSS for the page body [ BDYKY ]
 {
     font-family: $secondary-font;
     background: $body-color;
@@ -87,7 +87,7 @@ body // CSS for the page body
     color: $black-text;
     img, button, i, .anchor, .product-img{ caret-color: transparent; }
 }
-a 
+a // [ LNKKY ]
 { 
     color: $blue-secondary;
     width: fit-content; 
@@ -904,7 +904,7 @@ h1, h2{ font-weight: bold; }
 
 @media (min-width: 768px) // Breakpoint for Medium Devices and up
 {
-    .company-logo{ width: 75%; }
+    .company-logo{ width: 75%; } // [ HDRKY ]
     #pageContent { text-align: left; }
 
     nav
@@ -1017,7 +1017,7 @@ h1, h2{ font-weight: bold; }
         }
     }
     
-    #videoPlayer{ height: 20rem; width: 30rem; }
+    #videoPlayer{ height: 20rem; width: 30rem; } // [ FDVKY ]
 
     #confirmationSection // [ CFMKY ]
     {
@@ -1057,7 +1057,7 @@ h1, h2{ font-weight: bold; }
     }
     /* Header Nav CSS - END */
 
-    #screenOverlay, #screenOverlay.active{ display: none; }
+    #screenOverlay, #screenOverlay.active{ display: none; } // [ OVRKY ]
     #pageContent{ top: 2rem; }
 
     .desktop-only{ display: block; }
@@ -1095,15 +1095,14 @@ h1, h2{ font-weight: bold; }
 
     #mediaSection
     {
-        // [ FDVKY ]
-        #videoPlayer{ height: 25rem; width: 40rem; }
+        #videoPlayer{ height: 25rem; width: 40rem; } // [ FDVKY ]
     }
 
     #contactSection{ margin-top: 2rem; padding: 5% 25%; } // [ CONKY ]
 
     .anchor{ top: 0; }
 
-    #scrollToTopBtn
+    #scrollToTopBtn // [ STTKY ]
     {
         bottom: 1rem;
         right: 1.5rem;  
