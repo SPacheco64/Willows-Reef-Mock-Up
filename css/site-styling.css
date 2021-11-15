@@ -5,23 +5,28 @@ Developer: Sergio Pacheco
 --------------------------------------- Index ---------------------------------------                     
                 Content                   |         Search Keyword (ctrl+f the following terms)
 -------------------------------------------------------------------------------------
-Header                                    |
-Footer                                    |
-Homepage Welcome                          |
-Homepage Customer Images                  |
-Homepage Products                         |
-Individual Products                       |
-Wholesale Products                        |
-Stores Page                               |
-Blog Page                                 |
-Community Images Page                     |
-Feeding Videos Page                       |
-About Us Page                             |
-Contact Us Form                           |
-Contact Confirmation Page                 |
+Fonts                                     |                     FNTKY
+Global Variables                          |                     VARKY
+Body                                      |                     BDYKY
+Global Link Styles                        |                     LNKKY
+Screen Overlays                           |                     OVRKY
+Header                                    |                     HDRKY
+Footer                                    |                     FTRKY
+Homepage Welcome                          |                     HOMKY
+Homepage Customer Images                  |                     HCIKY
+Products Pages/Content                    |                     PRDKY
+Stores Page                               |                     STRKY
+Store Pop-up                              |                     STPKY
+Blog Page                                 |                     BLGKY
+Community Images Page                     |                     CIMKY
+Feeding Videos Page                       |                     FDVKY
+About Us Page                             |                     ABTKY
+Contact Us Form                           |                     CONKY
+Contact Confirmation Page                 |                     CFMKY
+Media Queries                             |                     MEDKY
 -------------------------------------------------------------------------------------
 */
-/* Font Imports */
+/* Font Imports [ FNTKY ]*/
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
 @font-face {
@@ -29,7 +34,7 @@ Contact Confirmation Page                 |
   src: url("/fonts/ChillerStd.otf");
 }
 
-/* Basic SCSS Style Variables (Colors & Fonts) - START */
+/* Basic SCSS Style Variables (Colors & Fonts) - START [ VARKY ] */
 /* Basic SCSS Style Variables - END */
 /* Animation CSS (using AOS animation library) */
 [aos="fade"] {
@@ -114,7 +119,7 @@ footer .footer-copyright {
   margin-top: 4.5rem;
 }
 
-/* Hamburger Menu Styling - START */
+/* Hamburger Menu Styling - START [ HDRKY ]*/
 .hamburger.navbar-toggler {
   outline: 0;
 }
@@ -153,7 +158,7 @@ footer .footer-copyright {
 }
 
 /* Hamburger Menu Styling - END */
-/* Header Nav CSS - START */
+/* Header Nav CSS - START [ HDRKY ] */
 .logo-link {
   text-decoration: none;
   font-weight: bold;
@@ -223,7 +228,7 @@ footer .footer-copyright {
 }
 
 /* Header Nav CSS - END */
-/* Nested CSS for Navigation Items - START */
+/* Nested CSS for Navigation Items - START [ HDRKY ] */
 nav .nav-item {
   width: 10rem;
   margin: 0 auto;
@@ -470,7 +475,7 @@ h1, h2 {
 }
 
 #productSection {
-  /* Styling for pop-ups on the Products pages that show Store Locations that sell a particular Product */
+  /* Styling for pop-ups on the Products pages that show Store Locations that sell a particular Product [ STPKY ] */
 }
 
 #productSection .section-header {
@@ -863,9 +868,9 @@ h1, h2 {
 }
 
 #mediaSection {
-  /* Customer Image Gallery Page Styling - START */
+  /* Customer Image Gallery Page Styling - START [ CIMKY ] */
   /* Customer Image Gallery Page Styling - END */
-  /* Feeding Videos Page Styling - START */
+  /* Feeding Videos Page Styling - START [ FDVKY ] */
   /* Feeding Videos Page Styling - END */
 }
 
@@ -1071,7 +1076,7 @@ h1, h2 {
   border: 0.1rem solid #fff;
 }
 
-/* Media Breakpoints - START */
+/* Media Breakpoints - START [ MEDKY ] */
 @media (min-width: 768px) {
   .company-logo {
     width: 75%;
@@ -1166,7 +1171,7 @@ h1, h2 {
   footer a i {
     padding: 0 .75rem;
   }
-  /* Header Nav CSS - START */
+  /* Header Nav CSS - START [ HDRKY ] */
   .hamburger, #mobileNav {
     display: none;
   }
