@@ -1,4 +1,26 @@
-/* Sergio Pacheco - Portfolio Site Styling */
+/* 
+Content: Willow's Reef Website CSS Styling
+Developer: Sergio Pacheco 
+
+--------------------------------------- Index ---------------------------------------                     
+                Content                   |         Search Keyword (ctrl+f the following terms)
+-------------------------------------------------------------------------------------
+Header                                    |
+Footer                                    |
+Homepage Welcome                          |
+Homepage Customer Images                  |
+Homepage Products                         |
+Individual Products                       |
+Wholesale Products                        |
+Stores Page                               |
+Blog Page                                 |
+Community Images Page                     |
+Feeding Videos Page                       |
+About Us Page                             |
+Contact Us Form                           |
+Contact Confirmation Page                 |
+-------------------------------------------------------------------------------------
+*/
 /* Font Imports */
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
@@ -7,7 +29,8 @@
   src: url("/fonts/ChillerStd.otf");
 }
 
-/* Basic SCSS Style Variables */
+/* Basic SCSS Style Variables (Colors & Fonts) - START */
+/* Basic SCSS Style Variables - END */
 /* Animation CSS (using AOS animation library) */
 [aos="fade"] {
   opacity: 0;
@@ -131,18 +154,18 @@ footer .footer-copyright {
 
 /* Hamburger Menu Styling - END */
 /* Header Nav CSS - START */
-#siteLogo {
-  max-height: 4rem;
-  border-radius: 1rem;
-}
-
 .logo-link {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.logo-link-text {
+.logo-link #siteLogo {
+  max-height: 4rem;
+  border-radius: 1rem;
+}
+
+.logo-link .logo-link-text {
   display: none;
 }
 
@@ -169,14 +192,6 @@ footer .footer-copyright {
 
 #mobileNav .dropdown-menu .nav-link {
   border: none;
-  /*
-            color: $white-text;
-            border: 0.1rem solid;
-            border-radius: 30rem;
-            margin: 1rem auto;
-            min-width: 12rem;
-            text-align: center; 
-            */
 }
 
 #mobileNav a, #mobileNav button {
@@ -208,6 +223,7 @@ footer .footer-copyright {
 }
 
 /* Header Nav CSS - END */
+/* Nested CSS for Navigation Items - START */
 nav .nav-item {
   width: 10rem;
   margin: 0 auto;
@@ -281,6 +297,7 @@ nav .dropdown .dropdown-menu .nav-link {
   line-height: 1.5rem;
 }
 
+/* Nested CSS for Navigation Items - END */
 #screenOverlay {
   display: none;
   background: #010048;
@@ -452,6 +469,10 @@ h1, h2 {
   border-radius: 30px;
 }
 
+#productSection {
+  /* Styling for pop-ups on the Products pages that show Store Locations that sell a particular Product */
+}
+
 #productSection .section-header {
   margin-bottom: 2rem;
 }
@@ -462,6 +483,7 @@ h1, h2 {
   padding: 0;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  /* Product Images set as Background images for each Product Container */
 }
 
 #productSection .product-container .product-info {
@@ -840,6 +862,76 @@ h1, h2 {
   padding-top: 2rem;
 }
 
+#mediaSection {
+  /* Customer Image Gallery Page Styling - START */
+  /* Customer Image Gallery Page Styling - END */
+  /* Feeding Videos Page Styling - START */
+  /* Feeding Videos Page Styling - END */
+}
+
+#mediaSection .customer-gallery {
+  width: 100%;
+  height: auto;
+}
+
+#mediaSection .customer-gallery figure {
+  color: #fff;
+  width: auto;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -2rem;
+  padding: 1rem;
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+#mediaSection .customer-gallery a {
+  height: auto;
+  line-height: 0;
+  text-decoration: none;
+  caret-color: transparent;
+  cursor: zoom-in;
+}
+
+#mediaSection .customer-img-container {
+  width: 100%;
+  max-width: 25rem;
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+  background-color: #444;
+  margin: 0 auto;
+  box-shadow: 1px 1px 8px -4px #000;
+}
+
+#mediaSection .customer-gallery [data-aos^=zoom][data-aos^=zoom].aos-animate:hover {
+  transform: scale(1.05);
+  transition-duration: .3s;
+}
+
+#mediaSection .customer-gallery a:hover .customer-img-container {
+  opacity: .8;
+}
+
+#mediaSection #videoPlayer {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 15rem;
+  border: 0.2rem solid #7d731e;
+  background: #000;
+  border-radius: 1rem;
+  caret-color: transparent;
+}
+
+#mediaSection .yt-red {
+  color: #E62117;
+}
+
+#mediaSection .yt-red i {
+  vertical-align: text-bottom;
+}
+
 /* STYLING FOR CONTACT FORM - START */
 #contactSection {
   background: #010048;
@@ -932,6 +1024,31 @@ h1, h2 {
 }
 
 /* STYLING FOR CONTACT FORM - END */
+#confirmationSection .confirmation-container {
+  padding: 3rem 0 5rem 0;
+}
+
+#confirmationSection .confirmation-container img {
+  width: 8rem;
+}
+
+#confirmationSection .confirmation-container .confirmation-page-box {
+  text-align: center;
+  background: #e3ecf1;
+  padding: 2rem;
+  width: 75%;
+}
+
+/* Padding added to all major Section Containers */
+#topSection, #productSection, #contactSection, #storeSection, #aboutSection, #mediaSection, #blogSection, #confirmationSection {
+  padding: 5%;
+}
+
+.anchor {
+  position: relative;
+  top: -3rem;
+}
+
 #scrollToTopBtn {
   display: none;
   position: fixed;
@@ -954,49 +1071,7 @@ h1, h2 {
   border: 0.1rem solid #fff;
 }
 
-#topSection, #productSection, #contactSection, #storeSection, #aboutSection, #mediaSection, #blogSection, #confirmationSection {
-  padding: 5%;
-}
-
-.anchor {
-  position: relative;
-  top: -3rem;
-}
-
-#videoPlayer {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: 15rem;
-  border: 0.2rem solid #7d731e;
-  background: #000;
-  border-radius: 1rem;
-  caret-color: transparent;
-}
-
-.yt-red {
-  color: #E62117;
-}
-
-.yt-red i {
-  vertical-align: text-bottom;
-}
-
-#confirmationSection .confirmation-container {
-  padding: 3rem 0 5rem 0;
-}
-
-#confirmationSection .confirmation-container img {
-  width: 8rem;
-}
-
-#confirmationSection .confirmation-container .confirmation-page-box {
-  text-align: center;
-  background: #e3ecf1;
-  padding: 2rem;
-  width: 75%;
-}
-
+/* Media Breakpoints - START */
 @media (min-width: 768px) {
   .company-logo {
     width: 75%;
@@ -1080,13 +1155,6 @@ h1, h2 {
 }
 
 @media (min-width: 992px) {
-  #topSection {
-    min-height: 100vh;
-  }
-  #topSection h1 {
-    line-height: 4rem;
-    font-size: 4rem;
-  }
   header {
     position: fixed;
     box-shadow: 1px 1px 8px -2px #000;
@@ -1098,46 +1166,12 @@ h1, h2 {
   footer a i {
     padding: 0 .75rem;
   }
-  #contactSection {
-    margin-top: 2rem;
-  }
-  /* Header Nav CSS */
+  /* Header Nav CSS - START */
   .hamburger, #mobileNav {
     display: none;
   }
   #desktopNav {
     display: flex;
-    /*
-        .nav-item
-        {
-            .nav-link
-            {
-                &:after 
-                {
-                    content: "";
-                    position: relative;
-                    display: block;
-                    width: 100%;
-                    height: 2px;
-                    top: -.1rem;
-                    background-color: $blue-hover;
-                    transform: scaleX(0);
-                    -webkit-transition: transform 0.3s ease;
-                    -moz-transition: transform 0.3s ease;
-                    -ms-transition: transform 0.3s ease;
-                    -o-transition: transform 0.3s ease;
-                    transition: transform 0.3s ease;
-                }
-                &:hover
-                {
-                    &:after 
-                    {
-                        transform: scaleX(1);
-                    }
-                }  
-            }
-        }
-        */
   }
   .logo-link-text {
     display: inline-block;
@@ -1149,7 +1183,6 @@ h1, h2 {
   .no-scroll {
     overflow: visible;
   }
-  /* Nested CSS for Navigation Items */
   nav .nav-item {
     width: auto;
   }
@@ -1177,6 +1210,13 @@ h1, h2 {
   .submit-container, .socialIcons {
     text-align: left;
   }
+  #topSection {
+    min-height: 100vh;
+  }
+  #topSection h1 {
+    line-height: 4rem;
+    font-size: 4rem;
+  }
   #productSection .row {
     margin: auto;
   }
@@ -1192,8 +1232,19 @@ h1, h2 {
   #productSection #storePopup {
     max-width: 30rem;
   }
+  #blogSection .blog-content {
+    padding: 5% 15% 0 15%;
+  }
+  #mediaSection #videoPlayer {
+    height: 25rem;
+    width: 40rem;
+  }
   #contactSection {
+    margin-top: 2rem;
     padding: 5% 25%;
+  }
+  .anchor {
+    top: 0;
   }
   #scrollToTopBtn {
     bottom: 1rem;
@@ -1214,14 +1265,6 @@ h1, h2 {
     color: #03002e;
     top: -.35rem;
   }
-  .anchor {
-    top: 0;
-  }
-  #blogSection .blog-content {
-    padding: 5% 15% 0 15%;
-  }
-  #videoPlayer {
-    height: 25rem;
-    width: 40rem;
-  }
 }
+
+/* Media Breakpoints - END */
