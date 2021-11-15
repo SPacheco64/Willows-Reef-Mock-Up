@@ -1,20 +1,30 @@
-// Sergio Pacheco - Portfolio Site JS
+/*
+Content: Universal Site JavaScript Code
+Developer: Sergio Pacheco
 
-// Swaps between Hamburger Icon to 'X' and displays the dropdown menu
+--------------------------------------- Index ---------------------------------------                     
+                Content                   |         Search Keyword (ctrl+f the following terms)
+-------------------------------------------------------------------------------------
+Header & Footer Load                      |                     HFLKY
+AOS Initialization                        |                     AOSKY
+Back to Top Button                        |                     BTTKY
+-------------------------------------------------------------------------------------
+*/
+
+// Loads in the Global Header & Footer [ HFLKY ]
 $(document).ready(function () 
 {
     $("#globalHeader").load("./global-header.html");
     $("#globalFooter").load("./global-footer.html");
 });
 
-// Initialization for the AOS CSS Animations
+// Initialization for the AOS CSS Animations [ AOSKY ]
 AOS.init
 ({
     duration: 800
 });
 
-
-// Back to Top Button JS
+// Back to Top Button JS [ BTTKY ]
 scrollBtn = document.getElementById("scrollToTopBtn");
 window.onscroll = function() 
 {
