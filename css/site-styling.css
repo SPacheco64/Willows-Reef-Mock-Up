@@ -820,6 +820,8 @@ h1, h2 {
   text-align: center;
   padding: 0;
   border-radius: 1rem;
+  margin: 0 auto;
+  height: 100%;
 }
 
 #blogSection .blog-post-container .blog-post-img {
