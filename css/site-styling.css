@@ -454,7 +454,7 @@ h1, h2 {
 }
 
 #customerSection .row {
-  height: inherit;
+  min-height: 30rem;
 }
 
 #customerSection .customer-content-1 {
@@ -1128,10 +1128,6 @@ h1, h2 {
   #customerSection {
     width: 90%;
     max-width: 75rem;
-    height: 30rem;
-  }
-  #customerSection .section-header {
-    text-align: left;
   }
   #customerSection .carousel .carousel-inner .carousel-item .slide-img-container img {
     height: 100%;
@@ -1247,6 +1243,9 @@ h1, h2 {
   #topSection h1 {
     line-height: 4rem;
     font-size: 4rem;
+  }
+  #customerSection .section-header {
+    text-align: left;
   }
   #productSection .row {
     margin: auto;
