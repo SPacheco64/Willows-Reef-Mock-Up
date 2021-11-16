@@ -23,7 +23,7 @@ Developer: Sergio Pacheco
 |------------------------------------------------------------------------------------------|
 | Anchor Tags                              |                     ANCKY                     |
 |------------------------------------------------------------------------------------------|
-| Homepage Welcome                         |                     HOMKY                     |
+| Homepage Welcome Section                 |                     HOMKY                     |
 |------------------------------------------------------------------------------------------|
 | Homepage Customer Images                 |                     HCIKY                     |
 |------------------------------------------------------------------------------------------|
@@ -31,7 +31,7 @@ Developer: Sergio Pacheco
 |------------------------------------------------------------------------------------------|
 | Stores Page                              |                     STRKY                     |
 |------------------------------------------------------------------------------------------|
-| Store Pop-up                             |                     STPKY                     |
+| Stores Pop-up                            |                     STPKY                     |
 |------------------------------------------------------------------------------------------|
 | Blog Page                                |                     BLGKY                     |
 |------------------------------------------------------------------------------------------|
@@ -501,16 +501,20 @@ h1, h2 {
 }
 
 #productSection .section-header {
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 #productSection .product-container {
+  /* Product Images set as Background images for each Product Container */
+}
+
+#productSection .product-container .wid-cont {
   box-shadow: 1px 1px 8px -4px #000;
   text-align: center;
   padding: 0;
   border-radius: 1rem;
-  margin-bottom: 2rem;
-  /* Product Images set as Background images for each Product Container */
+  height: 100%;
+  margin: 0 auto;
 }
 
 #productSection .product-container .product-info {
@@ -1132,7 +1136,7 @@ h1, h2 {
   #customerSection .carousel .carousel-inner .carousel-item .slide-img-container img {
     height: 100%;
   }
-  #productSection .product-container {
+  #productSection .product-container .wid-cont {
     max-width: 20rem;
   }
   #productSection .product-descript-container {
