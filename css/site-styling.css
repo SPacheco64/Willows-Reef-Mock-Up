@@ -811,12 +811,15 @@ h1, h2 {
   transform: rotate(180deg);
 }
 
-#blogSection .blog-post-container {
+#blogSection .section-header {
+  margin-bottom: 0;
+}
+
+#blogSection .blog-post-container .wid-cont {
   box-shadow: 1px 1px 8px -4px #000;
   text-align: center;
   padding: 0;
   border-radius: 1rem;
-  margin-bottom: 2rem;
 }
 
 #blogSection .blog-post-container .blog-post-img {
@@ -1158,7 +1161,7 @@ h1, h2 {
   #productSection #storePopup .row {
     max-height: 29rem;
   }
-  #blogSection .blog-post-container {
+  #blogSection .blog-post-container .wid-cont {
     max-width: 20rem;
   }
   #blogSection .blog-content .blog-post-details {
