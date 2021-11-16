@@ -438,8 +438,8 @@ h1, h2 {
 }
 
 #customerSection .social-link {
-  display: block;
-  margin: .5rem 0;
+  margin-right: .25rem;
+  font-size: 2rem;
   color: #010048;
 }
 
