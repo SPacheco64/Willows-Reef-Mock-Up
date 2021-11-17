@@ -574,6 +574,7 @@ h1, h2 {
 #productSection .view-all {
   margin-bottom: 2rem;
   box-shadow: none;
+  margin-top: 0;
 }
 
 #productSection .product-descript-container {
@@ -1266,6 +1267,7 @@ h1, h2 {
   }
   #productSection .view-all {
     margin: 2rem 0;
+    margin-top: 0;
   }
   #productSection #storePopup {
     max-width: 30rem;
