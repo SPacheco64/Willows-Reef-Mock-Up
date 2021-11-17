@@ -79,7 +79,7 @@ body {
   color: #000;
 }
 
-body img, body button, body i, body .anchor, body .product-img {
+body img, body button, body i, body .anchor, body .product-img, body .link-button {
   caret-color: transparent;
 }
 
