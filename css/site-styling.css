@@ -401,6 +401,17 @@ h1, h2 {
   border-color: #07c2f9;
 }
 
+.image-banner {
+  width: 100%;
+  height: 15rem;
+  overflow: hidden;
+  display: block;
+  margin-bottom: -5%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 #topSection {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.55) 0, rgba(0, 0, 0, 0.55) 100%), url(../images/jpg/placeholder-header-D4.jpg);
   background-size: cover;
@@ -969,6 +980,10 @@ h1, h2 {
   vertical-align: text-bottom;
 }
 
+.about-banner {
+  background-image: url("../images/jpg/compressed-main-images/about-us-header-M.jpg");
+}
+
 #aboutSection .about-info {
   width: 90%;
 }
@@ -1127,6 +1142,9 @@ h1, h2 {
     transform: translateX(-50%) !important;
     top: 100% !important;
   }
+  .image-banner {
+    height: 20rem;
+  }
   #topSection h1 {
     line-height: 5rem;
     font-size: 5rem;
@@ -1185,6 +1203,9 @@ h1, h2 {
   #videoPlayer {
     height: 20rem;
     width: 30rem;
+  }
+  .about-banner {
+    background-image: url("../images/jpg/compressed-main-images/about-us-header-D.jpg");
   }
   #aboutSection .about-info {
     width: 80%;
