@@ -980,6 +980,10 @@ h1, h2 {
   vertical-align: text-bottom;
 }
 
+#mediaSection a.yt-red:hover {
+  color: #07c2f9;
+}
+
 .about-banner {
   background-image: url("../images/jpg/compressed-main-images/about-us-header-M.jpg");
 }
