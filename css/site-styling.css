@@ -969,6 +969,10 @@ h1, h2 {
   vertical-align: text-bottom;
 }
 
+#aboutSection .about-info {
+  width: 90%;
+}
+
 /* STYLING FOR CONTACT FORM - START */
 #contactSection {
   background: #010048;
@@ -1181,6 +1185,9 @@ h1, h2 {
   #videoPlayer {
     height: 20rem;
     width: 30rem;
+  }
+  #aboutSection .about-info {
+    width: 80%;
   }
   #confirmationSection .confirmation-container {
     padding: 5rem 0 1rem 0;
