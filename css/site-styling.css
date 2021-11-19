@@ -694,7 +694,7 @@ h1, h2 {
   text-align: center;
   font-weight: bold;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 
@@ -1312,6 +1312,9 @@ h1, h2 {
   }
   #productSection #storePopup {
     max-width: 30rem;
+  }
+  #productSection #storePopup .popup-header {
+    font-size: 1.75rem;
   }
   #blogSection .blog-content {
     padding: 5% 15% 0 15%;
