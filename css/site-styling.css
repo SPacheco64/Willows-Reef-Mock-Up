@@ -410,6 +410,7 @@ h1, h2 {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  background-color: #555;
 }
 
 #topSection {
@@ -986,7 +987,6 @@ h1, h2 {
 
 .about-banner {
   background-image: url("../images/jpg/compressed-main-images/about-us-header-M.jpg");
-  background-color: #555;
 }
 
 #aboutSection .about-info {
