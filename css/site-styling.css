@@ -733,7 +733,7 @@ h1, h2 {
 }
 
 #productSection #storePopup .link-button:hover {
-  border: none;
+  border-color: #07c2f9;
 }
 
 #productSection #storePopup.active {
