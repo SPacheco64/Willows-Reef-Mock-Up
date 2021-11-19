@@ -727,6 +727,15 @@ h1, h2 {
   border-color: #07c2f9;
 }
 
+#productSection #storePopup .link-button {
+  border: 0.1rem solid #fff;
+  display: block;
+}
+
+#productSection #storePopup .link-button:hover {
+  border: none;
+}
+
 #productSection #storePopup.active {
   display: block;
 }
