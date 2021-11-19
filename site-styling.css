@@ -1,0 +1,1355 @@
+/* 
+Content: Willow's Reef Website SCSS Styling
+Developer: Sergio Pacheco 
+
+---------------------------------------- Index ---------------------------------------------
+|                  Content                 |            Search Keyword (ctrl+f)            |
+|------------------------------------------------------------------------------------------|
+| Fonts                                    |                     FNTKY                     |
+|------------------------------------------------------------------------------------------|
+| Global Variables                         |                     VARKY                     |
+|------------------------------------------------------------------------------------------|
+| Body                                     |                     BDYKY                     |
+|------------------------------------------------------------------------------------------|
+| Global Link Styles                       |                     LNKKY                     |
+|------------------------------------------------------------------------------------------|
+| Screen Overlays                          |                     OVRKY                     |
+|------------------------------------------------------------------------------------------|
+| Header                                   |                     HDRKY                     |
+|------------------------------------------------------------------------------------------|
+| Footer                                   |                     FTRKY                     |
+|------------------------------------------------------------------------------------------|
+| Scroll To Top Button                     |                     STTKY                     |
+|------------------------------------------------------------------------------------------|
+| Anchor Tags                              |                     ANCKY                     |
+|------------------------------------------------------------------------------------------|
+| Homepage Welcome Section                 |                     HOMKY                     |
+|------------------------------------------------------------------------------------------|
+| Homepage Customer Images                 |                     HCIKY                     |
+|------------------------------------------------------------------------------------------|
+| Products Pages/Content                   |                     PRDKY                     |
+|------------------------------------------------------------------------------------------|
+| Stores Page                              |                     STRKY                     |
+|------------------------------------------------------------------------------------------|
+| Stores Pop-up                            |                     STPKY                     |
+|------------------------------------------------------------------------------------------|
+| Blog Page                                |                     BLGKY                     |
+|------------------------------------------------------------------------------------------|
+| Community Images Page                    |                     CIMKY                     |
+|------------------------------------------------------------------------------------------|
+| Feeding Videos Page                      |                     FDVKY                     |
+|------------------------------------------------------------------------------------------|
+| About Us Page                            |                     ABTKY                     |
+|------------------------------------------------------------------------------------------|
+| Contact Us Form                          |                     CONKY                     |
+|------------------------------------------------------------------------------------------|
+| Contact Confirmation Page                |                     CFMKY                     |
+|------------------------------------------------------------------------------------------|
+| Media Queries                            |                     MEDKY                     |
+--------------------------------------------------------------------------------------------
+*/
+/* Font Imports [ FNTKY ]*/
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
+@font-face {
+  font-family: 'chiller', sans-serif;
+  src: url("/fonts/ChillerStd.otf");
+}
+
+/* Basic SCSS Style Variables (Colors & Fonts) - START [ VARKY ] */
+/* Basic SCSS Style Variables - END */
+/* Animation CSS (using AOS animation library) */
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Karla";
+  background: #fff;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+body img, body button, body i, body .anchor, body .product-img, body .link-button {
+  caret-color: transparent;
+}
+
+a {
+  color: #010048;
+  width: fit-content;
+}
+
+a:hover {
+  color: #07c2f9;
+  text-decoration: none;
+}
+
+header {
+  background: #010048;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 300;
+  height: 5rem;
+}
+
+header .logo-link .logo-link-text {
+  font-family: 'chiller', sans-serif;
+}
+
+header .navbar {
+  height: 100%;
+}
+
+footer {
+  background: #03002e;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  text-align: center;
+  padding: 2rem 0;
+  min-height: 5rem;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a i {
+  font-size: 2rem;
+  padding: 0 .5rem;
+}
+
+footer .footer-copyright {
+  margin-top: .5rem;
+}
+
+#contactSection {
+  margin-top: 4.5rem;
+}
+
+/* Hamburger Menu Styling - START [ HDRKY ]*/
+.hamburger.navbar-toggler {
+  outline: 0;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: #fff;
+  margin: .5rem 0;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  border-radius: 3rem;
+}
+
+.hamburger.active .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-0.7rem, 0.7rem);
+  transform: rotate(-45deg) translate(-0.7rem, 0.7rem);
+  margin-top: .5rem;
+}
+
+.hamburger.active .bar2 {
+  opacity: 0;
+}
+
+.hamburger.active .bar3 {
+  -webkit-transform: rotate(45deg) translate(-0.7rem, -0.7rem);
+  transform: rotate(45deg) translate(-0.7rem, -0.7rem);
+}
+
+.hamburger:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Hamburger Menu Styling - END */
+/* Header Nav CSS - START [ HDRKY ] */
+.logo-link {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logo-link #siteLogo {
+  max-height: 4rem;
+  border-radius: 1rem;
+}
+
+.logo-link .logo-link-text {
+  display: none;
+}
+
+#desktopNav {
+  display: none;
+}
+
+#mobileNav {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 5rem;
+  background: #010048;
+  left: 0px;
+}
+
+#mobileNav .nav-item:first-child {
+  padding-top: 1rem;
+}
+
+#mobileNav .dropdown-menu .nav-item:first-child {
+  padding-top: 0;
+}
+
+#mobileNav .dropdown-menu .nav-link {
+  border: none;
+}
+
+#mobileNav a, #mobileNav button {
+  margin: .5rem auto;
+  width: 10rem;
+  border: 0.1rem solid #fff;
+  border-radius: 30rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+#mobileNav a:hover, #mobileNav button:hover {
+  border-color: #07c2f9;
+}
+
+#mobileNav .social-line {
+  margin: 1rem 0;
+}
+
+#mobileNav .social-line .social-icon {
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  padding: .5rem;
+}
+
+.no-scroll, .no-scroll-all {
+  overflow: hidden;
+}
+
+/* Header Nav CSS - END */
+/* Nested CSS for Navigation Items - START [ HDRKY ] */
+nav .nav-item {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+nav .nav-item .nav-link {
+  color: #fff;
+}
+
+nav .nav-item .nav-link:hover {
+  color: #07c2f9;
+}
+
+nav .dropdown {
+  padding: 0 .5rem;
+}
+
+nav .dropdown .dropdown-toggle::after {
+  margin-left: 0;
+  vertical-align: .15rem;
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+nav .dropdown .dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+
+nav .dropdown button {
+  color: #fff;
+  background: none;
+  border: none;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+nav .dropdown button:hover {
+  color: #07c2f9;
+}
+
+nav .dropdown .dropdown-menu {
+  background: #03002e;
+  border: 0.1rem solid #fff;
+  text-align: center;
+  width: 60%;
+  margin: 0.5rem auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-animation: fadeIn 0.5s;
+  -moz-animation: fadeIn 0.5s;
+  -ms-animation: fadeIn 0.5s;
+  -o-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+nav .dropdown .dropdown-menu .nav-link {
+  width: inherit;
+  line-height: 1.5rem;
+}
+
+/* Nested CSS for Navigation Items - END */
+#screenOverlay {
+  display: none;
+  background: #010048;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+#screenOverlay.active {
+  display: block;
+}
+
+#popupOverlay {
+  display: none;
+  background: rgba(0, 0, 0, 0.55);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 300;
+}
+
+#popupOverlay.active {
+  display: block;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #03002e;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.header-subtxt {
+  position: relative;
+  top: -1rem;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+#pageContent {
+  position: relative;
+  top: 5rem;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.link-button {
+  background-color: #010048;
+  padding: .8rem 1.3rem;
+  width: fit-content;
+  border-radius: 30rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 1rem auto;
+  border: none;
+}
+
+.link-button:hover {
+  background: #07c2f9;
+  color: #03002e;
+  border-color: #07c2f9;
+}
+
+.image-banner {
+  width: 100%;
+  height: 15rem;
+  overflow: hidden;
+  display: block;
+  margin-bottom: -5%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #555;
+}
+
+#topSection {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.55) 0, rgba(0, 0, 0, 0.55) 100%), url(../images/jpg/placeholder-header-D4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 55vh;
+  width: 100%;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 10px #000;
+  overflow-anchor: none;
+}
+
+#topSection .link-button {
+  text-shadow: none;
+  box-shadow: 1px 1px 10px -4px #000;
+}
+
+#topSection h1 {
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+}
+
+#topSection .section-content {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+#customerSection {
+  background: #e3ecf1;
+  width: 95%;
+  margin: 7.5% auto 0 auto;
+}
+
+#customerSection .social-link {
+  margin-right: .25rem;
+  font-size: 2rem;
+  color: #010048;
+}
+
+#customerSection .social-link:hover {
+  color: #07c2f9;
+}
+
+#customerSection .link-button {
+  display: block;
+  margin: 1rem auto;
+  box-shadow: none;
+}
+
+#customerSection .row {
+  min-height: 30rem;
+}
+
+#customerSection .customer-content-1 {
+  padding: 3rem;
+  height: inherit;
+}
+
+#customerSection .customer-content-2 {
+  padding: 0;
+  max-height: 24rem;
+}
+
+#customerSection .carousel {
+  height: 100%;
+}
+
+#customerSection .carousel .carousel-inner {
+  height: 100%;
+}
+
+#customerSection .carousel .carousel-inner .carousel-item {
+  height: 100%;
+}
+
+#customerSection .carousel .carousel-inner .carousel-item .slide-img-container {
+  height: 100%;
+}
+
+#customerSection .carousel .carousel-inner .carousel-item .slide-img-container img {
+  width: 100%;
+  object-fit: cover;
+  height: 15rem;
+}
+
+#customerSection .carousel .carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 30px;
+}
+
+#productSection {
+  /* Styling for pop-ups on the Products pages that show Store Locations that sell a particular Product [ STPKY ] */
+}
+
+#productSection .section-header {
+  margin-bottom: 0;
+}
+
+#productSection .product-container {
+  /* Product Images set as Background images for each Product Container */
+}
+
+#productSection .product-container .wid-cont {
+  box-shadow: 1px 1px 8px -4px #000;
+  text-align: center;
+  padding: 0;
+  border-radius: 1rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#productSection .product-container .product-info {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 1rem 0;
+  padding: .25rem .75rem;
+}
+
+#productSection .product-container .product-info .product-name {
+  line-height: 3.5rem;
+  font-weight: bold;
+  color: #03002e;
+  font-family: 'chiller', sans-serif;
+  font-size: 2.5rem;
+}
+
+#productSection .product-container .link-button {
+  box-shadow: none;
+}
+
+#productSection .product-container #coralFeast {
+  background: url(../images/png/compressed-product-images/coral-feast-prd.png);
+}
+
+#productSection .product-container #aminoFeast {
+  background: url(../images/png/compressed-product-images/amino-feast-prd.png);
+}
+
+#productSection .product-container #rhodoFeast {
+  background: url(../images/png/compressed-product-images/rhodo-feast-prd.png);
+}
+
+#productSection .product-container #frozenFeast {
+  background: url(../images/jpg/compressed-product-images/frozen-feast-prd.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e3ecf1;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#productSection .product-container #coralFeast, #productSection .product-container #aminoFeast, #productSection .product-container #rhodoFeast {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 15rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #e3ecf1;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#productSection .view-all {
+  margin-bottom: 2rem;
+  box-shadow: none;
+  margin-top: 0;
+}
+
+#productSection .product-descript-container {
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+#productSection .product-descript-container .coral-feast-col {
+  background: url(../images/png/compressed-product-images/coral-feast-prd.png);
+  background-size: contain;
+}
+
+#productSection .product-descript-container .amino-feast-col {
+  background: url(../images/png/compressed-product-images/amino-feast-prd.png);
+  background-size: contain;
+}
+
+#productSection .product-descript-container .rhodo-feast-col {
+  background: url(../images/png/compressed-product-images/rhodo-feast-prd.png);
+  background-size: contain;
+}
+
+#productSection .product-descript-container .frozen-feast-col {
+  background: url(../images/jpg/compressed-product-images/frozen-feast-prd.jpg);
+  background-size: cover;
+}
+
+#productSection .product-descript-container .coral-feast-col, #productSection .product-descript-container .amino-feast-col, #productSection .product-descript-container .rhodo-feast-col, #productSection .product-descript-container .frozen-feast-col {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25rem;
+  caret-color: transparent;
+}
+
+#productSection .product-descript-container .section-header {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#productSection .product-descript-container .item-descript {
+  background: #e3ecf1;
+  padding: 5%;
+}
+
+#productSection .product-descript-container .link-button {
+  display: block;
+  margin-top: 0;
+}
+
+#productSection .full-descript {
+  background: #e3ecf1;
+  padding: 5%;
+}
+
+#productSection .ingredient-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+#productSection #storePopup {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 90%;
+  max-height: fit-content;
+  height: fit-content;
+  background: #03002e;
+  z-index: 400;
+  border: 0.1rem solid #fff;
+  padding: 2rem;
+  -webkit-animation: fadeIn 0.5s;
+  -moz-animation: fadeIn 0.5s;
+  -ms-animation: fadeIn 0.5s;
+  -o-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#productSection #storePopup .close-popup-overlay {
+  color: #fff;
+  font-size: 1.75rem;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
+
+#productSection #storePopup .close-popup-overlay:hover {
+  color: #07c2f9;
+  cursor: pointer;
+}
+
+#productSection #storePopup .popup-header {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+#productSection #storePopup .row {
+  overflow: auto;
+  max-height: 19rem;
+}
+
+#productSection #storePopup .store-link {
+  padding: 0;
+}
+
+#productSection #storePopup .store-link div {
+  text-align: center;
+  margin: 0.25rem;
+  border: 0.1rem solid #fff;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#productSection #storePopup .store-link img {
+  max-width: 85%;
+  margin: 1rem 0;
+  max-height: 5rem;
+}
+
+#productSection #storePopup .store-link:hover div {
+  border-color: #07c2f9;
+}
+
+#productSection #storePopup .link-button {
+  border: 0.1rem solid #fff;
+  display: block;
+}
+
+#productSection #storePopup .link-button:hover {
+  border-color: #07c2f9;
+}
+
+#productSection #storePopup.active {
+  display: block;
+}
+
+#storeSection a {
+  text-decoration: none;
+  color: #fff;
+  border: 0.1rem solid;
+  border-radius: 30rem;
+  margin: 1rem auto;
+  min-width: 9rem;
+  text-align: center;
+}
+
+#storeSection a:hover {
+  color: #07c2f9;
+}
+
+#storeSection a:first-child {
+  margin-top: 0.5rem;
+}
+
+#storeSection button {
+  border: none;
+  background: #03002e;
+  color: #fff;
+  border-radius: 30rem;
+  min-width: 15rem;
+  padding: .8rem 1.3rem;
+}
+
+#storeSection button:hover, #storeSection button:focus, #storeSection button:active {
+  color: #03002e;
+  background: #07c2f9;
+}
+
+#storeSection .dropdown .dropdown-menu {
+  background: #03002e;
+  border: 0.1rem solid #fff;
+  margin: 0.5rem auto;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  top: 100% !important;
+  min-width: 15rem;
+  height: max-content;
+  z-index: 100;
+  -webkit-animation: fadeIn 0.5s;
+  -moz-animation: fadeIn 0.5s;
+  -ms-animation: fadeIn 0.5s;
+  -o-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#storeSection .dropdown .dropdown-menu .store-logo {
+  max-width: 85%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5%;
+  color: #fff;
+}
+
+#storeSection .dropdown .dropdown-menu .store-logo img {
+  max-height: 5rem;
+  max-width: 100%;
+}
+
+#storeSection .dropdown .dropdown-menu .dropdown-header {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#storeSection .dropdown .dropdown-toggle::after {
+  margin-left: 0;
+  vertical-align: .15rem;
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+
+#storeSection .dropdown .dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+
+#blogSection .section-header {
+  margin-bottom: 0;
+}
+
+#blogSection .blog-post-container .wid-cont {
+  box-shadow: 1px 1px 8px -4px #000;
+  text-align: center;
+  padding: 0;
+  border-radius: 1rem;
+  margin: 0 auto;
+  height: 100%;
+}
+
+#blogSection .blog-post-container .blog-post-img {
+  max-height: 15rem;
+}
+
+#blogSection .blog-post-container .blog-post-img img {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#blogSection .blog-post-container .blog-post-info {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 1rem 0;
+  padding: .25rem 1.25rem;
+  text-align: left;
+}
+
+#blogSection .blog-post-container .blog-post-info .blog-post-name {
+  line-height: 3rem;
+  font-weight: bold;
+  color: #03002e;
+  font-size: 2rem;
+}
+
+#blogSection .blog-post-container .blog-post-info .blog-post-name a {
+  text-decoration: none;
+}
+
+#blogSection .blog-content {
+  padding: 5% 10% 0 10%;
+}
+
+#blogSection .blog-content .blog-post-details {
+  margin-bottom: 1rem;
+}
+
+#blogSection .blog-content .blog-post-details .auth-date-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: -1rem;
+}
+
+#blogSection .blog-content .blog-post-details .auth-date-info .author-img {
+  height: 5rem;
+  border-radius: 10rem;
+}
+
+#blogSection .blog-content .blog-post-details .auth-date-info .author-details {
+  margin: 0 1rem;
+}
+
+#blogSection .blog-content .blog-post-details a {
+  text-decoration: none;
+}
+
+#blogSection .blog-content .blog-top-img {
+  max-width: 100%;
+}
+
+#blogSection .blog-content .img-src {
+  color: #555;
+  font-size: .8rem;
+}
+
+#blogSection .blog-content .final-blurb {
+  margin: 2rem 0;
+  font-style: italic;
+  color: #555;
+  border-top: .05rem solid;
+  padding-top: 2rem;
+}
+
+#mediaSection {
+  /* Customer Image Gallery Page Styling - START [ CIMKY ] */
+  /* Customer Image Gallery Page Styling - END */
+  /* Feeding Videos Page Styling - START [ FDVKY ] */
+  /* Feeding Videos Page Styling - END */
+}
+
+#mediaSection .customer-gallery {
+  width: 100%;
+  height: auto;
+}
+
+#mediaSection .customer-gallery figure {
+  color: #fff;
+  width: auto;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: -2rem;
+  padding: 1rem;
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+#mediaSection .customer-gallery a {
+  height: auto;
+  line-height: 0;
+  text-decoration: none;
+  caret-color: transparent;
+  cursor: zoom-in;
+}
+
+#mediaSection .customer-img-container {
+  width: 100%;
+  max-width: 25rem;
+  height: 15rem;
+  background-size: cover;
+  background-position: center;
+  background-color: #444;
+  margin: 0 auto;
+  box-shadow: 1px 1px 8px -4px #000;
+}
+
+#mediaSection .customer-gallery [data-aos^=zoom][data-aos^=zoom].aos-animate:hover {
+  transform: scale(1.05);
+  transition-duration: .3s;
+}
+
+#mediaSection .customer-gallery a:hover .customer-img-container {
+  opacity: .8;
+}
+
+#mediaSection #videoPlayer {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: 15rem;
+  border: 0.2rem solid #7d731e;
+  background: #000;
+  border-radius: 1rem;
+  caret-color: transparent;
+}
+
+#mediaSection .yt-red {
+  color: #E62117;
+}
+
+#mediaSection .yt-red i {
+  vertical-align: text-bottom;
+}
+
+#mediaSection a.yt-red:hover {
+  color: #07c2f9;
+}
+
+.about-banner {
+  background-image: url("../images/jpg/compressed-main-images/about-us-header-M.jpg");
+}
+
+#aboutSection .about-info {
+  width: 90%;
+}
+
+/* STYLING FOR CONTACT FORM - START */
+#contactSection {
+  background: #010048;
+  color: #fff;
+  text-align: center;
+}
+
+#contactSection .section-header {
+  color: #fff;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  margin: -1rem;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+.contact .contactContainer .contactForm input, .contact .contactContainer .contactForm textarea {
+  padding: .4rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: .2rem;
+  outline: none;
+}
+
+.contact .contactContainer .contactForm input {
+  width: 100%;
+}
+
+.contact .contactContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .contactContainer .contactInformation, .contact .contactContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contactContainer .contactInformation .socialIcons {
+  padding: 0;
+}
+
+.contact .contactContainer .contactInformation .socialIcons i {
+  padding: 0 1rem 0 0;
+  font-size: 2rem;
+}
+
+.contact .contactContainer .contactInformation .socialIcons a:hover {
+  color: #fff;
+}
+
+.contact .contactContainer .contactForm button {
+  background-color: #03002e;
+  border: none;
+  padding: .8rem 1.3rem;
+  margin: 1rem auto;
+  display: block;
+  width: auto;
+  border-radius: 30rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  min-width: 10rem;
+  border: 0.2rem solid #fff;
+}
+
+.contact .contactContainer .contactForm button:hover {
+  background: #07c2f9;
+  color: #03002e;
+  border-color: #07c2f9;
+  cursor: pointer;
+}
+
+#message {
+  max-height: 15rem;
+  min-height: 10rem;
+}
+
+.submit-container, .socialIcons {
+  text-align: center;
+}
+
+/* STYLING FOR CONTACT FORM - END */
+#confirmationSection .confirmation-container {
+  padding: 3rem 0 5rem 0;
+}
+
+#confirmationSection .confirmation-container img {
+  width: 8rem;
+}
+
+#confirmationSection .confirmation-container .confirmation-page-box {
+  text-align: center;
+  background: #e3ecf1;
+  padding: 2rem;
+  width: 75%;
+}
+
+/* Padding added to all major Section Containers */
+#topSection, #productSection, #contactSection, #storeSection, #aboutSection, #mediaSection, #blogSection, #confirmationSection {
+  padding: 5%;
+}
+
+.anchor {
+  position: relative;
+  top: -3rem;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: .5rem;
+  right: .1rem;
+  z-index: 100;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+#scrollToTopBtn i {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #03002e;
+  padding: .45rem .6rem;
+  border-radius: 100%;
+  border: 0.1rem solid #fff;
+}
+
+/* Media Breakpoints - START [ MEDKY ] */
+@media (min-width: 768px) {
+  .company-logo {
+    width: 75%;
+  }
+  #pageContent {
+    text-align: left;
+  }
+  nav .dropdown .dropdown-menu {
+    width: 35%;
+    left: 50% !important;
+    right: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 100% !important;
+  }
+  .image-banner {
+    height: 20rem;
+  }
+  #topSection h1 {
+    line-height: 5rem;
+    font-size: 5rem;
+  }
+  #topSection .section-content {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  #customerSection {
+    width: 90%;
+    max-width: 75rem;
+  }
+  #customerSection .carousel .carousel-inner .carousel-item .slide-img-container img {
+    height: 100%;
+  }
+  #productSection .product-container .wid-cont {
+    max-width: 20rem;
+  }
+  #productSection .product-descript-container {
+    display: table;
+    margin-bottom: 3rem;
+  }
+  #productSection .product-descript-container .col-md-6 {
+    display: table-cell;
+  }
+  #productSection .product-descript-container .coral-feast-col, #productSection .product-descript-container .amino-feast-col, #productSection .product-descript-container .rhodo-feast-col, #productSection .product-descript-container .frozen-feast-col {
+    height: auto;
+  }
+  #productSection .product-descript-container .section-header {
+    text-align: left;
+  }
+  #productSection .product-descript-container .link-button {
+    display: inline-block;
+  }
+  #productSection #storePopup {
+    width: 70%;
+  }
+  #productSection #storePopup .row {
+    max-height: 20rem;
+  }
+  #blogSection .blog-post-container .wid-cont {
+    max-width: 20rem;
+  }
+  #blogSection .blog-content .blog-post-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #blogSection .blog-content .blog-post-details .auth-date-info {
+    margin-bottom: 0;
+  }
+  #blogSection .blog-content .img-src {
+    font-size: inherit;
+  }
+  #videoPlayer {
+    height: 20rem;
+    width: 30rem;
+  }
+  .about-banner {
+    background-image: url("../images/jpg/compressed-main-images/about-us-header-D.jpg");
+  }
+  #aboutSection .about-info {
+    width: 80%;
+  }
+  #confirmationSection .confirmation-container {
+    padding: 5rem 0;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    position: fixed;
+    box-shadow: 1px 1px 8px -2px #000;
+  }
+  footer {
+    position: static;
+    background: #03002e;
+  }
+  footer a i {
+    padding: 0 .75rem;
+  }
+  /* Header Nav CSS - START [ HDRKY ] */
+  .hamburger, #mobileNav {
+    display: none;
+  }
+  #desktopNav {
+    display: flex;
+  }
+  .logo-link .logo-link-text {
+    display: inline-block;
+    position: relative;
+    font-size: 2rem;
+    top: .25rem;
+    color: #fff;
+  }
+  .no-scroll {
+    overflow: visible;
+  }
+  nav .nav-item {
+    width: auto;
+  }
+  nav a {
+    font-size: 1.2rem;
+    margin: 0 .75rem;
+  }
+  nav .dropdown-menu {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* Header Nav CSS - END */
+  #screenOverlay, #screenOverlay.active {
+    display: none;
+  }
+  #pageContent {
+    top: 2rem;
+  }
+  .desktop-only {
+    display: block;
+  }
+  .w-100 {
+    display: none;
+  }
+  .submit-container, .socialIcons {
+    text-align: left;
+  }
+  #topSection {
+    min-height: 100vh;
+  }
+  #topSection h1 {
+    line-height: 4rem;
+    font-size: 4rem;
+  }
+  #customerSection .section-header {
+    text-align: left;
+  }
+  #customerSection .customer-content-2 {
+    max-height: inherit;
+  }
+  #productSection .row {
+    margin: auto;
+  }
+  #productSection .row .product-container {
+    margin-bottom: 0;
+  }
+  #productSection .product-descript-container {
+    margin: 3rem 0;
+  }
+  #productSection .view-all {
+    margin: 2rem 0;
+    margin-top: 0;
+  }
+  #productSection #storePopup {
+    max-width: 30rem;
+  }
+  #productSection #storePopup .popup-header {
+    font-size: 1.75rem;
+  }
+  #blogSection .blog-content {
+    padding: 5% 15% 0 15%;
+  }
+  #mediaSection #videoPlayer {
+    height: 25rem;
+    width: 40rem;
+  }
+  #contactSection {
+    margin-top: 2rem;
+    padding: 5% 25%;
+  }
+  .anchor {
+    top: 0;
+  }
+  #scrollToTopBtn {
+    bottom: 1rem;
+    right: 1.5rem;
+  }
+  #scrollToTopBtn i {
+    top: 0;
+    -webkit-transition: top 0.3s ease-out;
+    -moz-transition: top 0.3s ease-out;
+    -ms-transition: top 0.3s ease-out;
+    -o-transition: top 0.3s ease-out;
+    transition: top 0.3s ease-out;
+    position: relative;
+  }
+  #scrollToTopBtn i:hover {
+    background-color: #07c2f9;
+    border-color: #07c2f9;
+    color: #03002e;
+    top: -.35rem;
+  }
+}
+
+/* Media Breakpoints - END */
