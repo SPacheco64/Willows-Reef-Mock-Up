@@ -35,6 +35,15 @@ Developer: Sergio Pacheco
     </head>
 
     <body>
+        <!-- Button Styling Specific to FrozenFeast page -->
+        <style>
+            #productSection .product-descript-container .link-button
+            {
+                width: 13rem;
+                text-align: center;
+            }
+        </style>
+
         <button onclick = "topFunction()" id = "scrollToTopBtn">
             <i class = "fas fa-chevron-up"></i>
             <span class = "sr-only">Back to Top</span>
@@ -43,11 +52,42 @@ Developer: Sergio Pacheco
         <!-- Global Header Section populated by JS -->
         <div id = "globalHeader">&nbsp;</div>
 
-        <div id = "pageContent" class = "">
+        <div id = "pageContent">
             <!-- Overlay for Mobile Dropdown -->
             <div id = "screenOverlay">&nbsp;</div>
 
+            <!-- Overlay for Stores List Pop-Up -->
+            <div id = "popupOverlay">&nbsp;</div>
+
             <div id = "productSection" class = "container-fluid">
+                <!-- Stores List Pop-Up (Shows Locations that Sell this Product) - START -->
+                <div id = "storePopup">
+                    <i class = "close-popup-overlay far fa-times-circle">
+                        &nbsp;
+                    </i>
+                    <div class = "popup-header">
+                        Recommended Stores:
+                    </div>
+                    <div class = "row">
+                        <a class = "col-6 store-link" href = "https://coralhubus.com/cart-2/rhodofeast/" target = "_blank" rel = "noopener norferrer">
+                            <div>
+                                <img alt = "Coral Hub" src = "images/png/store-logos/coral-hub-logo.png">
+                            </div>
+                        </a>
+                        <a class = "col-6 store-link" href = "https://reefshackllc.com/products/rhodofeast-premium-direct-feed-probiotic-4oz-nitrate-phosphate-remover?_pos=2&_sid=9b682b3ea&_ss=r" target = "_blank" rel = "noopener norferrer">
+                            <div>
+                                <img alt = "Reef Shack" src = "images/png/store-logos/reef-shack-logo.png">
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href = "/Willows-Reef-Mock-Up/stores-page.html" class = "link-button">
+                            All Stores
+                        </a>
+                    </div>
+                </div>
+                <!-- Stores List Pop-Up (Shows Locations that Sell this Product) - END -->
+
                 <!-- Product Overview - START -->
                 <div class = "row justify-content-center product-descript-container">
                     <div class = "frozen-feast-col col-md-6">
@@ -55,17 +95,20 @@ Developer: Sergio Pacheco
                     </div>
                     <div class = "col-md-6 item-descript">
                         <h2 class = "section-header">FrozenFeast</h2>
-                        Now taking orders for our all new <b>FrozenFeast</b>. Please ask your LFS to reach out to us or send us an email at 
+                        Now taking wholesale orders for our all new <b>FrozenFeast</b>. Please ask your LFS to reach out to us or send us an email at 
                         <a href = "mailto:info@willowsreef.com?subject=Frozenfreast%20Pre%20Order" target = "_blank">info@willowsreef.com</a>. 
                         You can always let us know the shops you visit frequently, and we can reach out to them directly. 
                         <br><br>
-                        Each retail pack will contain 70 cubes for easy feeding. FrozenFeast contains balanced mix of mysis, brine, 
-                        krill, fish, oyster eggs, and seaweeds and the added benefits of AminosFeast+ and CoralFeast. Along with 
-                        two special types of bacteria. 
+                        <b>FrozenFeast</b> can also be found in select retail stores. Each retail pack will contain 70 cubes made for 
+                        easy feeding. <b>FrozenFeast</b> contains a balanced mix of mysis, brine, krill, fish, oyster eggs, and seaweed, along with two 
+                        special types of bacteria - containing the added benefits of both AminoFeast+ and Coral Feast. 
                         <br><br>
-                        FrozenFeast comes in a heat-sealed freezer bag so it last longer in your freezers. Ideal for nanos and 
+                        FrozenFeast comes in a heat-sealed freezer bag so that it lasts longer in your freezer. Ideal for nanos and 
                         mixed reefs.
-                        <br><br>
+                        <br><br><br>
+                        <button class = "link-button" id = "seeStores">
+                            See Stores
+                        </button>
                         <a href = "mailto:info@willowsreef.com?subject=Frozenfreast%20Pre%20Order" target = "_blank" class = "link-button">
                             Order via Email
                         </a>
@@ -109,4 +152,5 @@ Developer: Sergio Pacheco
 
     <!-- Custom Site JS -->
     <script src = "js/site-js.js"></script>
+    <script src = "js/store-popup.js"></script>
 </html>
