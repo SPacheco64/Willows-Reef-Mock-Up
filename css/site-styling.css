@@ -433,8 +433,9 @@ h1, h2 {
 
 #topSection h1 {
   text-transform: uppercase;
-  line-height: 2.5rem;
-  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-size: 3.5rem;
+  font-family: 'chiller', sans-serif;
 }
 
 #topSection .section-content {
@@ -1161,8 +1162,8 @@ h1, h2 {
     height: 20rem;
   }
   #topSection h1 {
-    line-height: 5rem;
-    font-size: 5rem;
+    line-height: 4rem;
+    font-size: 4rem;
   }
   #topSection .section-content {
     font-size: 1.5rem;
@@ -1289,8 +1290,8 @@ h1, h2 {
     min-height: 100vh;
   }
   #topSection h1 {
-    line-height: 4rem;
-    font-size: 4rem;
+    line-height: 5rem;
+    font-size: 5rem;
   }
   #customerSection .section-header {
     text-align: left;
