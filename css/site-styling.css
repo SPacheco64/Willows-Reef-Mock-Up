@@ -748,6 +748,10 @@ h1, h2 {
   display: block;
 }
 
+#wholesaleSection .dropdown {
+  height: 8rem;
+}
+
 #wholesaleSection .dropdown button {
   border: none;
   background: none;
@@ -779,7 +783,7 @@ h1, h2 {
   margin: 0.5rem auto;
   left: 50% !important;
   transform: translateX(-50%) !important;
-  top: 100% !important;
+  top: -65% !important;
   min-width: 20rem;
   height: max-content;
   padding: 1rem;
@@ -799,6 +803,16 @@ h1, h2 {
   100% {
     opacity: 1;
   }
+}
+
+#wholesaleSection .dropdown .dropdown-menu .close-btn {
+  position: relative;
+  left: 95%;
+}
+
+#wholesaleSection .dropdown .dropdown-menu .close-btn:hover {
+  color: #07c2f9;
+  cursor: pointer;
 }
 
 #wholesaleSection .dropdown .dropdown-menu .dropdown-header {
