@@ -826,6 +826,11 @@ h1, h2 {
   color: #07c2f9;
   text-decoration: none;
   border: none;
+  border-radius: 0;
+}
+
+#wholesaleSection .dropdown .dropdown-menu .phone-link:hover {
+  border-bottom: 0.1rem solid #07c2f9;
 }
 
 #wholesaleSection .dropdown .dropdown-toggle::after {
