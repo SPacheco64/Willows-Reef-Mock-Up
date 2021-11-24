@@ -807,7 +807,8 @@ h1, h2 {
 
 #wholesaleSection .dropdown .dropdown-menu .close-btn {
   position: relative;
-  left: 95%;
+  left: 93%;
+  font-size: 1.5rem;
 }
 
 #wholesaleSection .dropdown .dropdown-menu .close-btn:hover {
