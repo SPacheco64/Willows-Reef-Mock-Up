@@ -385,6 +385,10 @@ h1, h2 {
   display: none;
 }
 
+.bottom-border {
+  border-bottom: .1rem solid;
+}
+
 .link-button {
   background-color: #010048;
   padding: .8rem 1.3rem;
