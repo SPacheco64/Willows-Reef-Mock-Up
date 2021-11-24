@@ -29,6 +29,8 @@ Developer: Sergio Pacheco
 |------------------------------------------------------------------------------------------|
 | Products Pages/Content                   |                     PRDKY                     |
 |------------------------------------------------------------------------------------------|
+| Wholesale Page/Content                   |                     WHLKY                     |
+|------------------------------------------------------------------------------------------|
 | Stores Page                              |                     STRKY                     |
 |------------------------------------------------------------------------------------------|
 | Stores Pop-up                            |                     STPKY                     |
@@ -742,6 +744,94 @@ h1, h2 {
   display: block;
 }
 
+#wholesaleSection .dropdown button {
+  border: none;
+  background: none;
+  color: #03002e;
+}
+
+#wholesaleSection .dropdown button img {
+  position: relative;
+  top: 0;
+  -webkit-transition: top 0.15s ease-out;
+  -moz-transition: top 0.15s ease-out;
+  -ms-transition: top 0.15s ease-out;
+  -o-transition: top 0.15s ease-out;
+  transition: top 0.15s ease-out;
+}
+
+#wholesaleSection .dropdown button:hover, #wholesaleSection .dropdown button:focus, #wholesaleSection .dropdown button:active {
+  color: #07c2f9;
+  opacity: .8;
+}
+
+#wholesaleSection .dropdown button:hover img, #wholesaleSection .dropdown button:focus img, #wholesaleSection .dropdown button:active img {
+  top: -.25rem;
+}
+
+#wholesaleSection .dropdown .dropdown-menu {
+  background: #03002e;
+  border: 0.1rem solid #fff;
+  margin: 0.5rem auto;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  top: 100% !important;
+  min-width: 20rem;
+  height: max-content;
+  padding: 1rem;
+  color: #fff;
+  z-index: 50;
+  -webkit-animation: fadeIn 0.5s;
+  -moz-animation: fadeIn 0.5s;
+  -ms-animation: fadeIn 0.5s;
+  -o-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#wholesaleSection .dropdown .dropdown-menu .dropdown-header {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#wholesaleSection .dropdown .dropdown-menu a {
+  text-decoration: none;
+  color: #fff;
+  border: 0.1rem solid;
+  border-radius: 30rem;
+  margin: 1rem auto;
+  min-width: 9rem;
+  text-align: center;
+}
+
+#wholesaleSection .dropdown .dropdown-menu a:hover {
+  color: #07c2f9;
+}
+
+#wholesaleSection .dropdown .dropdown-menu a:first-child {
+  margin-top: 0.5rem;
+}
+
+#wholesaleSection .dropdown .dropdown-menu .phone-link {
+  color: #07c2f9;
+  text-decoration: none;
+  border: none;
+}
+
+#wholesaleSection .dropdown .dropdown-toggle::after {
+  display: none;
+}
+
 #storeSection a {
   text-decoration: none;
   color: #fff;
@@ -1112,7 +1202,7 @@ h1, h2 {
 }
 
 /* Padding added to all major Section Containers */
-#topSection, #productSection, #contactSection, #storeSection, #aboutSection, #mediaSection, #blogSection, #confirmationSection {
+#topSection, #productSection, #wholesaleSection, #contactSection, #storeSection, #aboutSection, #mediaSection, #blogSection, #confirmationSection {
   padding: 5%;
 }
 
