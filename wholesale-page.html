@@ -48,7 +48,7 @@ Developer: Sergio Pacheco
             <!-- Overlay for Mobile Dropdown -->
             <div id = "screenOverlay">&nbsp;</div>
 
-            <div id = "productSection" class = "container-fluid mt-4">
+            <div id = "wholesaleSection" class = "container-fluid mt-4">
                 <h2 class = "section-header">Wholesale Sellers</h2>
                 <div style = "font-weight: bold; text-align: center; margin-top: 3rem; font-size: 1.5rem; border-bottom: 0.1rem solid;">
                     <span><img alt = "US Flag" src = "images/svg/united-states-flag.svg" style = "max-width: 1.5rem; position: relative; top: -0.1rem;"></span>
@@ -56,19 +56,96 @@ Developer: Sergio Pacheco
                 </div>
                 <div class = "row justify-content-center align-items-center" style = "min-height: 10rem; margin-bottom: 5rem;">
                     <div class = "col-12 col-lg-4 mt-3 text-center">
-                        <a href = "" target = "_blank" rel = "noopener norferrer">
-                            <img alt = "Aquarium Specialty" src = "images/png/store-logos/wholesale-logos/aqua-spec-logo.png" style = "max-width: 14rem ;">
-                        </a>
+                        <span class = "dropdown btn-group">
+                            <button class = "dropdown-toggle" type = "button" id = "asTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
+                                <img alt = "Aquarium Specialty" src = "images/png/store-logos/wholesale-logos/aqua-spec-logo.png" style = "max-width: 14rem ;">
+                            </button>
+                            <ul class = "dropdown-menu" aria-labelledby = "asTab">
+                                <span class = "dropdown-header">Location Information</span>
+                                <div class = "store-details" style = "border: .01rem solid; padding: .5rem; text-align: center;">
+                                    <div>
+                                        <i class="fas fa-phone-alt"></i><br>
+                                        <a href = "tel:803-788-4445" class = "phone-link">803-788-4445</a>
+                                    </div>
+                                    <div style = "margin-top: 1rem;">
+                                        <i class="fas fa-map-marker-alt"></i><br>
+                                        535-C Clemson Rd, Columbia, SC 29229
+                                    </div>
+                                </div>
+                                <span class = "dropdown-header">Products Available</span>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "https://www.aquariumspecialty.com/willows-reef-coral-feast.html" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "https://www.aquariumspecialty.com/willows-reef-amino-feast-premium-amino-blend.html" target = "_blank" rel = "noopener norferrer"> AminoFeast+ </a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "https://www.aquariumspecialty.com/willows-reef-rhodofeast.html" target = "_blank" rel = "noopener norferrer"> RhodoFeast </a>
+                                </li>
+                            </ul>
+                        </span>
                     </div>
                     <div class = "col-12 col-lg-4 mt-3 text-center">
-                        <a href = "" target = "_blank" rel = "noopener norferrer">
-                            <img alt = "Gulfstream Tropical Aquarium" src = "images/png/store-logos/wholesale-logos/gulfstream-tropical-logo.png" style = "max-width: 8rem; background: #000; border-radius: 1rem;">
-                        </a>
+                        <span class = "dropdown btn-group">
+                            <button class = "dropdown-toggle" type = "button" id = "asTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
+                                <img alt = "Gulfstream Tropical Aquarium" src = "images/png/store-logos/wholesale-logos/gulfstream-tropical-logo.png" style = "max-width: 8rem; background: #000; border-radius: 1rem;">
+                            </button>
+                            <ul class = "dropdown-menu" aria-labelledby = "asTab">
+                                <span class = "dropdown-header">Location Information</span>
+                                <div class = "store-details" style = "border: .01rem solid; padding: .5rem; text-align: center;">
+                                    <div>
+                                        <i class="fas fa-phone-alt"></i><br> 
+                                        <a href = "tel:954-927-1140" class = "phone-link">954-927-1140</a>
+                                    </div>
+                                    <div style = "margin-top: 1rem;">
+                                        <i class="fas fa-map-marker-alt"></i><br>
+                                        470 SW 9th St, Dania Beach, FL 33004
+                                    </div>
+                                </div>
+                                <span class = "dropdown-header">Products Available</span>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "https://gulfstreamtropicalaquarium.com/product/willows-reef-coral-feast/" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "https://gulfstreamtropicalaquarium.com/product/willows-reef-amino-feast/" target = "_blank" rel = "noopener norferrer"> AminoFeast+ </a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "https://gulfstreamtropicalaquarium.com/product/willows-reef-rhodofeast/" target = "_blank" rel = "noopener norferrer"> RhodoFeast </a>
+                                </li>
+                            </ul>
+                        </span>
                     </div>
                     <div class = "col-12 col-lg-4 mt-3 text-center">
-                        <a href = "" target = "_blank" rel = "noopener norferrer">
-                            <img alt = "Vasca Aquarium Supply" src = "images/png/store-logos/wholesale-logos/vasca-logo.png" style = "max-width: 14rem ;">
-                        </a>
+                        <span class = "dropdown btn-group">
+                            <button class = "dropdown-toggle" type = "button" id = "asTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
+                                <img alt = "Vasca Aquarium Supply" src = "images/png/store-logos/wholesale-logos/vasca-logo.png" style = "max-width: 14rem ;">
+                            </button>
+                            <ul class = "dropdown-menu" aria-labelledby = "asTab">
+                                <span class = "dropdown-header">Location Information</span>
+                                <div class = "store-details" style = "border: .01rem solid; padding: .5rem; text-align: center;">
+                                    <div>
+                                        <i class="fas fa-phone-alt"></i><br> 
+                                        <a href = "tel:480-829-8122" class = "phone-link">480-829-8122</a>
+                                    </div>
+                                    <div style = "margin-top: 1rem;">
+                                        <i class="fas fa-map-marker-alt"></i><br>
+                                        1536 W Todd Dr, Tempe, AZ 85283
+                                    </div>
+                                </div>
+                                <span class = "dropdown-header">Products Available</span>
+                                <!--
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "" target = "_blank" rel = "noopener norferrer"> AminoFeast+ </a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "" target = "_blank" rel = "noopener norferrer"> RhodoFeast </a>
+                                </li>
+                                -->
+                            </ul>
+                        </span>
                     </div>
                 </div>
 
@@ -78,9 +155,36 @@ Developer: Sergio Pacheco
                 </div>
                 <div class = "row justify-content-center align-items-center" style = "min-height: 10rem; margin-bottom: 5rem;">
                     <div class = "col-12 col-lg-4 mt-3 text-center">
-                        <a href = "" target = "_blank" rel = "noopener norferrer">
-                            <img alt = "Digitech Aquarium" src = "images/png/store-logos/wholesale-logos/digitech-aquariums-logo.png" style = "max-width: 12rem ;">
-                        </a>
+                        <span class = "dropdown btn-group">
+                            <button class = "dropdown-toggle" type = "button" id = "asTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
+                                <img alt = "Digitech Aquarium" src = "images/png/store-logos/wholesale-logos/digitech-aquariums-logo.png" style = "max-width: 12rem ;">
+                            </button>
+                            <ul class = "dropdown-menu" aria-labelledby = "asTab">
+                                <span class = "dropdown-header">Location Information</span>
+                                <div class = "store-details" style = "border: .01rem solid; padding: .5rem; text-align: center;">
+                                    <div>
+                                        <i class="fas fa-phone-alt"></i><br> 
+                                        <a href = "tel:+91-83693-88959" class = "phone-link">+91-83693-88959</a>
+                                    </div>
+                                    <div style = "margin-top: 1rem;">
+                                        <i class="fas fa-map-marker-alt"></i><br> 
+                                        Shop no 12, Chandresh Godavari, CHS, Thane, Maharashtra 421204, India
+                                    </div>
+                                </div>
+                                <span class = "dropdown-header">Products Available</span>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "https://digitechaquariums.com/product/willowsreef-coral-feast/" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
+                                </li>
+                                <!--
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "" target = "_blank" rel = "noopener norferrer"> AminoFeast+ </a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "" target = "_blank" rel = "noopener norferrer"> RhodoFeast </a>
+                                </li>
+                                -->
+                            </ul>
+                        </span>
                     </div>
                 </div>
 
@@ -90,9 +194,32 @@ Developer: Sergio Pacheco
                 </div>
                 <div class = "row justify-content-center align-items-center" style = "min-height: 10rem; margin-bottom: 5rem;">
                     <div class = "col-12 col-lg-4 mt-3 text-center">
-                        <a href = "" target = "_blank" rel = "noopener norferrer">
-                            <img alt = "Happy Fish Food PR" src = "images/png/store-logos/wholesale-logos/happy-fish-logo.png" style = "max-width: 9rem ;">
-                        </a>
+                        <span class = "dropdown btn-group">
+                            <button class = "dropdown-toggle" type = "button" id = "asTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
+                                <img alt = "Happy Fish Food PR" src = "images/png/store-logos/wholesale-logos/happy-fish-logo.png" style = "max-width: 9rem ;">
+                            </button>
+                            <ul class = "dropdown-menu" aria-labelledby = "asTab">
+                                <span class = "dropdown-header">Location Information</span>
+                                <div class = "store-details" style = "border: .01rem solid; padding: .5rem; text-align: center;">
+                                    <div>
+                                        <i class="fas fa-phone-alt"></i><br> 
+                                        <a href = "tel:787-528-8286" class = "phone-link">787-528-8286</a>
+                                    </div>
+                                </div>
+                                <span class = "dropdown-header">Products Available</span>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "https://happyfishfoodpr.com/products/willows-reef-coral-feast-30g" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "https://happyfishfoodpr.com/products/willows-reef-aminofeast-8-oz" target = "_blank" rel = "noopener norferrer"> AminoFeast+ </a>
+                                </li>
+                                <!--
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "" target = "_blank" rel = "noopener norferrer"> RhodoFeast </a>
+                                </li>
+                                -->
+                            </ul>
+                        </span>
                     </div>
                 </div>
 
@@ -102,9 +229,36 @@ Developer: Sergio Pacheco
                 </div>
                 <div class = "row justify-content-center align-items-center" style = "min-height: 10rem; margin-bottom: 5rem;">
                     <div class = "col-12 col-lg-4 mt-3 text-center">
-                        <a href = "" target = "_blank" rel = "noopener norferrer">
-                            <img alt = "SHOPR Aquatics" src = "images/png/store-logos/wholesale-logos/shopr-aquatics-logo.png" style = "max-width: 9rem ;">
-                        </a>
+                        <span class = "dropdown btn-group">
+                            <button class = "dropdown-toggle" type = "button" id = "asTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
+                                <img alt = "SHOPR Aquatics" src = "images/png/store-logos/wholesale-logos/shopr-aquatics-logo.png" style = "max-width: 9rem ;">
+                            </button>
+                            <ul class = "dropdown-menu" aria-labelledby = "asTab">
+                                <span class = "dropdown-header">Location Information</span>
+                                <div class = "store-details" style = "border: .01rem solid; padding: .5rem; text-align: center;">
+                                    <div>
+                                        <i class="fas fa-phone-alt"></i><br> 
+                                        <a href = "tel:+880-1799-355477" class = "phone-link">+880-1799-355477</a>
+                                    </div>
+                                    <div style = "margin-top: 1rem;">
+                                        <i class="fas fa-map-marker-alt"></i><br> 
+                                        53 Shiddeshwari Lane, Dhaka 1217, Bangladesh
+                                    </div>
+                                </div>
+                                <span class = "dropdown-header">Products Available</span>
+                                <!--
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "" target = "_blank" rel = "noopener norferrer"> AminoFeast+ </a>
+                                </li>
+                                <li class = "nav-item">
+                                    <a class = "nav-link" href = "" target = "_blank" rel = "noopener norferrer"> RhodoFeast </a>
+                                </li>
+                                -->
+                            </ul>
+                        </span>
                     </div>
                 </div>
             </div>
