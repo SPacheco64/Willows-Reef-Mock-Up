@@ -827,6 +827,7 @@ h1, h2 {
 }
 
 #wholesaleSection .dropdown .dropdown-menu .phone-link, #wholesaleSection .dropdown .dropdown-menu .address-link, #wholesaleSection .dropdown .dropdown-menu .website-link, #wholesaleSection .dropdown .dropdown-menu .email-link {
+  color: #07c2f9;
   text-decoration: none;
   border: none;
   border-radius: 0;
@@ -834,7 +835,6 @@ h1, h2 {
 
 #wholesaleSection .dropdown .dropdown-menu .phone-link:hover, #wholesaleSection .dropdown .dropdown-menu .address-link:hover, #wholesaleSection .dropdown .dropdown-menu .website-link:hover, #wholesaleSection .dropdown .dropdown-menu .email-link:hover {
   border-bottom: 0.1rem solid #07c2f9;
-  color: #07c2f9;
 }
 
 #wholesaleSection .dropdown .dropdown-toggle::after {
