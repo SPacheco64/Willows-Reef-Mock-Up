@@ -1384,9 +1384,6 @@ h1, h2 {
     width: 100%;
     margin: 0 auto;
   }
-  nav .dropdown {
-    pointer-events: none;
-  }
   nav .dropdown .dropdown-menu {
     width: 100%;
     margin: 0 auto;
@@ -1395,7 +1392,10 @@ h1, h2 {
     display: block;
     margin-top: 0;
   }
-  nav .dropdown:hover .dropdown-toggle::after {
+  nav .dropdown:hover .dropdown-toggle {
+    pointer-events: none;
+  }
+  nav .dropdown:hover .dropdown-toggle:after {
     transform: rotate(180deg);
   }
   /* Header Nav CSS - END */
