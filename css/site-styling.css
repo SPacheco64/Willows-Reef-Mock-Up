@@ -1384,7 +1384,7 @@ h1, h2 {
     width: 100%;
     margin: 0 auto;
   }
-  nav .dropdown {
+  nav .dropdown .dropdown-btn {
     cursor: pointer;
   }
   nav .dropdown .dropdown-menu {
