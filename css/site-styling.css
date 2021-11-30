@@ -215,6 +215,10 @@ footer .footer-copyright {
   padding-top: 1rem;
 }
 
+#mobileNav .dropdown-menu {
+  border-radius: 0;
+}
+
 #mobileNav .dropdown-menu .nav-item:first-child {
   padding-top: 0;
 }
@@ -267,7 +271,6 @@ nav .nav-item .nav-link:hover {
 }
 
 nav .dropdown {
-  border-radius: 0;
   padding: 0 .5rem;
 }
 
