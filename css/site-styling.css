@@ -495,6 +495,51 @@ h1, h2 {
   line-height: 1.5rem;
 }
 
+#foundationSection {
+  background: #e3ecf1;
+  width: 95%;
+  margin: 7.5% auto 0 auto;
+}
+
+#foundationSection img {
+  width: 100%;
+  height: 100%;
+}
+
+#foundationSection .social-link {
+  margin-right: .25rem;
+  font-size: 2rem;
+  color: #010048;
+}
+
+#foundationSection .social-link:hover {
+  color: #07c2f9;
+}
+
+#foundationSection .link-button {
+  display: block;
+  margin: 1rem auto;
+  box-shadow: none;
+}
+
+#foundationSection .row {
+  max-height: fit-content;
+}
+
+#foundationSection .content-1 {
+  padding: 3rem;
+  height: inherit;
+}
+
+#foundationSection .content-2 {
+  padding: 0;
+  background: url("../images/svg/willows-foundation-logo.svg") #131540;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25rem;
+}
+
 #customerSection {
   background: #e3ecf1;
   width: 95%;
@@ -521,12 +566,12 @@ h1, h2 {
   min-height: 30rem;
 }
 
-#customerSection .customer-content-1 {
+#customerSection .content-1 {
   padding: 3rem;
   height: inherit;
 }
 
-#customerSection .customer-content-2 {
+#customerSection .content-2 {
   padding: 0;
   max-height: 24rem;
 }
@@ -1332,6 +1377,10 @@ h1, h2 {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+  #foundationSection {
+    width: 90%;
+    max-width: 75rem;
+  }
   #customerSection {
     width: 90%;
     max-width: 75rem;
@@ -1474,10 +1523,22 @@ h1, h2 {
     line-height: 5rem;
     font-size: 5rem;
   }
+  #foundationSection .section-header {
+    text-align: left;
+  }
+  #foundationSection .content-1 {
+    max-height: inherit;
+  }
+  #foundationSection .content-2 {
+    height: auto;
+  }
+  #foundationSection .row {
+    max-height: 30rem;
+  }
   #customerSection .section-header {
     text-align: left;
   }
-  #customerSection .customer-content-2 {
+  #customerSection .content-2 {
     max-height: inherit;
   }
   #productSection .row {
