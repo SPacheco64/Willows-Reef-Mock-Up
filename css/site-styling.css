@@ -779,6 +779,7 @@ h1, h2 {
 }
 
 #wholesaleSection .dropdown .dropdown-menu {
+  border-radius: 0;
   background: #03002e;
   border: 0.1rem solid #fff;
   margin: 0.5rem auto;
