@@ -215,10 +215,6 @@ footer .footer-copyright {
   padding-top: 1rem;
 }
 
-#mobileNav .dropdown-menu {
-  border-radius: 0;
-}
-
 #mobileNav .dropdown-menu .nav-item:first-child {
   padding-top: 0;
 }
@@ -301,6 +297,7 @@ nav .dropdown button:hover {
 }
 
 nav .dropdown .dropdown-menu {
+  border-radius: 0;
   background: #03002e;
   border: 0.1rem solid #fff;
   text-align: center;
