@@ -428,6 +428,38 @@ h1, h2 {
   background-color: #555;
 }
 
+.coming-soon-pop {
+  position: fixed;
+  z-index: 400;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  background-color: #03002e;
+  border: 0.1rem solid #fff;
+  padding: 2rem;
+  width: 90%;
+  max-width: 30rem;
+  height: fit-content;
+}
+
+.coming-soon-pop .section-header {
+  color: #fff;
+  font-weight: bold;
+}
+
+.coming-soon-pop .pop-blurb {
+  margin-bottom: 2rem;
+}
+
+.coming-soon-pop .link-button {
+  border: 0.1rem solid #fff;
+  display: block;
+}
+
 #topSection {
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.55) 0, rgba(0, 0, 0, 0.55) 100%), url(../images/jpg/placeholder-header-D4.jpg);
   background-size: cover;
@@ -1284,6 +1316,9 @@ h1, h2 {
   }
   .image-banner {
     height: 20rem;
+  }
+  .coming-soon-pop {
+    width: 70%;
   }
   #topSection h1 {
     line-height: 4rem;
