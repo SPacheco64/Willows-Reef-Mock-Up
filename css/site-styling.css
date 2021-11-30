@@ -1209,6 +1209,10 @@ h1, h2 {
   width: 90%;
 }
 
+#aboutSection #foundationSection {
+  margin: 3.5% auto 0 auto;
+}
+
 /* STYLING FOR CONTACT FORM - START */
 #contactSection {
   background: #010048;
