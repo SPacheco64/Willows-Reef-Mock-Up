@@ -1394,6 +1394,8 @@ h1, h2 {
   }
   nav .dropdown:hover .dropdown-toggle {
     pointer-events: none;
+    color: #07c2f9;
+    cursor: pointer;
   }
   nav .dropdown:hover .dropdown-toggle:after {
     transform: rotate(180deg);
