@@ -55,7 +55,7 @@ Developer: Sergio Pacheco
 @import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
 @font-face {
   font-family: 'chiller', sans-serif;
-  src: url("/fonts/ChillerStd.otf");
+  src: url("/fonts/ChillerStd.otf") format("otf");
 }
 
 /* Basic SCSS Style Variables (Colors & Fonts) - START [ VARKY ] */
