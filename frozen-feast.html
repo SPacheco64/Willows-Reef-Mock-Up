@@ -35,12 +35,26 @@ Developer: Sergio Pacheco
     </head>
 
     <body>
-        <!-- Button Styling Specific to FrozenFeast page -->
+        <!-- Styling Specific to FrozenFeast page -->
         <style>
             #productSection .product-descript-container .link-button
             {
                 width: 13rem;
                 text-align: center;
+            }
+            @media (min-width: 768px)
+            {
+                #productSection .product-descript-container .frozen-feast-col
+                {
+                    height: 25rem;
+                }
+            }
+            @media (min-width: 992px)
+            {
+                #productSection .product-descript-container .frozen-feast-col
+                {
+                    height: auto;
+                }
             }
         </style>
 
@@ -90,10 +104,10 @@ Developer: Sergio Pacheco
 
                 <!-- Product Overview - START -->
                 <div class = "row justify-content-center product-descript-container">
-                    <div class = "frozen-feast-col col-md-6">
+                    <div class = "frozen-feast-col col-lg-6">
                         &nbsp;                        
                     </div>
-                    <div class = "col-md-6 item-descript">
+                    <div class = "col-lg-6 item-descript">
                         <h2 class = "section-header">FrozenFeast</h2>
                         Now taking wholesale orders for our all new <b>FrozenFeast</b>. Please ask your LFS to reach out to us or send us an email at 
                         <a href = "mailto:info@willowsreef.com?subject=Frozenfreast%20Pre%20Order" target = "_blank">info@willowsreef.com</a>. 
