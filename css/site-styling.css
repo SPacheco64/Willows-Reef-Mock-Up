@@ -54,7 +54,7 @@ Developer: Sergio Pacheco
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sarabun&display=swap");
 @font-face {
-  font-family: 'chiller', sans-serif;
+  font-family: 'chiller';
   src: url("../fonts/ChillerStd.otf") format("otf"), url("../fonts/ChillerStd.ttf") format("ttf"), url("../fonts/ChillerStd.woff") format("woff"), url("../fonts/ChillerStd.woff2") format("woff2");
 }
 
@@ -106,7 +106,7 @@ header {
 }
 
 header .logo-link .logo-link-text {
-  font-family: 'chiller', sans-serif;
+  font-family: 'chiller';
 }
 
 header .navbar {
@@ -487,7 +487,7 @@ h1, h2 {
   text-transform: uppercase;
   line-height: 3.5rem;
   font-size: 3.5rem;
-  font-family: 'chiller', sans-serif;
+  font-family: 'chiller';
 }
 
 #topSection .section-content {
@@ -638,7 +638,7 @@ h1, h2 {
   line-height: 3.5rem;
   font-weight: bold;
   color: #03002e;
-  font-family: 'chiller', sans-serif;
+  font-family: 'chiller';
   font-size: 2.5rem;
 }
 
