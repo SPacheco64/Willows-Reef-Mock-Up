@@ -408,6 +408,7 @@ h1, h2 {
   text-transform: uppercase;
   margin: 1rem auto;
   border: none;
+  text-align: center;
 }
 
 .link-button:hover {
