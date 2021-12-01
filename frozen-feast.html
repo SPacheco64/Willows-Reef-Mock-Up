@@ -48,6 +48,13 @@ Developer: Sergio Pacheco
                 {
                     height: 25rem;
                 }
+                #productSection .product-descript-container .col-md-6
+                {
+                    width: 100%;
+                    display: block;
+                }
+                #productSection .product-descript-container .section-header{ text-align: center; }
+                .btn-container{ text-align: center; }
             }
             @media (min-width: 992px)
             {
@@ -55,6 +62,13 @@ Developer: Sergio Pacheco
                 {
                     height: auto;
                 }
+                #productSection .product-descript-container .col-md-6
+                {
+                    width: 50%;
+                    display: table-cell;
+                }
+                #productSection .product-descript-container .section-header{ text-align: left; }
+                .btn-container{ text-align: left; }
             }
         </style>
 
@@ -120,12 +134,14 @@ Developer: Sergio Pacheco
                         FrozenFeast comes in a heat-sealed freezer bag so that it lasts longer in your freezer. Ideal for nanos and 
                         mixed reefs.
                         <br><br>
-                        <button class = "link-button" id = "seeStores">
-                            See Stores
-                        </button>
-                        <a href = "mailto:info@willowsreef.com?subject=FrozenFeast%20Pre-Order" target = "_blank" class = "link-button">
-                            Order via Email
-                        </a>
+                        <div class = "btn-container">
+                            <button class = "link-button" id = "seeStores">
+                                See Stores
+                            </button>
+                            <a href = "mailto:info@willowsreef.com?subject=FrozenFeast%20Pre-Order" target = "_blank" class = "link-button">
+                                Order via Email
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- Product Overview - END -->
