@@ -841,6 +841,31 @@ h1, h2 {
   display: block;
 }
 
+#wholesaleSection .location-divider {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  border-bottom: 0.1rem solid;
+}
+
+#wholesaleSection .location-flag {
+  max-width: 1.5rem;
+  position: relative;
+  top: -0.1rem;
+}
+
+#wholesaleSection .store-row {
+  min-height: 10rem;
+  margin-bottom: 5rem;
+}
+
+#wholesaleSection .store-details {
+  border: .01rem solid;
+  padding: .5rem;
+  text-align: center;
+}
+
 #wholesaleSection .dropdown {
   height: 8rem;
 }
