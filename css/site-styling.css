@@ -686,7 +686,7 @@ h1, h2 {
 #productSection .view-all {
   margin-bottom: 2rem;
   box-shadow: none;
-  margin-top: 0;
+  margin-top: 2rem;
 }
 
 #productSection .product-descript-container {
