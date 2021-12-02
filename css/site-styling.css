@@ -977,9 +977,6 @@ h1, h2 {
 
 #storeSection a {
   text-decoration: none;
-  color: #fff;
-  border: 0.1rem solid;
-  border-radius: 30rem;
   margin: 1rem auto;
   min-width: 9rem;
   text-align: center;
