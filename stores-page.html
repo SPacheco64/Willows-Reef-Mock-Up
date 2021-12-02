@@ -32,9 +32,15 @@ Developer: Sergio Pacheco
 
         <!-- Font Awesome script for Icons -->
         <script src = "https://kit.fontawesome.com/b8159c5824.js" crossorigin = "anonymous"></script>
+
+        <!-- JS to Convert XLS to JSON -->
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"></script>
     </head>
 
     <body>
+        <!-- XLS Input (Pulls in Store List data from Spreadsheet) -->
+
+
         <button onclick = "topFunction()" id = "scrollToTopBtn">
             <i class = "fas fa-chevron-up"></i>
             <span class = "sr-only">Back to Top</span>
@@ -50,185 +56,89 @@ Developer: Sergio Pacheco
 
             <div id = "storeSection" class = "container-fluid mt-4">
                 <h2 class = "section-header mb-0">Stores</h2>
+                <div class = "location-divider">
+                    <span><img alt = "US Flag" src = "images/svg/united-states-flag.svg" class = "location-flag"></span>
+                    USA
+                </div>
                 <div class = "row text-center">
-                    <span class = "col-12 col-md-6 col-lg-4 mt-3">
-                        <span class = "dropdown btn-group">
-                            <button class = "dropdown-toggle" type = "button" id = "amazonTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                Amazon 
-                            </button>
-                            <ul class = "dropdown-menu" aria-labelledby = "amazonTab">
-                                <!--
-                                <div class = "store-logo">
-                                    <img alt = "Amazon" src = "images/png/store-logos/amazon-logo.png">
-                                </div>
-                                -->
-                                <span class = "dropdown-header">Products Available</span>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://www.amazon.com/Coral-Feast-Powdered-Quality-Food/dp/B08M95Z64Q/ref=sr_1_1?crid=2DB1V05HEENV5&keywords=coral%2Bfeast&qid=1636048104&sprefix=coral%2Caps%2C210&sr=8-1&th=1" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
-                                </li>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://www.amazon.com/AminoFeast-Quality-Coral-Amino-Acids/dp/B08P7VL6PX/ref=sr_1_2?keywords=amino+feast&qid=1636048123&sr=8-2" target = "_blank" rel = "noopener norferrer"> AminoFeast+ </a>
-                                </li>
-                            </ul> 
-                        </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
                     </span>
-                    <span class = "col-12 col-md-6 col-lg-4 mt-3">
-                        <span class = "dropdown btn-group">
-                            <button class = "dropdown-toggle" type = "button" id = "aacTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                AAC
-                            </button>
-                            <ul class = "dropdown-menu" aria-labelledby = "aacTab">
-                                <!--
-                                <div class = "store-logo">
-                                    <img alt = "Advanced Aquarium Consultancy" src = "images/png/store-logos/aac-logo.png" >
-                                </div>
-                                -->
-                                <span class = "dropdown-header">Products Available</span>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://www.aac-online.co.uk/shop/dry-goods/willows-reef-coral-feast-60g/" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
-                                </li>
-                            </ul>
-                        </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
                     </span>
-                    <span class = "col-12 col-md-6 col-lg-4 mt-3">
-                        <span class = "dropdown btn-group">
-                            <button class = "dropdown-toggle" type = "button" id = "aquaCaveTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                AquaCave
-                            </button>
-                            <ul class = "dropdown-menu" aria-labelledby = "aquaCaveTab">
-                                <!--
-                                <div class = "store-logo">
-                                    <img alt = "AquaCave" src = "images/png/store-logos/aquacave-logo.png" >
-                                </div>
-                                -->
-                                <span class = "dropdown-header">Products Available</span>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://www.aquacave.com/coral-feast-jars.html" target = "_blank" rel = "noopener norferrer"> 
-                                        Coral Feast 
-                                    </a>
-                                </li>
-                            </ul>
-                        </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
                     </span>
-                    <span class = "col-12 col-md-6 col-lg-4 mt-3">
-                        <span class = "dropdown btn-group">
-                            <button class = "dropdown-toggle" type = "button" id = "aquariumSpecialtyTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                Aquarium Specialty
-                            </button>
-                            <ul class = "dropdown-menu" aria-labelledby = "aquariumSpecialtyTab">
-                                <!--
-                                <div class = "store-logo">
-                                    <img alt = "Aquarium Specialty" src = "images/png/store-logos/aqua-spec-logo.png" >
-                                </div>
-                                -->
-                                <span class = "dropdown-header">Products Available</span>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://www.aquariumspecialty.com/willows-reef-coral-feast.html" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
-                                </li>
-                            </ul>
-                        </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
                     </span>
-                    <span class = "col-12 col-md-6 col-lg-4 mt-3">
-                        <span class = "dropdown btn-group">
-                            <button class = "dropdown-toggle" type = "button" id = "coralHubTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                Coral Hub
-                            </button>
-                            <ul class = "dropdown-menu" aria-labelledby = "coralHubTab">
-                                <!--
-                                <div class = "store-logo">
-                                    <img alt = "Coral Hub" src = "images/png/store-logos/coral-hub-logo.png" >
-                                </div>
-                                -->
-                                <span class = "dropdown-header">Products Available</span>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://coralhubus.com/cart-2/coral-feast-60g/" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
-                                </li>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://coralhubus.com/cart-2/3-4-frag-plug/" target = "_blank" rel = "noopener norferrer"> AminoFeast+ </a>
-                                </li>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://coralhubus.com/cart-2/rhodofeast/" target = "_blank" rel = "noopener norferrer"> RhodoFeast </a>
-                                </li>
-                            </ul>
-                        </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
                     </span>
-                    <span class = "col-12 col-md-6 col-lg-4 mt-3">
-                        <span class = "dropdown btn-group">
-                            <button class = "dropdown-toggle" type = "button" id = "noopsycheTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                Noopsyche USA
-                            </button>
-                            <ul class = "dropdown-menu" aria-labelledby = "noopsycheTab">
-                                <!--
-                                <div class = "store-logo">
-                                    <img alt = "Noopsyche USA" src = "images/png/store-logos/noopsyche-logo.png" >
-                                </div>
-                                -->
-                                <span class = "dropdown-header">Products Available</span>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://noopsycheusa.com/products/coral-feast-no-filler-coral-food-60g" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
-                                </li>
-                            </ul>
-                        </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
                     </span>
-                    <span class = "col-12 col-md-6 col-lg-4 mt-3">
-                        <span class = "dropdown btn-group">
-                            <button class = "dropdown-toggle" type = "button" id = "reefShackTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                Reef Shack
-                            </button>
-                            <ul class = "dropdown-menu" aria-labelledby = "reefShackTab">
-                                <!--
-                                <div class = "store-logo">
-                                    <img alt = "Reef Shack" src = "images/png/store-logos/reef-shack-logo.png" >
-                                </div>
-                                -->
-                                <span class = "dropdown-header">Products Available</span>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://reefshackllc.com/products/coral-feast-powdered-coral-food-60-gm?_pos=1&_sid=9b682b3ea&_ss=r" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
-                                </li>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://reefshackllc.com/products/amino-feast-coral-food-amino-acid-250ml?_pos=1&_sid=71bb8333e&_ss=r" target = "_blank" rel = "noopener norferrer"> AminoFeast+ </a>
-                                </li>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://reefshackllc.com/products/rhodofeast-premium-direct-feed-probiotic-4oz-nitrate-phosphate-remover?_pos=2&_sid=9b682b3ea&_ss=r" target = "_blank" rel = "noopener norferrer"> RhodoFeast </a>
-                                </li>
-                            </ul>
-                        </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
                     </span>
-                    <span class = "col-12 col-md-6 col-lg-4 mt-3">
-                        <span class = "dropdown btn-group">
-                            <button class = "dropdown-toggle" type = "button" id = "indieFurTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                IndieFur
-                            </button>
-                            <ul class = "dropdown-menu" aria-labelledby = "indieFurTab">
-                                <!--
-                                <div class = "store-logo">
-                                    <img alt = "IndieFur" src = "images/png/store-logos/indie-fur-logo.png" >
-                                </div>
-                                -->
-                                <span class = "dropdown-header">Products Available</span>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://www.indiefur.com/product/willows-reef-coral-feast/" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
-                                </li>
-                            </ul>
-                        </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
                     </span>
-                    <span class = "col-12 col-md-6 col-lg-4 mt-3">
-                        <span class = "dropdown btn-group">
-                            <button class = "dropdown-toggle" type = "button" id = "krakenTab" data-bs-toggle = "dropdown" aria-expanded = "false"> 
-                                Kraken Corals
-                            </button>
-                            <ul class = "dropdown-menu" aria-labelledby = "krakenTab">
-                                <!--
-                                <div class = "store-logo">
-                                    <img alt = "Kraken Corals" src = "images/png/store-logos/kraken-corals-logo.png" >
-                                </div>
-                                -->
-                                <span class = "dropdown-header">Products Available</span>
-                                <li class = "nav-item">
-                                    <a class = "nav-link" href = "https://krakencorals.co.uk/willows-reef-coral-feast-60g.html" target = "_blank" rel = "noopener norferrer"> Coral Feast </a>
-                                </li>
-                            </ul>
-                        </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                </div>
+
+                <div class = "location-divider">
+                    <span><img alt = "US Flag" src = "images/svg/united-kingdom-flag.svg" class = "location-flag"></span>
+                    United Kingdom
+                </div>
+                <div class = "row text-center">
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
+                    </span>
+                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
+                        <a href = "" style = "color: #000; border: none;">Store Example</a>
                     </span>
                 </div>
             </div>
