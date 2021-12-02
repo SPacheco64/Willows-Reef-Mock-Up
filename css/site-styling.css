@@ -1007,6 +1007,20 @@ h1, h2 {
   background: #07c2f9;
 }
 
+#storeSection .location-divider {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  border-bottom: 0.1rem solid;
+}
+
+#storeSection .location-flag {
+  max-width: 1.5rem;
+  position: relative;
+  top: -0.1rem;
+}
+
 #storeSection .dropdown .dropdown-menu {
   background: #03002e;
   border: 0.1rem solid #fff;
