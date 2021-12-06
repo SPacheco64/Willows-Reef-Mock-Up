@@ -990,7 +990,7 @@ h1, h2 {
   margin-top: 0.5rem;
 }
 
-#storeSection span {
+#storeSection #usStoreList span, #storeSection #ukStoreList span {
   text-transform: capitalize;
   display: flex;
   align-items: center;
