@@ -992,6 +992,8 @@ h1, h2 {
 
 #storeSection span {
   text-transform: capitalize;
+  display: flex;
+  align-items: center;
 }
 
 #storeSection button {
