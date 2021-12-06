@@ -6,6 +6,8 @@ Developer: Sergio Pacheco
 // Store List Variables
 var usStores;
 var ukStores;
+var usContainer = document.getElementById('usStoreList');
+var ukContainer = document.getElementById('ukStoreList');
 
 // ajax Calls to JSON Files
 $(document).ready(function () 
@@ -53,8 +55,6 @@ function createLists()
 {
     var usStoreList = "";
     var ukStoreList = "";
-    var usContainer = document.getElementById('usStoreList');
-    var ukContainer = document.getElementById('ukStoreList');
 
     $.each(usStores, function (key, value) 
     {
