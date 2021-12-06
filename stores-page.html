@@ -38,11 +38,6 @@ Developer: Sergio Pacheco
     </head>
 
     <body>
-        <!-- XLS Input (Pulls in Store List data from Spreadsheet) -->
-        <script>
-            
-        </script>
-
         <button onclick = "topFunction()" id = "scrollToTopBtn">
             <i class = "fas fa-chevron-up"></i>
             <span class = "sr-only">Back to Top</span>
@@ -76,13 +71,14 @@ Developer: Sergio Pacheco
             </div>
         </div>
 
-        <script>
-            createLists();
-        </script>
-
         <!-- Global Footer Section populated by JS -->
         <div id = "globalFooter">&nbsp;</div>
     </body>
+
+    <!-- Call to Function that Populates the Store Lists (Function Found in populate-stores-list.js) -->
+    <script>
+        createLists();
+    </script>
 
     <!-- Custom Site JS -->
     <script src = "js/site-js.js"></script>
