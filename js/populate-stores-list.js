@@ -82,7 +82,7 @@ function createLists()
         {
             usStoreSet += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>" + value.Store_Name + "</span>";
         }
-    });
+    })
     usContainer.innerHTML = usStoreSet;
 
     $.each(ukStores, function (key, value) 
@@ -110,6 +110,6 @@ function createLists()
         {
             ukStoreSet += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>" + value.Store_Name + "</span>";
         }
-    });
+    })
     ukContainer.innerHTML = ukStoreSet;
 }
