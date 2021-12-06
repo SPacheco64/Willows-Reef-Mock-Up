@@ -5,7 +5,7 @@ Developer: Sergio Pacheco
 
 $(document).ready(function () 
 {
-    // Call to Store List JSON
+    // Call to US Store List JSON
     $.ajax
     ({
         url: "./json/us-stores.json",
@@ -21,4 +21,21 @@ $(document).ready(function ()
             console.log(error);
         }
     })
-})
+
+    // Call to US Store List JSON
+    $.ajax
+    ({
+        url: "./json/uk-stores.json",
+        type: "GET",
+        dataType: 'json',
+        success: function(data)
+        {
+            result = data;
+            console.log(result);
+        },
+        error: function(error)
+        {
+            console.log(error);
+        }
+    })
+});
