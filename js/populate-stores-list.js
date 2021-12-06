@@ -81,7 +81,7 @@ function createUSList()
         }
         else
         {
-            usStoreSet += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>" + value.Store_Name + "</span>";
+            usStoreSet += "<span class = 'col-12 col-md-6 col-lg-4 mt-3'>" + value.Store_Name + "</span>";
         }
     });
     usContainer.innerHTML = usStoreSet;
@@ -94,7 +94,7 @@ function createUKList()
     {
         if(value.Store_Name != "" && (value.Link != "" || value.Facebook != ""))
         {
-            ukStoreSet += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>";
+            ukStoreSet += "<span class = 'col-12 col-md-6 col-lg-4 mt-3'>";
 
             if(value.Link != "")
             {
@@ -113,7 +113,7 @@ function createUKList()
         }
         else
         {
-            ukStoreSet += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>" + value.Store_Name + "</span>";
+            ukStoreSet += "<span class = 'col-12 col-md-6 col-lg-4 mt-3'>" + value.Store_Name + "</span>";
         }
     });
     ukContainer.innerHTML = ukStoreSet;
