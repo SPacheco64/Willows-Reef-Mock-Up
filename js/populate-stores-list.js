@@ -6,8 +6,8 @@ Developer: Sergio Pacheco
 // Store List Variables
 var usStores;
 var ukStores;
-var usContainer = document.getElementById('usStoreList');
-var ukContainer = document.getElementById('ukStoreList');
+var usContainer = document.getElementById("usStoreList");
+var ukContainer = document.getElementById("ukStoreList");
 
 // ajax Calls to JSON Files
 $(document).ready(function () 
@@ -53,62 +53,62 @@ $(document).ready(function ()
 
 function createLists() 
 {
-    var usStoreList = "";
-    var ukStoreList = "";
+    var usStoreSet = "";
+    var ukStoreSet = "";
 
     $.each(usStores, function (key, value) 
     {
         if(value.Store_Name != null && (value.Link != null || value.Facebook != null))
         {
-            usStoreList += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>";
+            usStoreSet += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>";
 
             if(value.Link != null)
             {
-                usStoreList += "<a href ='" + value.Link + "' target = '_blank' rel = 'noopener norferrer'>" + value.Store_Name + "</a>";
+                usStoreSet += "<a href ='" + value.Link + "' target = '_blank' rel = 'noopener norferrer'>" + value.Store_Name + "</a>";
             }
             else
             {
-                usStoreList += "<a href ='" + value.Facebook + "' target = '_blank' rel = 'noopener norferrer'>" + value.Store_Name + "</a>";
+                usStoreSet += "<a href ='" + value.Facebook + "' target = '_blank' rel = 'noopener norferrer'>" + value.Store_Name + "</a>";
             }
 
-            usStoreList += "</span>";
+            usStoreSet += "</span>";
         }
         else if(value.Store_Name == null)
         {
-            usStoreList += "";
+            usStoreSet += "";
         }
         else
         {
-            usStoreList += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>" + value.Store_Name + "</span>";
+            usStoreSet += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>" + value.Store_Name + "</span>";
         }
     });
-    usContainer.innerHTML = usStoreList;
+    usContainer.innerHTML = usStoreSet;
 
     $.each(ukStores, function (key, value) 
     {
         if(value.Store_Name != null && (value.Link != null || value.Facebook != null))
         {
-            ukStoreList += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>";
+            ukStoreSet += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>";
 
             if(value.Link != null)
             {
-                ukStoreList += "<a href ='" + value.Link + "' target = '_blank' rel = 'noopener norferrer'>" + value.Store_Name + "</a>";
+                ukStoreSet += "<a href ='" + value.Link + "' target = '_blank' rel = 'noopener norferrer'>" + value.Store_Name + "</a>";
             }
             else
             {
-                ukStoreList += "<a href ='" + value.Facebook + "' target = '_blank' rel = 'noopener norferrer'>" + value.Store_Name + "</a>";
+                ukStoreSet += "<a href ='" + value.Facebook + "' target = '_blank' rel = 'noopener norferrer'>" + value.Store_Name + "</a>";
             }
 
-            ukStoreList += "</span>";
+            ukStoreSet += "</span>";
         }
         else if(value.Store_Name == null)
         {
-            ukStoreList += "";
+            ukStoreSet += "";
         }
         else
         {
-            ukStoreList += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>" + value.Store_Name + "</span>";
+            ukStoreSet += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>" + value.Store_Name + "</span>";
         }
     });
-    ukContainer.innerHTML = ukStoreList;
+    ukContainer.innerHTML = ukStoreSet;
 }
