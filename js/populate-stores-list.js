@@ -28,6 +28,9 @@ $(document).ready(function ()
         {
             console.log(error);
         }
+    }).done(function()
+    {
+        createUSList();
     });
 
     // Call to US Store List JSON
@@ -48,15 +51,13 @@ $(document).ready(function ()
         }
     }).done(function()
     {
-        createLists();
+        createUKList();
     });
 });
 
-function createLists() 
+function createUSList() 
 {
     var usStoreSet = "";
-    var ukStoreSet = "";
-
     $.each(usStores, function (key, value) 
     {
         if(value.Store_Name != "" && (value.Link != "" || value.Facebook != ""))
@@ -84,7 +85,11 @@ function createLists()
         }
     });
     usContainer.innerHTML = usStoreSet;
+}
 
+function createUKList()
+{
+    var ukStoreSet = "";
     $.each(ukStores, function (key, value) 
     {
         if(value.Store_Name != "" && (value.Link != "" || value.Facebook != ""))
