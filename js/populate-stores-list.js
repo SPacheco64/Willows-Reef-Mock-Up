@@ -61,7 +61,7 @@ function createLists()
     {
         if(value.Store_Name != "" && (value.Link != "" || value.Facebook != ""))
         {
-            usStoreSet += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>";
+            usStoreSet += "<span class = 'col-12 col-md-6 col-lg-4 mt-3'>";
 
             if(value.Link != "")
             {
