@@ -58,11 +58,11 @@ function createLists()
 
     $.each(usStores, function (key, value) 
     {
-        if(value.Store_Name != null && (value.Link != null || value.Facebook != null))
+        if(value.Store_Name != "" && (value.Link != "" || value.Facebook != ""))
         {
             usStoreSet += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>";
 
-            if(value.Link != null)
+            if(value.Link != "")
             {
                 usStoreSet += "<a href ='" + value.Link + "' target = '_blank' rel = 'noopener norferrer'>" + value.Store_Name + "</a>";
             }
@@ -73,7 +73,7 @@ function createLists()
 
             usStoreSet += "</span>";
         }
-        else if(value.Store_Name == null)
+        else if(value.Store_Name == "")
         {
             usStoreSet += "";
         }
@@ -86,11 +86,11 @@ function createLists()
 
     $.each(ukStores, function (key, value) 
     {
-        if(value.Store_Name != null && (value.Link != null || value.Facebook != null))
+        if(value.Store_Name != "" && (value.Link != "" || value.Facebook != ""))
         {
             ukStoreSet += "<span class = 'col-6 col-md-4 col-lg-3 mt-3'>";
 
-            if(value.Link != null)
+            if(value.Link != "")
             {
                 ukStoreSet += "<a href ='" + value.Link + "' target = '_blank' rel = 'noopener norferrer'>" + value.Store_Name + "</a>";
             }
@@ -101,7 +101,7 @@ function createLists()
 
             ukStoreSet += "</span>";
         }
-        else if(value.Store_Name == null)
+        else if(value.Store_Name == "")
         {
             ukStoreSet += "";
         }
