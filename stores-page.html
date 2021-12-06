@@ -77,7 +77,10 @@ Developer: Sergio Pacheco
 
     <!-- Call to Function that Populates the Store Lists (Function Found in populate-stores-list.js) -->
     <script>
-        $(document).ready(createLists());
+        $( document ).ajaxComplete(function() 
+        {
+        createLists();
+        });
     </script>
 
     <!-- Custom Site JS -->
