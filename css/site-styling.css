@@ -468,7 +468,7 @@ h1, h2 {
 }
 
 #topSection {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.55) 0, rgba(0, 0, 0, 0.55) 100%), url(../images/jpg/placeholder-header-D4.jpg);
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.55) 0, rgba(0, 0, 0, 0.55) 100%), url(../images/jpg/homepage-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 55vh;
