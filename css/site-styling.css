@@ -990,6 +990,10 @@ h1, h2 {
   margin-top: 0.5rem;
 }
 
+#storeSection span {
+  text-transform: capitalize;
+}
+
 #storeSection button {
   border: none;
   background: #03002e;
