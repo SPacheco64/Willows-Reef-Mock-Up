@@ -28,7 +28,7 @@ $(document).ready(function ()
         {
             console.log(error);
         }
-    })
+    });
 
     // Call to US Store List JSON
     $.ajax
@@ -46,9 +46,10 @@ $(document).ready(function ()
         {
             console.log(error);
         }
-    })
-
-    createLists();
+    }).done(function()
+    {
+        createLists();
+    });
 });
 
 function createLists() 
