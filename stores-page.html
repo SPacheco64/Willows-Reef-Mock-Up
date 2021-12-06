@@ -32,14 +32,13 @@ Developer: Sergio Pacheco
 
         <!-- Font Awesome script for Icons -->
         <script src = "https://kit.fontawesome.com/b8159c5824.js" crossorigin = "anonymous"></script>
-
-        <!-- JS to Convert XLS to JSON -->
-        <script src = "https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"></script>
     </head>
 
     <body>
         <!-- XLS Input (Pulls in Store List data from Spreadsheet) -->
-
+        <script>
+            
+        </script>
 
         <button onclick = "topFunction()" id = "scrollToTopBtn">
             <i class = "fas fa-chevron-up"></i>
@@ -60,86 +59,16 @@ Developer: Sergio Pacheco
                     <span><img alt = "US Flag" src = "images/svg/united-states-flag.svg" class = "location-flag"></span>
                     USA
                 </div>
-                <div class = "row text-center">
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
+                <div class = "row text-center" id = "usStoreList">
+                    &nbsp;
                 </div>
 
                 <div class = "location-divider">
-                    <span><img alt = "US Flag" src = "images/svg/united-kingdom-flag.svg" class = "location-flag"></span>
+                    <span><img alt = "UK Flag" src = "images/svg/united-kingdom-flag.svg" class = "location-flag"></span>
                     United Kingdom
                 </div>
-                <div class = "row text-center">
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
-                    <span class = "col-6 col-md-4 col-lg-3 mt-3">
-                        <a href = "">Store Example</a>
-                    </span>
+                <div class = "row text-center" id = "ukStoreList">
+                    &nbsp;
                 </div>
             </div>
         </div>
@@ -151,4 +80,7 @@ Developer: Sergio Pacheco
 
     <!-- Custom Site JS -->
     <script src = "js/site-js.js"></script>
+    
+    <!-- JS to Populate Page with List of Store Links -->
+    <script src = "js/populate-stores-list.js"></script>
 </html>
