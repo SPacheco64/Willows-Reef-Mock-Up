@@ -7,10 +7,6 @@ Developer: Sergio Pacheco
     const screenOverlay = document.getElementById("screenOverlay");
     $(".hamburger").click(function () 
     {
-        while(document.getElementById('mobileNav').classList.contains('collapsing'))
-        {
-            document.body.style.pointerEvents = "none";
-        }
         $(".hamburger").toggleClass("active");
         screenOverlay.classList.toggle("active");
         pageBody.classList.toggle("no-scroll");
