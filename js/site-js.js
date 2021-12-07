@@ -18,17 +18,6 @@ $(document).ready(function ()
     $("#globalFooter").load("./global-footer.html");
 });
 
-$(document).load(function () 
-{
-    // Keeps Harmburger Icon from being Double-Clicked
-    var mobileNav = $('#mobileNav');
-    var hamburgerBtn = $('.hamburger');
-    if(mobileNav.classList.contains('collapsing'))
-    {
-        hamburgerBtn.style.pointerEvents = "none";
-    }
-});
-
 // Initialization for the AOS CSS Animations [ AOSKY ]
 AOS.init
 ({
@@ -56,4 +45,9 @@ function topFunction() // When the user clicks on the button, scroll to the top 
 {
     document.body.scrollTop = 0; // Safari Compatibility
     document.documentElement.scrollTop = 0; // Chrome, Firefox, & IE Compatibility
+}
+
+while($('#mobileNav').classList.contains('collapsing'))
+{
+    body.style.pointerEvents = "none";
 }
