@@ -46,11 +46,3 @@ function topFunction() // When the user clicks on the button, scroll to the top 
     document.body.scrollTop = 0; // Safari Compatibility
     document.documentElement.scrollTop = 0; // Chrome, Firefox, & IE Compatibility
 }
-
-$(document).ready(function () 
-{
-    while(document.getElementById('mobileNav').classList.contains('collapsing'))
-    {
-        body.style.pointerEvents = "none";
-    }
-});
