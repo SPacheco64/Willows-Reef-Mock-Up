@@ -7,9 +7,17 @@ Developer: Sergio Pacheco
     const screenOverlay = document.getElementById("screenOverlay");
     $(".hamburger").click(function () 
     {
-        $(".hamburger").toggleClass("active");
-        screenOverlay.classList.toggle("active");
-        pageBody.classList.toggle("no-scroll");
+        if($('#mobileNav').classList.contains('collapsing'))
+        {
+            // Nothing
+            return;
+        }
+        else
+        {
+            $(".hamburger").toggleClass("active");
+            screenOverlay.classList.toggle("active");
+            pageBody.classList.toggle("no-scroll");
+        }
     });
     $("#mobileNav .nav-link").click(function () 
     {
