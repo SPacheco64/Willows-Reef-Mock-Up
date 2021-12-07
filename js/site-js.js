@@ -16,9 +16,12 @@ $(document).ready(function ()
 {
     $("#globalHeader").load("./global-header.html");
     $("#globalFooter").load("./global-footer.html");
+});
 
+$(document).load(function () 
+{
     // Keeps Harmburger Icon from being Double-Clicked
-    var mobileNav = document.getElementById('mobileNav');
+    var mobileNav = $('#mobileNav');
     var hamburgerBtn = $('.hamburger');
     if(mobileNav.classList.contains('collapsing'))
     {
