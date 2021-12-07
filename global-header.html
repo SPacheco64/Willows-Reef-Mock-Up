@@ -5,19 +5,15 @@ Developer: Sergio Pacheco
 <script>
     const pageBody = document.body;
     const screenOverlay = document.getElementById("screenOverlay");
+    while(document.getElementById('mobileNav').classList.contains('collapsing'))
+    {
+        body.style.pointerEvents = "none";
+    }
     $(".hamburger").click(function () 
     {
-        if($('#mobileNav').classList.contains('collapsing'))
-        {
-            // Nothing
-            return;
-        }
-        else
-        {
-            $(".hamburger").toggleClass("active");
-            screenOverlay.classList.toggle("active");
-            pageBody.classList.toggle("no-scroll");
-        }
+        $(".hamburger").toggleClass("active");
+        screenOverlay.classList.toggle("active");
+        pageBody.classList.toggle("no-scroll");
     });
     $("#mobileNav .nav-link").click(function () 
     {
