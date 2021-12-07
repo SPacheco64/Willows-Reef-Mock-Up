@@ -49,7 +49,7 @@ function topFunction() // When the user clicks on the button, scroll to the top 
 
 $(document).ready(function () 
 {
-    while($('#mobileNav').classList.contains('collapsing'))
+    while(document.getElementById('mobileNav').classList.contains('collapsing'))
     {
         body.style.pointerEvents = "none";
     }
