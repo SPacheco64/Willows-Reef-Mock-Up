@@ -41,9 +41,16 @@ function scrollFunction()
         scrollBtn.style.display = "none";
     }
 }
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() 
+function topFunction() // When the user clicks on the button, scroll to the top of the document
 {
     document.body.scrollTop = 0; // Safari Compatibility
     document.documentElement.scrollTop = 0; // Chrome, Firefox, & IE Compatibility
+}
+
+// Keeps Harmburger Icon from being Double-Clicked
+var mobileNav = document.getElementById('mobileNav');
+var hamburgerBtn = $('.hamburger');
+if(mobileNav.classList.contains('collapsing'))
+{
+    hamburgerBtn.style.pointerEvents = "none";
 }
