@@ -984,6 +984,7 @@ h1, h2 {
 
 #storeSection a:hover {
   color: #07c2f9;
+  font-weight: bold;
 }
 
 #storeSection a:first-child {
