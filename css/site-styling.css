@@ -88,7 +88,7 @@ body img, body button, body i, body .anchor, body .product-img, body .link-butto
 }
 
 a {
-  color: #010048;
+  color: #010099;
   width: fit-content;
 }
 
@@ -98,7 +98,7 @@ a:hover {
 }
 
 header {
-  background: #010048;
+  background: #03006B;
   position: fixed;
   width: 100%;
   top: 0;
@@ -116,7 +116,7 @@ header .navbar {
 }
 
 footer {
-  background: #03002e;
+  background: #03006B;
   color: #fff;
   position: relative;
   width: 100%;
@@ -209,7 +209,7 @@ footer .footer-copyright {
   width: 100%;
   text-align: center;
   top: 5rem;
-  background: #010048;
+  background: #010099;
   left: 0px;
 }
 
@@ -300,7 +300,7 @@ nav .dropdown button:hover {
 
 nav .dropdown .dropdown-menu {
   border-radius: 0;
-  background: #03002e;
+  background: #03006B;
   border: 0.1rem solid #fff;
   text-align: center;
   width: 60%;
@@ -332,7 +332,7 @@ nav .dropdown .dropdown-menu .nav-link {
 /* Nested CSS for Navigation Items - END */
 #screenOverlay {
   display: none;
-  background: #010048;
+  background: #010099;
   height: 100%;
   width: 100%;
   position: fixed;
@@ -375,7 +375,7 @@ h1, h2 {
 .section-header {
   margin-bottom: 1rem;
   text-transform: uppercase;
-  color: #03002e;
+  color: #03006B;
   font-size: 2rem;
   text-align: center;
 }
@@ -401,7 +401,7 @@ h1, h2 {
 }
 
 .link-button {
-  background-color: #010048;
+  background-color: #010099;
   padding: .8rem 1.3rem;
   width: fit-content;
   border-radius: 30rem;
@@ -415,7 +415,7 @@ h1, h2 {
 
 .link-button:hover {
   background: #07c2f9;
-  color: #03002e;
+  color: #03006B;
   border-color: #07c2f9;
 }
 
@@ -441,7 +441,7 @@ h1, h2 {
   margin: auto;
   text-align: center;
   color: #fff;
-  background-color: #03002e;
+  background-color: #03006B;
   border: 0.1rem solid #fff;
   padding: 2rem;
   width: 90%;
@@ -512,7 +512,7 @@ h1, h2 {
 #foundationSection .social-link {
   margin-right: .25rem;
   font-size: 2rem;
-  color: #010048;
+  color: #010099;
 }
 
 #foundationSection .social-link:hover {
@@ -552,7 +552,7 @@ h1, h2 {
 #customerSection .social-link {
   margin-right: .25rem;
   font-size: 2rem;
-  color: #010048;
+  color: #010099;
 }
 
 #customerSection .social-link:hover {
@@ -639,7 +639,7 @@ h1, h2 {
 #productSection .product-container .product-info .product-name {
   line-height: 3.5rem;
   font-weight: bold;
-  color: #03002e;
+  color: #03006B;
   font-family: 'chiller';
   font-size: 2.5rem;
 }
@@ -757,7 +757,7 @@ h1, h2 {
   max-width: 90%;
   max-height: fit-content;
   height: fit-content;
-  background: #03002e;
+  background: #03006B;
   z-index: 400;
   border: 0.1rem solid #fff;
   padding: 2rem;
@@ -873,7 +873,7 @@ h1, h2 {
 #wholesaleSection .dropdown button {
   border: none;
   background: none;
-  color: #03002e;
+  color: #03006B;
 }
 
 #wholesaleSection .dropdown button img {
@@ -897,7 +897,7 @@ h1, h2 {
 
 #wholesaleSection .dropdown .dropdown-menu {
   border-radius: 0;
-  background: #03002e;
+  background: #03006B;
   border: 0.1rem solid #fff;
   margin: 0.5rem auto;
   left: 50% !important;
@@ -1001,7 +1001,7 @@ h1, h2 {
 
 #storeSection button {
   border: none;
-  background: #03002e;
+  background: #03006B;
   color: #fff;
   border-radius: 30rem;
   min-width: 15rem;
@@ -1009,7 +1009,7 @@ h1, h2 {
 }
 
 #storeSection button:hover, #storeSection button:focus, #storeSection button:active {
-  color: #03002e;
+  color: #03006B;
   background: #07c2f9;
 }
 
@@ -1028,7 +1028,7 @@ h1, h2 {
 }
 
 #storeSection .dropdown .dropdown-menu {
-  background: #03002e;
+  background: #03006B;
   border: 0.1rem solid #fff;
   margin: 0.5rem auto;
   left: 50% !important;
@@ -1123,7 +1123,7 @@ h1, h2 {
 #blogSection .blog-post-container .blog-post-info .blog-post-name {
   line-height: 3rem;
   font-weight: bold;
-  color: #03002e;
+  color: #03006B;
   font-size: 2rem;
 }
 
@@ -1263,7 +1263,7 @@ h1, h2 {
 
 /* STYLING FOR CONTACT FORM - START */
 #contactSection {
-  background: #010048;
+  background: #010099;
   color: #fff;
   text-align: center;
 }
@@ -1322,7 +1322,7 @@ h1, h2 {
 }
 
 .contact .contactContainer .contactForm button {
-  background-color: #03002e;
+  background-color: #03006B;
   border: none;
   padding: .8rem 1.3rem;
   margin: 1rem auto;
@@ -1338,7 +1338,7 @@ h1, h2 {
 
 .contact .contactContainer .contactForm button:hover {
   background: #07c2f9;
-  color: #03002e;
+  color: #03006B;
   border-color: #07c2f9;
   cursor: pointer;
 }
@@ -1394,7 +1394,7 @@ h1, h2 {
 #scrollToTopBtn i {
   font-size: 2rem;
   color: #fff;
-  background-color: #03002e;
+  background-color: #03006B;
   padding: .45rem .6rem;
   border-radius: 100%;
   border: 0.1rem solid #fff;
@@ -1504,7 +1504,7 @@ h1, h2 {
   }
   footer {
     position: static;
-    background: #03002e;
+    background: #03006B;
   }
   footer a i {
     padding: 0 .75rem;
@@ -1645,7 +1645,7 @@ h1, h2 {
   #scrollToTopBtn i:hover {
     background-color: #07c2f9;
     border-color: #07c2f9;
-    color: #03002e;
+    color: #03006B;
     top: -.35rem;
   }
 }
