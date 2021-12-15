@@ -98,7 +98,7 @@ a:hover {
 }
 
 header {
-  background: #010048;
+  background: #03002e;
   position: fixed;
   width: 100%;
   top: 0;
@@ -209,7 +209,7 @@ footer .footer-copyright {
   width: 100%;
   text-align: center;
   top: 5rem;
-  background: #010048;
+  background: #03002e;
   left: 0px;
 }
 
@@ -332,7 +332,7 @@ nav .dropdown .dropdown-menu .nav-link {
 /* Nested CSS for Navigation Items - END */
 #screenOverlay {
   display: none;
-  background: #010048;
+  background: #03002e;
   height: 100%;
   width: 100%;
   position: fixed;
